@@ -1,0 +1,3147 @@
+[
+  {
+    "apiName": "TFT17_Briar",
+    "characterName": "TFT17_Briar",
+    "zhName": "贝蕾亚",
+    "aliases": [],
+    "cost": 1,
+    "role": "ADFighter",
+    "traits": [
+      "幻灵战队",
+      "海魔人",
+      "游侠"
+    ],
+    "cdragonTraits": [
+      "幻灵战队",
+      "海魔人",
+      "游侠"
+    ],
+    "stats": {
+      "armor": 35,
+      "attackSpeed": 0.75,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 40,
+      "hp": 650,
+      "initialMana": 0,
+      "magicResist": 35,
+      "mana": 40,
+      "range": 1
+    },
+    "ability": {
+      "name": "鱼群狂欢",
+      "desc": "被动：每损失@PercentMissingHealth@%生命值，获得@ModifiedAS@% (%i:scaleAP%)攻击速度。\n主动：对目标造成@ModifiedDamage@ (%i:scaleAD%)物理伤害，如果目标是坦克，则此伤害提升@PercentBonusDamage*100@%。",
+      "icon": "ASSETS/Characters/TFT17_Briar/HUD/Icons2D/TFT17_BriarQ.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_briar/hud/icons2d/tft17_briarq.tft_set17.png",
+      "assetPath": "assets/s17/abilities/贝蕾亚__TFT17_Briar.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Briar/Skins/Base/Images/TFT17_Briar_splash_tile_10.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_briar/skins/base/images/tft17_briar_splash_tile_10.tft_set17.png",
+    "assetPath": "assets/s17/champions/贝蕾亚__TFT17_Briar.png",
+    "youxia": {
+      "name": "贝蕾亚",
+      "cost": "1费卡",
+      "traits": [
+        "游侠",
+        "幻灵战队",
+        "海魔人"
+      ],
+      "skillName": null,
+      "skillText": "【狂热鱼群】\n被动：\n每损失19%生命值，获得2.0%攻击速度。\n主动：\n对目标造成物理伤害：若目标为坦克则多造成部分物理伤害。",
+      "source": "https://m.ali213.net/news/gl2603/1758463.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Poppy",
+    "characterName": "TFT17_Poppy",
+    "zhName": "波比",
+    "aliases": [],
+    "cost": 1,
+    "role": "APTank",
+    "traits": [
+      "木灵族",
+      "堡垒卫士"
+    ],
+    "cdragonTraits": [
+      "木灵族",
+      "堡垒卫士"
+    ],
+    "stats": {
+      "armor": 45,
+      "attackSpeed": 0.6499999761581421,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 60,
+      "hp": 700,
+      "initialMana": 30,
+      "magicResist": 45,
+      "mana": 100,
+      "range": 1
+    },
+    "ability": {
+      "name": "蜷缩起来！",
+      "desc": "获得@ModifiedShield@ (%i:scaleAP%)护盾值，持续@ShieldDuration@秒。持续期间，2格内的友军们获得@ModifiedResists@ (%i:scaleAP%)护甲和魔抗。\n木灵加成：木灵为相距最近的@ModifiedNumMeeps@(%i:set14AmpIcon%)名友军提供持续@ShieldDuration@秒的@ModifiedMeepShield@(%i:scaleAP%)护盾值。",
+      "icon": "ASSETS/Characters/TFT17_Poppy/HUD/Icons2D/TFT17_Poppy_W.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_poppy/hud/icons2d/tft17_poppy_w.tft_set17.png",
+      "assetPath": "assets/s17/abilities/波比__TFT17_Poppy.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Poppy/Skins/Base/Images/TFT17_Poppy_splash_tile_16.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_poppy/skins/base/images/tft17_poppy_splash_tile_16.tft_set17.png",
+    "assetPath": "assets/s17/champions/波比__TFT17_Poppy.png",
+    "youxia": {
+      "name": "波比",
+      "cost": "1费卡",
+      "traits": [
+        "木灵族",
+        "堡垒卫士"
+      ],
+      "skillName": null,
+      "skillText": "获得持续4秒的护盾值。持续期间，2格内的友军获得波比护甲和魔抗。\n木灵加成：木灵对最近的几名友军提供护盾持续4秒。",
+      "source": "https://m.ali213.net/news/gl2603/1758605.html"
+    }
+  },
+  {
+    "apiName": "TFT17_TwistedFate",
+    "characterName": "TFT17_TwistedFate",
+    "zhName": "崔斯特",
+    "aliases": [
+      "卡牌"
+    ],
+    "cost": 1,
+    "role": "APCaster",
+    "traits": [
+      "观星者",
+      "织命者"
+    ],
+    "cdragonTraits": [
+      "观星者",
+      "织命人"
+    ],
+    "stats": {
+      "armor": 15,
+      "attackSpeed": 0.699999988079071,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 30,
+      "hp": 500,
+      "initialMana": 0,
+      "magicResist": 15,
+      "mana": 50,
+      "range": 4
+    },
+    "ability": {
+      "name": "命运的断言",
+      "desc": "按幸运几率随机抽取一张数值在1到9之间的卡牌，然后将其扔向目标。基于抽到的卡牌，造成@ModifiedDamageMin@ (%i:scaleAP%)到@ModifiedDamageMax@ (%i:scaleAP%)魔法伤害。过量击杀伤害将弹跳至相距最近的那个敌人。\n3星加成：如果扔出一张9，则生成1金币。\n幸运：进行两次判定，选择较优的结果。",
+      "icon": "ASSETS/Characters/TFT17_TwistedFate/HUD/Icons2D/CardMaster_FatesGambit.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_twistedfate/hud/icons2d/cardmaster_fatesgambit.tft_set17.png",
+      "assetPath": "assets/s17/abilities/崔斯特__TFT17_TwistedFate.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_TwistedFate/Skins/Base/Images/TFT17_TwistedFate_splash_tile_45.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_twistedfate/skins/base/images/tft17_twistedfate_splash_tile_45.tft_set17.png",
+    "assetPath": "assets/s17/champions/崔斯特__TFT17_TwistedFate.png",
+    "youxia": {
+      "name": "卡牌",
+      "cost": "1费卡",
+      "traits": [
+        "观星者",
+        "织命人"
+      ],
+      "skillName": null,
+      "skillText": "【命运诡计】\n随机抽取一张点数为1至9的牌，然后将其掷向目标。根据抽到的点数，造成由低至高的魔法伤害。过量伤害会弹射至最近的敌人。",
+      "source": "https://m.ali213.net/news/gl2603/1758701.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Caitlyn",
+    "characterName": "TFT17_Caitlyn",
+    "zhName": "凯特琳",
+    "aliases": [
+      "女警"
+    ],
+    "cost": 1,
+    "role": "ADSpecialist",
+    "traits": [
+      "新星特攻队",
+      "织命者"
+    ],
+    "cdragonTraits": [
+      "新星特攻队",
+      "织命人"
+    ],
+    "stats": {
+      "armor": 15,
+      "attackSpeed": 0.550000011920929,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 65,
+      "hp": 500,
+      "initialMana": 0,
+      "magicResist": 15,
+      "mana": 0,
+      "range": 4
+    },
+    "ability": {
+      "name": "瞄准脑袋",
+      "desc": "被动：普攻有@ProcChance@%幸运几率打出一次强化【爆头】，造成@ModifiedHeadshotDamage@ (%i:scaleAD%%i:scaleAP%)物理伤害。\n新星特攻：标记所有敌人，使其承受的伤害提升@NovaMarkDamageAmp*100@%。当标记目标生命值首次降至@NovaMarkThreshold*100@%以下时，对其进行【爆头】，造成@ModifiedNovaHeadshotDamage@ (%i:scaleAD%%i:scaleAP%)物理伤害。\n幸运：进行两次判定，选择较优的结果。",
+      "icon": "ASSETS/Characters/TFT17_Caitlyn/HUD/Icons2D/TFT17_Caitlyn_Headshot.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_caitlyn/hud/icons2d/tft17_caitlyn_headshot.tft_set17.png",
+      "assetPath": "assets/s17/abilities/凯特琳__TFT17_Caitlyn.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Caitlyn/Skins/Base/Images/TFT17_Caitlyn_splash_tile_48.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_caitlyn/skins/base/images/tft17_caitlyn_splash_tile_48.tft_set17.png",
+    "assetPath": "assets/s17/champions/凯特琳__TFT17_Caitlyn.png",
+    "youxia": {
+      "name": "女警",
+      "cost": "1费卡",
+      "traits": [
+        "织命者",
+        "新星特攻队"
+      ],
+      "skillName": null,
+      "skillText": "【爆头】\n攻击有15%的几率发射一个强化的爆头，造成大量伤害。",
+      "source": "https://m.ali213.net/news/gl2603/1758503.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Chogath",
+    "characterName": "TFT17_Chogath",
+    "zhName": "科加斯",
+    "aliases": [
+      "大虫子"
+    ],
+    "cost": 1,
+    "role": "APTank",
+    "traits": [
+      "暗星",
+      "斗士"
+    ],
+    "cdragonTraits": [
+      "暗星",
+      "斗士"
+    ],
+    "stats": {
+      "armor": 40,
+      "attackSpeed": 0.6000000238418579,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 45,
+      "hp": 650,
+      "initialMana": 30,
+      "magicResist": 40,
+      "mana": 70,
+      "range": 1
+    },
+    "ability": {
+      "name": "积聚",
+      "desc": "对距离内生命值最低的敌人造成@TotalDamage@ (%i:scaleHealth%%i:scaleAP%)魔法伤害，并永久获得@BonusHealthPerCast@最大生命值。如果这个技能击杀了该敌人，则转而获得@BonusHealthOnKill@最大生命值。\n(当前加成：+@TFTUnitProperty.:TFT17_ChoGathBonusHealth@生命值)",
+      "icon": "ASSETS/Characters/TFT17_Chogath/HUD/Icons2D/GreenTerror_Feast.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_chogath/hud/icons2d/greenterror_feast.tft_set17.png",
+      "assetPath": "assets/s17/abilities/科加斯__TFT17_Chogath.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Chogath/Skins/Base/Images/TFT17_Chogath_splash_tile_7.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_chogath/skins/base/images/tft17_chogath_splash_tile_7.tft_set17.png",
+    "assetPath": "assets/s17/champions/科加斯__TFT17_Chogath.png",
+    "youxia": {
+      "name": "大虫子",
+      "cost": "1费卡",
+      "traits": [
+        "暗星",
+        "斗士"
+      ],
+      "skillName": null,
+      "skillText": "对当前目标吞噬造成魔法伤害并永久增加自身生命值，若击杀目标则叠加更多生命值。",
+      "source": "https://m.ali213.net/news/gl2603/1758535.html"
+    }
+  },
+  {
+    "apiName": "TFT17_RekSai",
+    "characterName": "TFT17_RekSai",
+    "zhName": "雷克塞",
+    "aliases": [
+      "挖掘机"
+    ],
+    "cost": 1,
+    "role": "APTank",
+    "traits": [
+      "海魔人",
+      "斗士"
+    ],
+    "cdragonTraits": [
+      "海魔人",
+      "斗士"
+    ],
+    "stats": {
+      "armor": 45,
+      "attackSpeed": 0.6000000238418579,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 50,
+      "hp": 700,
+      "initialMana": 40,
+      "magicResist": 45,
+      "mana": 100,
+      "range": 1
+    },
+    "ability": {
+      "name": "地壳隆起",
+      "desc": "回复@TotalHealing@ (%i:scaleHealth%%i:scaleAP%)生命值，然后短暂击飞邻格敌人，造成@ModifiedDamage@ (%i:scaleAP%) 魔法伤害。",
+      "icon": "ASSETS/Characters/TFT17_RekSai/HUD/Icons2D/TFT17_RekSai_W2.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_reksai/hud/icons2d/tft17_reksai_w2.tft_set17.png",
+      "assetPath": "assets/s17/abilities/雷克塞__TFT17_RekSai.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_RekSai/Skins/Base/Images/TFT17_RekSai_splash_tile_26.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_reksai/skins/base/images/tft17_reksai_splash_tile_26.tft_set17.png",
+    "assetPath": "assets/s17/champions/雷克塞__TFT17_RekSai.png",
+    "youxia": {
+      "name": "挖掘机",
+      "cost": "1费卡",
+      "traits": [
+        "海魔人",
+        "斗士"
+      ],
+      "skillName": null,
+      "skillText": "【破土而出】\n治疗自身生命值，然后短暂击飞相邻敌人并造成魔法伤害。",
+      "source": "https://m.ali213.net/news/gl2603/1758681.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Leona",
+    "characterName": "TFT17_Leona",
+    "zhName": "蕾欧娜",
+    "aliases": [],
+    "cost": 1,
+    "role": "APTank",
+    "traits": [
+      "法官",
+      "重装战士"
+    ],
+    "cdragonTraits": [
+      "法官",
+      "重装战士"
+    ],
+    "stats": {
+      "armor": 45,
+      "attackSpeed": 0.6000000238418579,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 50,
+      "hp": 700,
+      "initialMana": 50,
+      "magicResist": 45,
+      "mana": 110,
+      "range": 1
+    },
+    "ability": {
+      "name": "破晓之盾",
+      "desc": "获得持续@ShieldDuration@秒的@ModifiedShield@ (%i:scaleAP%)护盾值。猛击当前目标，造成@ModifiedDamage@ (%i:scaleArmor%%i:scaleMR%)魔法伤害和@StunDuration@秒晕眩。",
+      "icon": "ASSETS/Characters/TFT17_Leona/HUD/Icons2D/TFT17_LeonaQ.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_leona/hud/icons2d/tft17_leonaq.tft_set17.png",
+      "assetPath": "assets/s17/abilities/蕾欧娜__TFT17_Leona.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Leona/Skins/Base/Images/TFT17_Leona_splash_tile_64.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_leona/skins/base/images/tft17_leona_splash_tile_64.tft_set17.png",
+    "assetPath": "assets/s17/champions/蕾欧娜__TFT17_Leona.png",
+    "youxia": {
+      "name": "蕾欧娜",
+      "cost": "1费卡",
+      "traits": [
+        "法官",
+        "重装战士"
+      ],
+      "skillName": null,
+      "skillText": "【破晓之盾】\n获得护盾，持续4秒。猛击当前目标，造成魔法伤害并使其晕眩。",
+      "source": "https://m.ali213.net/news/gl2603/1758917.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Lissandra",
+    "characterName": "TFT17_Lissandra",
+    "zhName": "丽桑卓",
+    "aliases": [
+      "冰女"
+    ],
+    "cost": 1,
+    "role": "APCaster",
+    "traits": [
+      "暗星",
+      "牧羊人",
+      "魔术师"
+    ],
+    "cdragonTraits": [
+      "暗星",
+      "牧羊人",
+      "魔术师"
+    ],
+    "stats": {
+      "armor": 15,
+      "attackSpeed": 0.699999988079071,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 30,
+      "hp": 450,
+      "initialMana": 0,
+      "magicResist": 15,
+      "mana": 30,
+      "range": 4
+    },
+    "ability": {
+      "name": "黑暗物质",
+      "desc": "向当前目标投掷一个碎片，对命中的首个敌人造成@ModifiedDamage@ (%i:scaleAP%)魔法伤害。在命中首个目标后或到达它的飞行终点时，匕首会爆炸，对附近的目标们造成@ModifiedSecondaryDamage@ (%i:scaleAP%)魔法伤害。",
+      "icon": "ASSETS/Characters/TFT17_Lissandra/HUD/Icons2D/TFT17_Lissandra_Q.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_lissandra/hud/icons2d/tft17_lissandra_q.tft_set17.png",
+      "assetPath": "assets/s17/abilities/丽桑卓__TFT17_Lissandra.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Lissandra/Skins/Base/Images/TFT17_Lissandra_splash_tile_12.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_lissandra/skins/base/images/tft17_lissandra_splash_tile_12.tft_set17.png",
+    "assetPath": "assets/s17/champions/丽桑卓__TFT17_Lissandra.png",
+    "youxia": {
+      "name": "冰女",
+      "cost": "1费卡",
+      "traits": [
+        "暗星",
+        "牧羊人",
+        "魔术师"
+      ],
+      "skillName": null,
+      "skillText": "【暗物质】\n向当前目标投掷一把匕首，对命中的第一个目标造成魔法伤害。在命中初始目标或到达最终位置后，匕首会爆炸，对附近目标造成魔法伤害。",
+      "source": "https://m.ali213.net/news/gl2603/1758523.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Nasus",
+    "characterName": "TFT17_Nasus",
+    "zhName": "内瑟斯",
+    "aliases": [
+      "狗头"
+    ],
+    "cost": 1,
+    "role": "APTank",
+    "traits": [
+      "太空律动",
+      "重装战士"
+    ],
+    "cdragonTraits": [
+      "太空律动",
+      "重装战士"
+    ],
+    "stats": {
+      "armor": 45,
+      "attackSpeed": 0.6499999761581421,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 40,
+      "hp": 700,
+      "initialMana": 60,
+      "magicResist": 45,
+      "mana": 120,
+      "range": 1
+    },
+    "ability": {
+      "name": "律动苏珊",
+      "desc": "变形@Duration@秒，临时获得@MaxHealth@最大生命值、进入{{TFT17_SpaceGroove_TheGroove}}状态、并且每秒对邻格的敌人们造成@ModifiedDamage@ (%i:scaleHealth%%i:scaleAP%)魔法伤害。",
+      "icon": "ASSETS/Characters/TFT17_Nasus/HUD/Icons2D/TFT17_Nasus_R.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_nasus/hud/icons2d/tft17_nasus_r.tft_set17.png",
+      "assetPath": "assets/s17/abilities/内瑟斯__TFT17_Nasus.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Nasus/Skins/Base/Images/TFT17_Nasus_splash_tile_25.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_nasus/skins/base/images/tft17_nasus_splash_tile_25.tft_set17.png",
+    "assetPath": "assets/s17/champions/内瑟斯__TFT17_Nasus.png",
+    "youxia": {
+      "name": "狗头",
+      "cost": "1费卡",
+      "traits": [
+        "太空律动",
+        "重装战士"
+      ],
+      "skillName": null,
+      "skillText": "【律动苏珊】\n变身一段时间，暂时获得一定最大生命值，并每秒对相邻敌人造成范围魔法伤害。在变身期间，内瑟斯处于律动状态。\n木灵加成：战斗开始时，为距离最近宇航员额外提供一个木灵。",
+      "source": "https://m.ali213.net/news/gl2603/1758639.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Talon",
+    "characterName": "TFT17_Talon",
+    "zhName": "泰隆",
+    "aliases": [
+      "男刀"
+    ],
+    "cost": 1,
+    "role": "ADReaper",
+    "traits": [
+      "观星者",
+      "游侠"
+    ],
+    "cdragonTraits": [
+      "观星者",
+      "游侠"
+    ],
+    "stats": {
+      "armor": 35,
+      "attackSpeed": 0.800000011920929,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 35,
+      "hp": 650,
+      "initialMana": 0,
+      "magicResist": 35,
+      "mana": 30,
+      "range": 1
+    },
+    "ability": {
+      "name": "圣神审判",
+      "desc": "戳刺目标，使其流血，在@BleedDuration@秒内持续造成@ModifiedBleedDamage@ (%i:scaleAD%%i:scaleAP%)物理伤害。这次攻击之后，跳跃至@HexDistance@格内生命值百分比最高的那个敌人处。",
+      "icon": "ASSETS/Characters/TFT17_Talon/HUD/Icons2D/TFT17_TalonE.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_talon/hud/icons2d/tft17_talone.tft_set17.png",
+      "assetPath": "assets/s17/abilities/泰隆__TFT17_Talon.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Talon/Skins/Base/Images/TFT17_Talon_splash_tile_39.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_talon/skins/base/images/tft17_talon_splash_tile_39.tft_set17.png",
+    "assetPath": "assets/s17/champions/泰隆__TFT17_Talon.png",
+    "youxia": {
+      "name": "男刀",
+      "cost": "1费卡",
+      "traits": [
+        "观星者",
+        "游侠"
+      ],
+      "skillName": null,
+      "skillText": "【神谕者的审判】\n跃至3格内距离最远的敌人面前。下一次攻击会使敌人流血，在18秒内持续造成物理伤害。",
+      "source": "https://m.ali213.net/news/gl2603/1758703.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Teemo",
+    "characterName": "TFT17_Teemo",
+    "zhName": "提莫",
+    "aliases": [],
+    "cost": 1,
+    "role": "APCarry",
+    "traits": [
+      "太空律动",
+      "牧羊人"
+    ],
+    "cdragonTraits": [
+      "太空律动",
+      "牧羊人"
+    ],
+    "stats": {
+      "armor": 15,
+      "attackSpeed": 0.699999988079071,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 15,
+      "hp": 450,
+      "initialMana": 0,
+      "magicResist": 15,
+      "mana": 50,
+      "range": 4
+    },
+    "ability": {
+      "name": "双倍时间",
+      "desc": "被动：普攻造成@ModifiedHitDamage@ (%i:scaleAP%)额外魔法伤害，并在@PoisonDuration@秒内持续造成额外的@ModifiedMagicDamage@ (%i:scaleAP%)可叠加魔法伤害。敌人的层数达到@GrooveStacks@或以上时，【提莫】进入{{TFT17_SpaceGroove_TheGroove}}状态。\n主动：获得@AttackSpeed*100@%攻击速度，持续@ActiveAttacks@次普攻。",
+      "icon": "ASSETS/Characters/TFT17_Teemo/HUD/Icons2D/TFT17_TeemoW.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_teemo/hud/icons2d/tft17_teemow.tft_set17.png",
+      "assetPath": "assets/s17/abilities/提莫__TFT17_Teemo.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Teemo/Skins/Base/Images/TFT17_Teemo_splash_tile_47.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_teemo/skins/base/images/tft17_teemo_splash_tile_47.tft_set17.png",
+    "assetPath": "assets/s17/champions/提莫__TFT17_Teemo.png",
+    "youxia": {
+      "name": "提莫",
+      "cost": "1费卡",
+      "traits": [
+        "太空律动",
+        "牧羊人"
+      ],
+      "skillName": null,
+      "skillText": "【双倍节拍】\n被动：\n普攻在6秒内造成额外魔法伤害。当敌人的层数达到5或更高时，提莫进入律动状态。\n主动：\n对当前目标增加层数。",
+      "source": "https://m.ali213.net/news/gl2603/1758643.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Veigar",
+    "characterName": "TFT17_Veigar",
+    "zhName": "维迦",
+    "aliases": [
+      "小法",
+      "小法师"
+    ],
+    "cost": 1,
+    "role": "APCaster",
+    "traits": [
+      "木灵族",
+      "魔术师"
+    ],
+    "cdragonTraits": [
+      "木灵族",
+      "魔术师"
+    ],
+    "stats": {
+      "armor": 15,
+      "attackSpeed": 0.699999988079071,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 30,
+      "hp": 500,
+      "initialMana": 10,
+      "magicResist": 15,
+      "mana": 50,
+      "range": 4
+    },
+    "ability": {
+      "name": "木灵流星雨",
+      "desc": "召唤一颗木灵流星落在目标上，造成@ModifiedDamage@ (%i:scaleAP%)魔法伤害。\n木灵加成：召唤额外@ModifiedMiniMeeps@ (%i:set14AmpIcon%)个迷你木灵流星落在附近的目标上，每个造成@ModifiedMiniDamage@ (%i:scaleAP%)魔法伤害。",
+      "icon": "ASSETS/Characters/TFT17_Veigar/HUD/Icons2D/TFT17_VeigarDarkMatter.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_veigar/hud/icons2d/tft17_veigardarkmatter.tft_set17.png",
+      "assetPath": "assets/s17/abilities/维迦__TFT17_Veigar.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Veigar/Skins/Base/Images/TFT17_Veigar_splash_tile_32.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_veigar/skins/base/images/tft17_veigar_splash_tile_32.tft_set17.png",
+    "assetPath": "assets/s17/champions/维迦__TFT17_Veigar.png",
+    "youxia": {
+      "name": "小法",
+      "cost": "1费卡",
+      "traits": [
+        "魔术师",
+        "木灵族"
+      ],
+      "skillName": null,
+      "skillText": "【木灵族流星雨】\n召唤一颗木灵流星砸向目标，造成魔法伤害。木灵加成：朝附近的目标召唤额外数量的迷你木灵，每个造成少量魔法魔法伤害。",
+      "source": "https://m.ali213.net/news/gl2603/1758597.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Aatrox",
+    "characterName": "TFT17_Aatrox",
+    "zhName": "亚托克斯",
+    "aliases": [
+      "剑魔"
+    ],
+    "cost": 1,
+    "role": "ADTank",
+    "traits": [
+      "新星特攻队",
+      "堡垒卫士"
+    ],
+    "cdragonTraits": [
+      "新星特攻队",
+      "堡垒卫士"
+    ],
+    "stats": {
+      "armor": 45,
+      "attackSpeed": 0.6000000238418579,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 50,
+      "hp": 700,
+      "initialMana": 30,
+      "magicResist": 45,
+      "mana": 90,
+      "range": 1
+    },
+    "ability": {
+      "name": "星界斩击",
+      "desc": "回复@ModifiedHeal@ (%i:scaleAP%)生命值，随后对当前目标造成@ModifiedDamage@ (%i:scaleAD%%i:scaleArmor%)物理伤害。\n新星特攻：顺劈整个战场，短暂击飞所有敌人，并造成@ModifiedNovaDamage@ (%i:scaleAD%%i:scaleArmor%)物理伤害。",
+      "icon": "ASSETS/Characters/TFT17_Aatrox/HUD/Icons2D/TFT17_Aatrox_Q2.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_aatrox/hud/icons2d/tft17_aatrox_q2.tft_set17.png",
+      "assetPath": "assets/s17/abilities/亚托克斯__TFT17_Aatrox.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Aatrox/Skins/Base/Images/TFT17_Aatrox_splash_tile_30.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_aatrox/skins/base/images/tft17_aatrox_splash_tile_30.tft_set17.png",
+    "assetPath": "assets/s17/champions/亚托克斯__TFT17_Aatrox.png",
+    "youxia": {
+      "name": "剑魔",
+      "cost": "1费卡",
+      "traits": [
+        "堡垒卫士",
+        "新星特攻队"
+      ],
+      "skillName": null,
+      "skillText": "【星辰斩】\n治疗自身并斩击锥形区域内的所有敌人，造成物理伤害和护甲击碎，持续3秒。",
+      "source": "https://m.ali213.net/news/gl2603/1758497.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Ezreal",
+    "characterName": "TFT17_Ezreal",
+    "zhName": "伊泽瑞尔",
+    "aliases": [
+      "EZ"
+    ],
+    "cost": 1,
+    "role": "ADCaster",
+    "traits": [
+      "未来战士",
+      "狙神"
+    ],
+    "cdragonTraits": [
+      "未来战士",
+      "狙神"
+    ],
+    "stats": {
+      "armor": 15,
+      "attackSpeed": 0.699999988079071,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 40,
+      "hp": 450,
+      "initialMana": 0,
+      "magicResist": 15,
+      "mana": 30,
+      "range": 6
+    },
+    "ability": {
+      "name": "时空射击",
+      "desc": "主动：对当前目标发射一道震波，造成@TotalDamage@ (%i:scaleAD%%i:scaleAP%)物理伤害。每参与击杀@TakedownsToDrone@次，获得一架无人机，它会在施放技能时对当前目标造成@ModifiedDroneDamage@ (%i:scaleAD%)物理伤害。\n(总参与击杀数：@TFTUnitProperty.:TFT17_Ezreal_Takedowns@)",
+      "icon": "ASSETS/Characters/TFT17_Ezreal/HUD/Icons2D/TFT17_Ezreal_Passive.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_ezreal/hud/icons2d/tft17_ezreal_passive.tft_set17.png",
+      "assetPath": "assets/s17/abilities/伊泽瑞尔__TFT17_Ezreal.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Ezreal/Skins/Base/Images/TFT17_Ezreal_splash_tile_5.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_ezreal/skins/base/images/tft17_ezreal_splash_tile_5.tft_set17.png",
+    "assetPath": "assets/s17/champions/伊泽瑞尔__TFT17_Ezreal.png",
+    "youxia": {
+      "name": "EZ",
+      "cost": "1费卡",
+      "traits": [
+        "未来战士",
+        "狙神"
+      ],
+      "skillName": null,
+      "skillText": "【时空射击】\n向目标发射一道能量波，造成物理伤害。",
+      "source": "https://m.ali213.net/news/gl2603/1758665.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Akali",
+    "characterName": "TFT17_Akali",
+    "zhName": "阿卡丽",
+    "aliases": [],
+    "cost": 2,
+    "role": "ADFighter",
+    "traits": [
+      "新星特攻队",
+      "狂战士"
+    ],
+    "cdragonTraits": [
+      "新星特攻队",
+      "狂战士"
+    ],
+    "stats": {
+      "armor": 45,
+      "attackSpeed": 0.800000011920929,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 45,
+      "hp": 750,
+      "initialMana": 0,
+      "magicResist": 45,
+      "mana": 30,
+      "range": 1
+    },
+    "ability": {
+      "name": "群星打击",
+      "desc": "重新定位至目标附近，以打击最多的敌人。随后投掷@NumShurikens@枚透体苦无，每枚对首个命中的敌人造成@ModifiedDamage@ (%i:scaleAD%)物理伤害，对每个后续目标的伤害降低至@ModifiedSecondaryDamage@ (%i:scaleAD%)。苦无削减@ArmorShred@护甲，这个数额在暴击时为@ArmorShredCrit@。\n新星特攻：斩击所有敌人，对其施加持续至战斗结束的重伤和流血效果，每秒造成@ModifiedNovaDamage@ (%i:scaleAD%)物理伤害，持续至战斗结束。苦无使该流血效果的伤害提升@NovaShurikenBonusDamage*100@%。",
+      "icon": "ASSETS/Characters/TFT17_Akali/HUD/Icons2D/TFT17_Akali_Q.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_akali/hud/icons2d/tft17_akali_q.tft_set17.png",
+      "assetPath": "assets/s17/abilities/阿卡丽__TFT17_Akali.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Akali/Skins/Base/Images/TFT17_Akali_splash_tile_68.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_akali/skins/base/images/tft17_akali_splash_tile_68.tft_set17.png",
+    "assetPath": "assets/s17/champions/阿卡丽__TFT17_Akali.png",
+    "youxia": {
+      "name": "阿卡丽",
+      "cost": "2费卡",
+      "traits": [
+        "新星特攻队",
+        "狂战士"
+      ],
+      "skillName": null,
+      "skillText": "【星辰打击】\n位移至目标身旁，以攻击到最多敌人的位置出手。随后掷出5枚穿透手里剑，每枚手里剑对首个命中的敌人造成物理伤害，对后续目标伤害衰减。手里剑会移除目标1点护甲，若产生暴击则移除2点。",
+      "source": "https://m.ali213.net/news/gl2603/1758511.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Belveth",
+    "characterName": "TFT17_Belveth",
+    "zhName": "卑尔维斯",
+    "aliases": [],
+    "cost": 2,
+    "role": "ADFighter",
+    "traits": [
+      "海魔人",
+      "挑战者",
+      "狂战士"
+    ],
+    "cdragonTraits": [
+      "海魔人",
+      "挑战者",
+      "狂战士"
+    ],
+    "stats": {
+      "armor": 45,
+      "attackSpeed": 0.75,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 47,
+      "hp": 750,
+      "initialMana": 0,
+      "magicResist": 45,
+      "mana": 50,
+      "range": 2
+    },
+    "ability": {
+      "name": "潮汐连斩",
+      "desc": "在@SlashDuration@秒里持续对当前目标进行共@TotalNumSlashes@ (%i:scaleAS%)次斩击，每击造成@TotalDamage@ (%i:scaleAD%%i:scaleAP%)物理伤害。",
+      "icon": "ASSETS/Characters/TFT17_Belveth/HUD/Icons2D/TFT17_BelvethE.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_belveth/hud/icons2d/tft17_belvethe.tft_set17.png",
+      "assetPath": "assets/s17/abilities/卑尔维斯__TFT17_Belveth.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Belveth/Skins/Base/Images/TFT17_Belveth_splash_tile_19.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_belveth/skins/base/images/tft17_belveth_splash_tile_19.tft_set17.png",
+    "assetPath": "assets/s17/champions/卑尔维斯__TFT17_Belveth.png",
+    "youxia": {
+      "name": "卑尔维斯",
+      "cost": "2费卡",
+      "traits": [
+        "海魔人",
+        "狂战士",
+        "挑战者"
+      ],
+      "skillName": null,
+      "skillText": "【潮汐斩击】\n在2秒内对当前目标发动12段连续斩击，每段造成一定物理伤害。",
+      "source": "https://m.ali213.net/news/gl2603/1758685.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Gwen",
+    "characterName": "TFT17_Gwen",
+    "zhName": "格温",
+    "aliases": [],
+    "cost": 2,
+    "role": "APReaper",
+    "traits": [
+      "太空律动",
+      "游侠"
+    ],
+    "cdragonTraits": [
+      "太空律动",
+      "游侠"
+    ],
+    "stats": {
+      "armor": 45,
+      "attackSpeed": 0.8500000238418579,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 50,
+      "hp": 750,
+      "initialMana": 0,
+      "magicResist": 45,
+      "mana": 30,
+      "range": 2
+    },
+    "ability": {
+      "name": "舞出机运",
+      "desc": "被动：普攻造成魔法伤害。格温在瞄准一个@GrooveThreshold*100@%生命值以下的敌人时处于{{TFT17_SpaceGroove_TheGroove}}状态。\n主动：冲刺至一个附近的格子，剪击生命值百分比最低的那个敌人，对其造成@ModifiedDamage@ (%i:scaleAP%)魔法伤害，并对一个锥形范围内的敌人们造成@ModifiedAreaDamage@ (%i:scaleAP%)魔法伤害。若此技能击杀了一名敌人，则冲刺并再次剪击，造成@ResetDamage*100@%伤害！",
+      "icon": "ASSETS/Characters/TFT17_Gwen/HUD/Icons2D/TFT17_Gwen_E.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_gwen/hud/icons2d/tft17_gwen_e.tft_set17.png",
+      "assetPath": "assets/s17/abilities/格温__TFT17_Gwen.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Gwen/Skins/Base/Images/TFT17_Gwen_splash_tile_1.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_gwen/skins/base/images/tft17_gwen_splash_tile_1.tft_set17.png",
+    "assetPath": "assets/s17/champions/格温__TFT17_Gwen.png",
+    "youxia": {
+      "name": "格温",
+      "cost": "2费卡",
+      "traits": [
+        "太空律动",
+        "游侠"
+      ],
+      "skillName": null,
+      "skillText": "【翩翩起舞】\n被动：\n攻击造成魔法伤害。当格温的目标是生命值低于40%的敌人时，她会进入律动状态。\n主动：\n突进至附近一格，斩击生命值百分比最低的敌人，对目标造成魔法伤害，并对锥形范围内的敌人造成少量魔法伤害。\n若该技能完成击杀，会再次突进并斩击，伤害为原来的70%！",
+      "source": "https://m.ali213.net/news/gl2603/1758647.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Gragas",
+    "characterName": "TFT17_Gragas",
+    "zhName": "古拉加斯",
+    "aliases": [
+      "酒桶"
+    ],
+    "cost": 2,
+    "role": "APTank",
+    "traits": [
+      "灵能特工",
+      "斗士"
+    ],
+    "cdragonTraits": [
+      "灵能特工",
+      "斗士"
+    ],
+    "stats": {
+      "armor": 45,
+      "attackSpeed": 0.6000000238418579,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 50,
+      "hp": 950,
+      "initialMana": 30,
+      "magicResist": 45,
+      "mana": 80,
+      "range": 1
+    },
+    "ability": {
+      "name": "化学狂怒",
+      "desc": "@Duration@秒内持续回复@ModifiedHeal@ (%i:scaleHealth%%i:scaleAP%)生命值。然后，对目标和目标邻格的敌人们造成@DamageTotal@ (%i:scaleAP%)魔法伤害和持续@CCDuration@秒的@ASSlow*100@%冰冷效果。\n{{TFT_Keyword_Chill}}",
+      "icon": "ASSETS/Characters/TFT17_Gragas/HUD/Icons2D/TFT17_GragasDrunkenRage.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_gragas/hud/icons2d/tft17_gragasdrunkenrage.tft_set17.png",
+      "assetPath": "assets/s17/abilities/古拉加斯__TFT17_Gragas.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Gragas/Skins/Base/Images/TFT17_Gragas_splash_tile_10.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_gragas/skins/base/images/tft17_gragas_splash_tile_10.tft_set17.png",
+    "assetPath": "assets/s17/champions/古拉加斯__TFT17_Gragas.png",
+    "youxia": {
+      "name": "酒桶",
+      "cost": "2费卡",
+      "traits": [
+        "灵能特工",
+        "斗士"
+      ],
+      "skillName": null,
+      "skillText": "【化学狂暴】\n2秒内持续回复一定生命值。然后，对邻格敌人造成魔法伤害和持续2秒的冰冷效果。\n冰冷：降低30%攻击速度",
+      "source": "https://m.ali213.net/news/gl2603/1758861.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Jax",
+    "characterName": "TFT17_Jax",
+    "zhName": "贾克斯",
+    "aliases": [],
+    "cost": 2,
+    "role": "APTank",
+    "traits": [
+      "观星者",
+      "堡垒卫士"
+    ],
+    "cdragonTraits": [
+      "观星者",
+      "堡垒卫士"
+    ],
+    "stats": {
+      "armor": 45,
+      "attackSpeed": 0.6499999761581421,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 50,
+      "hp": 950,
+      "initialMana": 20,
+      "magicResist": 45,
+      "mana": 80,
+      "range": 1
+    },
+    "ability": {
+      "name": "反星打击",
+      "desc": "进入@Duration@秒的防御姿态，令即将到来的伤害降低@ModifiedFlatDR@ (%i:scaleAP%)，并获得@ModifiedShield@ (%i:scaleAP%)护盾值。当这个姿态结束时，打击附近所有敌人，造成@ModifiedDamage@ (%i:scaleArmor%%i:scaleMR%)魔法伤害和@StunDuration@秒晕眩效果。",
+      "icon": "ASSETS/Characters/TFT17_Jax/HUD/Icons2D/TFT17_JaxE.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_jax/hud/icons2d/tft17_jaxe.tft_set17.png",
+      "assetPath": "assets/s17/abilities/贾克斯__TFT17_Jax.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Jax/Skins/Base/Images/TFT17_Jax_Mobile.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_jax/skins/base/images/tft17_jax_mobile.tft_set17.png",
+    "assetPath": "assets/s17/champions/贾克斯__TFT17_Jax.png",
+    "youxia": {
+      "name": "贾克斯",
+      "cost": "2费卡",
+      "traits": [
+        "观星者",
+        "堡垒卫士"
+      ],
+      "skillName": null,
+      "skillText": "【星辰反击】\n进入防御姿态，减少受到的伤害并获得护盾。姿态结束时，打击所有附近敌人，造成魔法伤害并使其晕眩。",
+      "source": "https://m.ali213.net/news/gl2603/1758809.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Jinx",
+    "characterName": "TFT17_Jinx",
+    "zhName": "金克丝",
+    "aliases": [],
+    "cost": 2,
+    "role": "ADCarry",
+    "traits": [
+      "幻灵战队",
+      "挑战者"
+    ],
+    "cdragonTraits": [
+      "幻灵战队",
+      "挑战者"
+    ],
+    "stats": {
+      "armor": 20,
+      "attackSpeed": 0.75,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 55,
+      "hp": 550,
+      "initialMana": 20,
+      "magicResist": 20,
+      "mana": 80,
+      "range": 4
+    },
+    "ability": {
+      "name": "易爆态势",
+      "desc": "在一个锥形范围内发射一道由@ModifiedNumRockets@ (%i:scaleAS%)枚火箭组成的弹幕，每枚火箭对命中的第一个目标造成@TotalDamage@ (%i:scaleAD%)物理伤害。",
+      "icon": "ASSETS/Characters/TFT17_Jinx/HUD/Icons2D/TFT17_Jinx_Q1.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_jinx/hud/icons2d/tft17_jinx_q1.tft_set17.png",
+      "assetPath": "assets/s17/abilities/金克丝__TFT17_Jinx.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Jinx/Skins/Base/Images/TFT17_Jinx_splash_tile_38.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_jinx/skins/base/images/tft17_jinx_splash_tile_38.tft_set17.png",
+    "assetPath": "assets/s17/champions/金克丝__TFT17_Jinx.png",
+    "youxia": {
+      "name": "金克丝",
+      "cost": "1费卡",
+      "traits": [
+        "幻灵战队",
+        "挑战者"
+      ],
+      "skillName": null,
+      "skillText": "【鱼骨头】\n发射锥形弹幕，共12发子弹，每发对首个命中的目标造成物理伤害。",
+      "source": "https://m.ali213.net/news/gl2603/1758471.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Milio",
+    "characterName": "TFT17_Milio",
+    "zhName": "米利欧",
+    "aliases": [],
+    "cost": 2,
+    "role": "APCaster",
+    "traits": [
+      "未来战士",
+      "织命者"
+    ],
+    "cdragonTraits": [
+      "未来战士",
+      "织命人"
+    ],
+    "stats": {
+      "armor": 20,
+      "attackSpeed": 0.699999988079071,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 30,
+      "hp": 550,
+      "initialMana": 0,
+      "magicResist": 20,
+      "mana": 30,
+      "range": 4
+    },
+    "ability": {
+      "name": "百万时间飞踢！",
+      "desc": "朝当前目标踢出一个球，造成@ModifiedDamage@ (%i:scaleAP%)魔法伤害。产生碰撞时，这个球有100% 幸运几率弹跳至一个新目标，造成@ModifiedBounceDamage@ (%i:scaleAP%)魔法伤害。这些弹跳还可以触发更多弹跳，但每次弹跳的几率减半。\n幸运：进行两次判定，选择较优的结果。",
+      "icon": "ASSETS/Characters/TFT17_Milio/HUD/Icons2D/TFT17_Milio_Q.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_milio/hud/icons2d/tft17_milio_q.tft_set17.png",
+      "assetPath": "assets/s17/abilities/米利欧__TFT17_Milio.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Milio/Skins/Base/Images/TFT17_Milio_splash_tile_0.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_milio/skins/base/images/tft17_milio_splash_tile_0.tft_set17.png",
+    "assetPath": "assets/s17/champions/米利欧__TFT17_Milio.png",
+    "youxia": {
+      "name": "米利欧",
+      "cost": "2费卡",
+      "traits": [
+        "未来战士",
+        "织命人"
+      ],
+      "skillName": null,
+      "skillText": "【究极无敌时间踢】\n朝敌人踢出一个火球，造成魔法伤害。产生碰撞时，火球有几率弹跳至一个新目标，造成少量魔法伤害。这些弹跳还可以触发更多弹跳。",
+      "source": "https://m.ali213.net/news/gl2603/1758671.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Mordekaiser",
+    "characterName": "TFT17_Mordekaiser",
+    "zhName": "莫德凯撒",
+    "aliases": [
+      "铁男"
+    ],
+    "cost": 2,
+    "role": "APTank",
+    "traits": [
+      "暗星",
+      "神谕",
+      "重装战士"
+    ],
+    "cdragonTraits": [
+      "暗星",
+      "神谕",
+      "重装战士"
+    ],
+    "stats": {
+      "armor": 45,
+      "attackSpeed": 0.6000000238418579,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 40,
+      "hp": 950,
+      "initialMana": 40,
+      "magicResist": 45,
+      "mana": 100,
+      "range": 1
+    },
+    "ability": {
+      "name": "不坏之身",
+      "desc": "获得@ModifiedInitialShield@ (%i:scaleAP%)护盾值。接下来的@Duration@秒内，每秒获得@ModifiedShieldPerProc@ (%i:scaleAP%)额外护盾值，并对所有邻格敌人造成@ModifiedDamagePerProc@ (%i:scaleAP%)魔法伤害。当这个技能结束时，消耗剩余所有护盾值然后回复相当于@HealRefund*100@%该数值的生命值。",
+      "icon": "ASSETS/Characters/TFT17_Mordekaiser/HUD/Icons2D/TFT17_MordekaiserW.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_mordekaiser/hud/icons2d/tft17_mordekaiserw.tft_set17.png",
+      "assetPath": "assets/s17/abilities/莫德凯撒__TFT17_Mordekaiser.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Mordekaiser/Skins/Base/Images/TFT17_Mordekaiser_splash_tile_6.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_mordekaiser/skins/base/images/tft17_mordekaiser_splash_tile_6.tft_set17.png",
+    "assetPath": "assets/s17/champions/莫德凯撒__TFT17_Mordekaiser.png",
+    "youxia": {
+      "name": "铁男",
+      "cost": "2费卡",
+      "traits": [
+        "暗星",
+        "神谕",
+        "重装战士"
+      ],
+      "skillName": null,
+      "skillText": "【不灭之躯】\n获得护盾。每秒消耗莫德凯撒法力值，再获得少量护盾，并对周围所有敌人造成魔法伤害。法力值耗尽后，消耗剩余所有护盾值，回复相当于其40%的生命值。",
+      "source": "https://m.ali213.net/news/gl2603/1758543.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Gnar",
+    "characterName": "TFT17_Gnar",
+    "zhName": "纳尔",
+    "aliases": [],
+    "cost": 2,
+    "role": "ADSpecialist",
+    "traits": [
+      "木灵族",
+      "狙神"
+    ],
+    "cdragonTraits": [
+      "木灵族",
+      "狙神"
+    ],
+    "stats": {
+      "armor": 20,
+      "attackSpeed": 0.699999988079071,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 45,
+      "hp": 550,
+      "initialMana": 0,
+      "magicResist": 20,
+      "mana": 5,
+      "range": 6
+    },
+    "ability": {
+      "name": "弹弓机动",
+      "desc": "被动：每第5次攻击，向目标投掷一个会折返的回力镖，在命中首个敌人后继续向前穿透2格。它造成@ModifiedDamage@ (%i:scaleAD%%i:scaleAP%)物理伤害，每命中一个敌人减少@DamageReductionPerHit*100@%。\n木灵加成 @ModifiedNumMeeps@ (%i:set14AmpIcon%)个木灵会伴随【纳尔】进行攻击，每秒造成@ModifiedMeepDPS@ (%i:scaleAD%%i:scaleAS%)物理伤害。",
+      "icon": "ASSETS/Characters/TFT17_Gnar/HUD/Icons2D/TFT17_Gnar_Q.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_gnar/hud/icons2d/tft17_gnar_q.tft_set17.png",
+      "assetPath": "assets/s17/abilities/纳尔__TFT17_Gnar.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Gnar/Skins/Base/Images/TFT17_Gnar_splash_tile_15.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_gnar/skins/base/images/tft17_gnar_splash_tile_15.tft_set17.png",
+    "assetPath": "assets/s17/champions/纳尔__TFT17_Gnar.png",
+    "youxia": {
+      "name": "纳尔",
+      "cost": "2费卡",
+      "traits": [
+        "木灵族",
+        "狙神"
+      ],
+      "skillName": null,
+      "skillText": "【弹弓机动】\n每第5次攻击时，向目标发射一枚回旋飞镖飞镖会飞过首个命中的敌人两格后返回每命中一个敌人伤害降低60%。\n木灵加成：木灵会与纳尔协同攻击，每秒造成少数物理伤害。",
+      "source": "https://m.ali213.net/news/gl2603/1758611.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Pyke",
+    "characterName": "TFT17_Pyke",
+    "zhName": "派克",
+    "aliases": [],
+    "cost": 2,
+    "role": "ADReaper",
+    "traits": [
+      "灵能特工",
+      "旅人"
+    ],
+    "cdragonTraits": [
+      "灵能特工",
+      "旅人"
+    ],
+    "stats": {
+      "armor": 45,
+      "attackSpeed": 0.800000011920929,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 45,
+      "hp": 700,
+      "initialMana": 0,
+      "magicResist": 45,
+      "mana": 40,
+      "range": 1
+    },
+    "ability": {
+      "name": "死亡标记",
+      "desc": "重新走位至多1格，朝最远的敌人投掷一个鱼叉。鱼叉会将命中的首名敌人向前拖拽1格，并造成@ModifiedDamage@ (%i:scaleAP%)物理伤害。随后传送到目标身后并进行顺劈，对其造成@ModifiedTargetDamage@ (%i:scaleAD%)物理伤害并对附近的敌人们造成@ModifiedAreaDamage@ (%i:scaleAD%)物理伤害。",
+      "icon": "ASSETS/Characters/TFT17_Pyke/HUD/Icons2D/TFT17_PykeQ.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_pyke/hud/icons2d/tft17_pykeq.tft_set17.png",
+      "assetPath": "assets/s17/abilities/派克__TFT17_Pyke.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Pyke/Skins/Base/Images/TFT17_Pyke_splash_tile_25.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_pyke/skins/base/images/tft17_pyke_splash_tile_25.tft_set17.png",
+    "assetPath": "assets/s17/champions/派克__TFT17_Pyke.png",
+    "youxia": {
+      "name": "派克",
+      "cost": "2费卡",
+      "traits": [
+        "灵能特工",
+        "旅人"
+      ],
+      "skillName": null,
+      "skillText": "【死亡印记】\n重新走位最多1格，朝最远的敌人投掷鱼叉。鱼叉将命中的首名敌人向前拖拽1格，并造成物理伤害。随后传送到其身后，劈砍附近的敌人，造成物理伤害。",
+      "source": "https://m.ali213.net/news/gl2603/1758855.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Pantheon",
+    "characterName": "TFT17_Pantheon",
+    "zhName": "潘森",
+    "aliases": [],
+    "cost": 2,
+    "role": "ADTank",
+    "traits": [
+      "未来战士",
+      "斗士",
+      "魔术师"
+    ],
+    "cdragonTraits": [
+      "未来战士",
+      "斗士",
+      "魔术师"
+    ],
+    "stats": {
+      "armor": 45,
+      "attackSpeed": 0.6000000238418579,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 50,
+      "hp": 900,
+      "initialMana": 20,
+      "magicResist": 45,
+      "mana": 80,
+      "range": 1
+    },
+    "ability": {
+      "name": "先进防御",
+      "desc": "获得@ModifiedShield@ (%i:scaleHealth%%i:scaleAP%)护盾值与@Durability*100@%伤害减免，持续@Duration@秒。在此期间，每秒对锥形范围内的敌人造成@ModifiedDamage@ (%i:scaleAD%)物理伤害。",
+      "icon": "ASSETS/Characters/TFT17_Pantheon/HUD/Icons2D/TFT17_Pantheon_E1.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_pantheon/hud/icons2d/tft17_pantheon_e1.tft_set17.png",
+      "assetPath": "assets/s17/abilities/潘森__TFT17_Pantheon.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Pantheon/Skins/Base/Images/TFT17_Pantheon_splash_tile_16.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_pantheon/skins/base/images/tft17_pantheon_splash_tile_16.tft_set17.png",
+    "assetPath": "assets/s17/champions/潘森__TFT17_Pantheon.png",
+    "youxia": {
+      "name": "潘森",
+      "cost": "2费卡",
+      "traits": [
+        "未来战士",
+        "魔术师",
+        "斗士"
+      ],
+      "skillName": null,
+      "skillText": "【高级防御】\n进入防御姿态，获得伤害减免持续数秒。在此期间，每秒对锥形范围内的敌人造成物理伤害。",
+      "source": "https://m.ali213.net/news/gl2603/1758673.html"
+    }
+  },
+  {
+    "apiName": "TFT17_IvernMinion",
+    "characterName": "TFT17_IvernMinion",
+    "zhName": "小木灵",
+    "aliases": [],
+    "cost": 2,
+    "role": "APTank",
+    "traits": [
+      "木灵族",
+      "牧羊人",
+      "旅人"
+    ],
+    "cdragonTraits": [
+      "木灵族",
+      "牧羊人",
+      "旅人"
+    ],
+    "stats": {
+      "armor": 45,
+      "attackSpeed": 0.550000011920929,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 65,
+      "hp": 950,
+      "initialMana": 50,
+      "magicResist": 45,
+      "mana": 100,
+      "range": 1
+    },
+    "ability": {
+      "name": "木灵冲击",
+      "desc": "@HealDuration@秒内持续回复@ModifiedHeal@ (%i:scaleHealth%%i:scaleAP%)生命值。猛击目标，造成@ModifiedDamage@ (%i:scaleAP%)魔法伤害和@StunDuration@秒击飞。这个冲击会生成木灵波纹，对目标所在的那一排施加@PercentEffects*100@%的上述效果。\n木灵加成：木灵将浇灌【小木灵】的花朵，使所有即将到来的治疗和护盾效果提升@ModifiedHealingAndShielding@ (%i:set14AmpIcon%)。",
+      "icon": "ASSETS/Characters/TFT17_IvernMinion/HUD/Icons2D/TFT17_IvernMinion_R.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_ivernminion/hud/icons2d/tft17_ivernminion_r.tft_set17.png",
+      "assetPath": "assets/s17/abilities/小木灵__TFT17_IvernMinion.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_IvernMinion/Skins/Base/Images/TFT17_IvernMinion_splash_tile_27.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_ivernminion/skins/base/images/tft17_ivernminion_splash_tile_27.tft_set17.png",
+    "assetPath": "assets/s17/champions/小木灵__TFT17_IvernMinion.png",
+    "youxia": {
+      "name": "小木灵",
+      "cost": "2费卡",
+      "traits": [
+        "木灵族",
+        "牧羊人",
+        "旅人"
+      ],
+      "skillName": null,
+      "skillText": "【木灵族冲击】\n猛击当前目标，造成魔法伤害，并将其击飞1.5秒。冲击将造成木灵能量波，对目标所在行施加上述效果的50%。\n木灵加成：木灵将浇灌花朵，在3秒内回复大量生命值。",
+      "source": "https://m.ali213.net/news/gl2603/1758607.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Zoe",
+    "characterName": "TFT17_Zoe",
+    "zhName": "佐伊",
+    "aliases": [],
+    "cost": 2,
+    "role": "APCaster",
+    "traits": [
+      "法官",
+      "神谕"
+    ],
+    "cdragonTraits": [
+      "法官",
+      "神谕"
+    ],
+    "stats": {
+      "armor": 20,
+      "attackSpeed": 0.699999988079071,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 30,
+      "hp": 550,
+      "initialMana": 0,
+      "magicResist": 20,
+      "mana": 50,
+      "range": 4
+    },
+    "ability": {
+      "name": "飞星乱入！",
+      "desc": "对当前目标发射一颗飞星，对命中的首个目标造成@ModifiedDamage@ (%i:scaleAP%)魔法伤害，并对途经的其他敌人造成@ModifiedSecondaryDamage@ (%i:scaleAP%)魔法伤害。飞星到达目的地时，会转向至一个远处的敌人，同时提升飞星的速度并重复造成该伤害。此转向效果可重复@NumRedirects@次。",
+      "icon": "ASSETS/Characters/TFT17_Zoe/HUD/Icons2D/TFT17_Zoe_Q2.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_zoe/hud/icons2d/tft17_zoe_q2.tft_set17.png",
+      "assetPath": "assets/s17/abilities/佐伊__TFT17_Zoe.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Zoe/Skins/Base/Images/TFT17_Zoe_splash_tile_43.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_zoe/skins/base/images/tft17_zoe_splash_tile_43.tft_set17.png",
+    "assetPath": "assets/s17/champions/佐伊__TFT17_Zoe.png",
+    "youxia": {
+      "name": "佐伊",
+      "cost": "2费卡",
+      "traits": [
+        "法官",
+        "神谕"
+      ],
+      "skillName": null,
+      "skillText": "【飞星乱入】\n对当前目标发射一颗飞星，造成少量魔法伤害。碰撞时，消耗佐伊法力值来重新引导它，提速并让它撞上另一个目标，造成魔法伤害。该效果将持续至佐伊法力值耗尽。",
+      "source": "https://m.ali213.net/news/gl2603/1758927.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Aurora",
+    "characterName": "TFT17_Aurora",
+    "zhName": "阿萝拉",
+    "aliases": [
+      "兔子"
+    ],
+    "cost": 3,
+    "role": "APCaster",
+    "traits": [
+      "幻灵战队",
+      "旅人"
+    ],
+    "cdragonTraits": [
+      "幻灵战队",
+      "旅人"
+    ],
+    "stats": {
+      "armor": 25,
+      "attackSpeed": 0.800000011920929,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 30,
+      "hp": 700,
+      "initialMana": 20,
+      "magicResist": 25,
+      "mana": 80,
+      "range": 4
+    },
+    "ability": {
+      "name": "跃升黑客攻击",
+      "desc": "开启一个@SpellHexRadius@格的裂隙，将目标困于其中，对裂隙内的敌人进行@HexDuration@秒黑客攻击，对每个敌人造成@ModifiedDamage@ (%i:scaleAP%)魔法伤害，并额外造成由被命中的敌人们分摊的@ModifiedSplitDamage@ (%i:scaleAP%)魔法伤害。\n被黑客攻击的敌人将存储其承受伤害的@HexPercent*100@%。黑客攻击结束时，目标将承受等同于已存储伤害的真实伤害。黑客攻击会在能够击杀目标时提前结束。",
+      "icon": "ASSETS/Characters/TFT17_Aurora/HUD/Icons2D/TFT17_AuroraE.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_aurora/hud/icons2d/tft17_aurorae.tft_set17.png",
+      "assetPath": "assets/s17/abilities/阿萝拉__TFT17_Aurora.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Aurora/Skins/Base/Images/TFT17_Aurora_splash_tile_1.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_aurora/skins/base/images/tft17_aurora_splash_tile_1.tft_set17.png",
+    "assetPath": "assets/s17/champions/阿萝拉__TFT17_Aurora.png",
+    "youxia": {
+      "name": "兔子",
+      "cost": "3费卡",
+      "traits": [
+        "幻灵战队",
+        "旅人"
+      ],
+      "skillName": null,
+      "skillText": "【蹦跳骇客】\n开启一个以目标为中心的2格裂隙，对范围内的敌人进行4秒骇入，对每个敌人造成魔法伤害，并额外对所有命中敌人分摊。被骇入的敌人会储存其所受10%的所有伤害。骇入结束时，敌人会受到等同于储存伤害的真实伤害。若直接击杀目标，则骇入效果提前结束。",
+      "source": "https://m.ali213.net/news/gl2603/1758479.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Ornn",
+    "characterName": "TFT17_Ornn",
+    "zhName": "奥恩",
+    "aliases": [],
+    "cost": 3,
+    "role": "APTank",
+    "traits": [
+      "太空律动",
+      "堡垒卫士"
+    ],
+    "cdragonTraits": [
+      "太空律动",
+      "堡垒卫士"
+    ],
+    "stats": {
+      "armor": 40,
+      "attackSpeed": 0.6499999761581421,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 50,
+      "hp": 850,
+      "initialMana": 40,
+      "magicResist": 40,
+      "mana": 100,
+      "range": 1
+    },
+    "ability": {
+      "name": "迪斯科炼狱",
+      "desc": "被动：对战开始时，锻造一件临时成装。如果已经装备了3件装备，则转而在这场对战内将一件随机成装升为光明版。\n主动：获得@ModifiedShield@(%i:scaleAP%)护盾值，持续@ShieldDuration@秒。随后呈锥形喷吐火焰，造成@ModifiedDamage@(%i:scaleAP%)魔法伤害。在身上的任意护盾失效之后，【奥恩】进入{{TFT17_SpaceGroove_TheGroove}}状态，持续@GrooveDuration@秒。",
+      "icon": "ASSETS/Characters/TFT17_Ornn/HUD/Icons2D/TFT17_OrnnW.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_ornn/hud/icons2d/tft17_ornnw.tft_set17.png",
+      "assetPath": "assets/s17/abilities/奥恩__TFT17_Ornn.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Ornn/Skins/Base/Images/TFT17_Ornn_splash_tile_11.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_ornn/skins/base/images/tft17_ornn_splash_tile_11.tft_set17.png",
+    "assetPath": "assets/s17/champions/奥恩__TFT17_Ornn.png",
+    "youxia": {
+      "name": "奥恩",
+      "cost": "3费卡",
+      "traits": [
+        "太空律动",
+        "堡垒卫士"
+      ],
+      "skillName": null,
+      "skillText": "【迪斯科地狱火】\n被动：战斗开始时，锻造一件临时的成品装备。若已装备3件装备，则随机一件成品装备在本场战斗剩余时间内变为光明装备。\n主动：获得护盾，持续3秒。随后向前方锥形区域喷火，造成魔法伤害。奥恩身上的任意护盾消失后，奥恩会进入律动状态，持续3秒。",
+      "source": "https://m.ali213.net/news/gl2603/1758655.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Diana",
+    "characterName": "TFT17_Diana",
+    "zhName": "黛安娜",
+    "aliases": [
+      "皎月"
+    ],
+    "cost": 3,
+    "role": "APFighter",
+    "traits": [
+      "法官",
+      "挑战者"
+    ],
+    "cdragonTraits": [
+      "法官",
+      "挑战者"
+    ],
+    "stats": {
+      "armor": 50,
+      "attackSpeed": 0.800000011920929,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": null,
+      "hp": 850,
+      "initialMana": 0,
+      "magicResist": 50,
+      "mana": 50,
+      "range": 1
+    },
+    "ability": {
+      "name": "苍白之瀑",
+      "desc": "被动：普攻造成@ModifiedBonusDamageToAttacks@ (%i:scaleAP%)额外魔法伤害。\n主动：获得@ModifiedShield@ (%i:scaleAP%)护盾并召唤3颗环绕法球，持续@ShieldDuration@秒。法球穿过敌人时造成@ModifiedDamage@ (%i:scaleAP%)魔法伤害，并根据攻击速度加速旋转。",
+      "icon": "ASSETS/Characters/TFT17_Diana/HUD/Icons2D/TFT17_Diana_W_LunarShower.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_diana/hud/icons2d/tft17_diana_w_lunarshower.tft_set17.png",
+      "assetPath": "assets/s17/abilities/黛安娜__TFT17_Diana.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Diana/Skins/Base/Images/TFT17_DianaSplash_Mobile.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_diana/skins/base/images/tft17_dianasplash_mobile.tft_set17.png",
+    "assetPath": "assets/s17/champions/黛安娜__TFT17_Diana.png",
+    "youxia": {
+      "name": "皎月",
+      "cost": "3费卡",
+      "traits": [
+        "法官",
+        "挑战者"
+      ],
+      "skillName": null,
+      "skillText": "【苍白之瀑】\n被动：获得护盾后，玫击额外造成可叠加的魔法伤害，相当于该护盾值的5%，持续至战斗结束。\n主动：获得护盾值，并且在接下来的3秒，攻击还会打击邻格的敌人。",
+      "source": "https://m.ali213.net/news/gl2603/1758939.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Illaoi",
+    "characterName": "TFT17_Illaoi",
+    "zhName": "俄洛伊",
+    "aliases": [],
+    "cost": 3,
+    "role": "APTank",
+    "traits": [
+      "幻灵战队",
+      "重装战士",
+      "牧羊人"
+    ],
+    "cdragonTraits": [
+      "幻灵战队",
+      "重装战士",
+      "牧羊人"
+    ],
+    "stats": {
+      "armor": 50,
+      "attackSpeed": 0.6499999761581421,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 50,
+      "hp": 1100,
+      "initialMana": 40,
+      "magicResist": 50,
+      "mana": 100,
+      "range": 1
+    },
+    "ability": {
+      "name": "灵魂试炼",
+      "desc": "获得持续@Duration@秒的@ModifiedShield@(%i:scaleAP%)护盾值。在持续期间，从相距最近的@NumEnemies@名敌人身上吸取@ModifiedHealthDrain@(%i:scaleAP%)生命值。然后向下猛击，对半径2格内的所有敌人造成@ModifiedDamage@(%i:scaleAP%)魔法伤害。",
+      "icon": "ASSETS/Characters/TFT17_Illaoi/HUD/Icons2D/TFT17_Illaoi_E_Debuff.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_illaoi/hud/icons2d/tft17_illaoi_e_debuff.tft_set17.png",
+      "assetPath": "assets/s17/abilities/俄洛伊__TFT17_Illaoi.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Illaoi/Skins/Base/Images/TFT17_Illaoi_splash_tile_27.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_illaoi/skins/base/images/tft17_illaoi_splash_tile_27.tft_set17.png",
+    "assetPath": "assets/s17/champions/俄洛伊__TFT17_Illaoi.png",
+    "youxia": {
+      "name": "俄洛伊",
+      "cost": "3费卡",
+      "traits": [
+        "幻灵战队",
+        "牧羊人",
+        "重装战士"
+      ],
+      "skillName": null,
+      "skillText": "【灵魂试炼】\n获得护盾，持续4秒。在此期间，从最近的3名敌人处汲取生命值。然后猛砸地面，对2格内的所有敌人造成魔法伤害。",
+      "source": "https://m.ali213.net/news/gl2603/1758485.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Urgot",
+    "characterName": "TFT17_Urgot",
+    "zhName": "厄加特",
+    "aliases": [],
+    "cost": 3,
+    "role": "ADFighter",
+    "traits": [
+      "霸天机甲",
+      "斗士",
+      "狂战士"
+    ],
+    "cdragonTraits": [
+      "霸天机甲",
+      "斗士",
+      "狂战士"
+    ],
+    "stats": {
+      "armor": 45,
+      "attackSpeed": 0.800000011920929,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 60,
+      "hp": 600,
+      "initialMana": 0,
+      "magicResist": 45,
+      "mana": 50,
+      "range": 2
+    },
+    "ability": {
+      "name": "不可阻挡的无畏战车",
+      "desc": "被动 - 感应轰击：当有敌人进入半径@ShotgunRange@ (%i:scaleRange%)格内时，以锥形范围向最近的相邻格子射出一道轰击，造成@ModifiedShotgunDamage@ (%i:scaleAD%)物理伤害，这个伤害每相距1格衰减@FalloffPerHex*100@%。每个相邻格子各有@ShotgunCooldown@秒冷却时间，并且在战斗开始时处于未冷却状态。\n主动：获得持续@ShieldDuration@秒的@ModifiedShield@ (%i:scaleAP%)护盾值并进行至多一格的走位，以最大化【感应轰击】半径内的目标数量。重置【感应轰击】的冷却时间。",
+      "icon": "ASSETS/Characters/TFT17_Urgot/HUD/Icons2D/TFT17_Urgot_E.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_urgot/hud/icons2d/tft17_urgot_e.tft_set17.png",
+      "assetPath": "assets/s17/abilities/厄加特__TFT17_Urgot.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Urgot/Skins/Base/Images/TFT17_Urgot_splash_tile_32.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_urgot/skins/base/images/tft17_urgot_splash_tile_32.tft_set17.png",
+    "assetPath": "assets/s17/champions/厄加特__TFT17_Urgot.png",
+    "youxia": {
+      "name": "厄加特",
+      "cost": "3费卡",
+      "traits": [
+        "霸天机甲",
+        "斗士",
+        "狂战士"
+      ],
+      "skillName": null,
+      "skillText": "【无畏战车】\n被动-近程爆破：\n每当敌人进入2格半径范围内，便会朝最近的相邻格子发射一道锥形冲击波，造成物理伤害，每越过一格伤害衰减30%。每个相邻格子有5秒冷却时间。\n主动：\n获得护盾，持续3秒，并突进至当前目标身后。重置近程爆破的所有冷却时间。",
+      "source": "https://m.ali213.net/news/gl2603/1758575.html"
+    }
+  },
+  {
+    "apiName": "TFT17_MissFortune",
+    "characterName": "TFT17_MissFortune",
+    "zhName": "厄运小姐",
+    "aliases": [
+      "女枪"
+    ],
+    "cost": 3,
+    "role": null,
+    "traits": [
+      "武装战姬",
+      "选择羁绊"
+    ],
+    "cdragonTraits": [
+      "武装战姬",
+      "选择羁绊"
+    ],
+    "stats": {
+      "armor": 30,
+      "attackSpeed": 0.75,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 50,
+      "hp": 650,
+      "initialMana": 0,
+      "magicResist": 30,
+      "mana": 100,
+      "range": 6
+    },
+    "ability": {
+      "name": "武装战姬武库",
+      "desc": "登场【厄运小姐】即可在【神谕模式】、【挑战者模式】、以及【魔术师模式】中选择一个以供她激活。所选的模式会决定她的技能和羁绊。",
+      "icon": "ASSETS/Characters/TFT17_MissFortune/HUD/Icons2D/TFT17_MissFortune_W.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_missfortune/hud/icons2d/tft17_missfortune_w.tft_set17.png",
+      "assetPath": "assets/s17/abilities/厄运小姐__TFT17_MissFortune.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_MissFortune/Skins/Base/Images/TFT17_MissFortune_splash_tile_16.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_missfortune/skins/base/images/tft17_missfortune_splash_tile_16.tft_set17.png",
+    "assetPath": "assets/s17/champions/厄运小姐__TFT17_MissFortune.png",
+    "youxia": {
+      "name": "女枪",
+      "cost": "3费卡",
+      "traits": [
+        "武装战姬"
+      ],
+      "skillName": null,
+      "skillText": "【武神军械库】\n上场【厄运小姐】时，在【神谕】、【挑战者】和【魔术师】模式之间选择。每个模式拥有一个独特羁绊，并为【厄运小姐】提供相关羁绊。",
+      "source": "https://m.ali213.net/news/gl2603/1758969.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Fizz",
+    "characterName": "TFT17_Fizz",
+    "zhName": "菲兹",
+    "aliases": [
+      "小鱼人"
+    ],
+    "cost": 3,
+    "role": "APReaper",
+    "traits": [
+      "木灵族",
+      "游侠"
+    ],
+    "cdragonTraits": [
+      "木灵族",
+      "游侠"
+    ],
+    "stats": {
+      "armor": 55,
+      "attackSpeed": 0.8500000238418579,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 30,
+      "hp": 850,
+      "initialMana": 0,
+      "magicResist": 55,
+      "mana": 20,
+      "range": 1
+    },
+    "ability": {
+      "name": "木灵诱饵",
+      "desc": "冲刺穿过当前目标，造成@ModifiedDamage@ (%i:scaleAP%)魔法伤害。每第三次施放还会在短暂延迟后召唤一个究极木灵，以短暂击飞目标并造成@ModifiedChompDamage@ (%i:scaleAP%%i:set14AmpIcon%)魔法伤害。邻格的敌人们受到@SecondaryDamage*100@%伤害。\n木灵加成：朝诱饵再派出@ModifiedNumMeeps@ (%i:set14AmpIcon%)个木灵，以使究极木灵伤害提升@ModifiedMeepBonusDamage@ (%i:set14AmpIcon%)。",
+      "icon": "ASSETS/Characters/TFT17_Fizz/HUD/Icons2D/TFT17_Fizz_R.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_fizz/hud/icons2d/tft17_fizz_r.tft_set17.png",
+      "assetPath": "assets/s17/abilities/菲兹__TFT17_Fizz.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Fizz/Skins/Base/Images/TFT17_Fizz_splash_tile_26.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_fizz/skins/base/images/tft17_fizz_splash_tile_26.tft_set17.png",
+    "assetPath": "assets/s17/champions/菲兹__TFT17_Fizz.png",
+    "youxia": {
+      "name": "小鱼人",
+      "cost": "3费卡",
+      "traits": [
+        "木灵族",
+        "游侠"
+      ],
+      "skillName": null,
+      "skillText": "【木灵族诱饵】\n冲刺并穿过3格内相距最远的敌人，造成魔法伤害并用诱饵标记该敌人。短暂延迟后，一个究极木灵撕咬该敌人，将其短暂击飞并在1格半径内造成魔法伤害。\n木灵加成：朝诱饵再派出个木灵，提升撕咬伤害。如果有四个或更多木灵被派向诱饵，究极木灵的半径将扩大至2格。",
+      "source": "https://m.ali213.net/news/gl2603/1758623.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Kaisa",
+    "characterName": "TFT17_Kaisa",
+    "zhName": "卡莎",
+    "aliases": [],
+    "cost": 3,
+    "role": "ADCaster",
+    "traits": [
+      "暗星",
+      "游侠"
+    ],
+    "cdragonTraits": [
+      "暗星",
+      "游侠"
+    ],
+    "stats": {
+      "armor": 25,
+      "attackSpeed": 0.800000011920929,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 45,
+      "hp": 650,
+      "initialMana": 0,
+      "magicResist": 25,
+      "mana": 50,
+      "range": 4
+    },
+    "ability": {
+      "name": "子弹星团",
+      "desc": "被动：参与击杀后，获得@ManaPerKill@法力值。\n主动：对当前目标附近的一个半径@HexRange@格的范围发射@BaseNumMissiles@颗飞弹，每颗造成@TotalDamage@ (%i:scaleAD%)物理伤害。",
+      "icon": "ASSETS/Characters/TFT17_Kaisa/HUD/Icons2D/TFT17_Kaisa_Q2.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_kaisa/hud/icons2d/tft17_kaisa_q2.tft_set17.png",
+      "assetPath": "assets/s17/abilities/卡莎__TFT17_Kaisa.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Kaisa/Skins/Base/Images/TFT17_Kaisa_splash_tile_69.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_kaisa/skins/base/images/tft17_kaisa_splash_tile_69.tft_set17.png",
+    "assetPath": "assets/s17/champions/卡莎__TFT17_Kaisa.png",
+    "youxia": {
+      "name": "卡莎",
+      "cost": "3费卡",
+      "traits": [
+        "暗星",
+        "游侠"
+      ],
+      "skillName": null,
+      "skillText": "对当前目标的2格半径发射多颗导弹，每颗造成物理伤害。每次施放，会额外增加发射导弹。",
+      "source": "https://m.ali213.net/news/gl2603/1758551.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Rhaast",
+    "characterName": "TFT17_Rhaast",
+    "zhName": "拉亚斯特",
+    "aliases": [],
+    "cost": 3,
+    "role": "ADTank",
+    "traits": [
+      "救世主"
+    ],
+    "cdragonTraits": [
+      "救世主"
+    ],
+    "stats": {
+      "armor": 60,
+      "attackSpeed": 0.6499999761581421,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 60,
+      "hp": 1200,
+      "initialMana": 30,
+      "magicResist": 60,
+      "mana": 90,
+      "range": 1
+    },
+    "ability": {
+      "name": "神圣镰刃",
+      "desc": "获得持续@Duration@秒的@Durability*100@%伤害减免，持续期间回复@ModifiedHeal@ (%i:scaleAP%)生命值。随后，向前斩击一个直线范围，对命中的敌人们造成@ModifiedDamage@ (%i:scaleAD%)物理伤害和@KnockupDuration@秒击飞。",
+      "icon": "ASSETS/Characters/TFT17_Rhaast/HUD/Icons2D/TFT17_Kayn_Passive_Slay.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_rhaast/hud/icons2d/tft17_kayn_passive_slay.tft_set17.png",
+      "assetPath": "assets/s17/abilities/拉亚斯特__TFT17_Rhaast.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Rhaast/Skins/Base/Images/TFT17_KaynSplash_Tile.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_rhaast/skins/base/images/tft17_kaynsplash_tile.tft_set17.png",
+    "assetPath": "assets/s17/champions/拉亚斯特__TFT17_Rhaast.png",
+    "youxia": {
+      "name": "拉亚斯特",
+      "cost": "3费卡",
+      "traits": [
+        "救世主"
+      ],
+      "skillName": null,
+      "skillText": "【异星巨镰】\n获得20%减伤，持续2秒，期间治疗一定生命值。之后向前挥出一道直线斩击，对命中的敌人造成物理伤害并将其击飞1秒。",
+      "source": "https://m.ali213.net/news/gl2603/1758955.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Lulu",
+    "characterName": "TFT17_Lulu",
+    "zhName": "璐璐",
+    "aliases": [],
+    "cost": 3,
+    "role": "APCaster",
+    "traits": [
+      "观星者",
+      "魔术师"
+    ],
+    "cdragonTraits": [
+      "观星者",
+      "魔术师"
+    ],
+    "stats": {
+      "armor": 25,
+      "attackSpeed": 0.75,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 30,
+      "hp": 650,
+      "initialMana": 0,
+      "magicResist": 25,
+      "mana": 60,
+      "range": 4
+    },
+    "ability": {
+      "name": "繁星雨！",
+      "desc": "被动：每局游戏都会获得一个不同的次要效果，基于【观星者】的星座。\n主动：从天空中召唤某物，对@NumEnemies@名附近敌人造成@ModifiedDamage@ (%i:scaleAP%)魔法伤害并且基于这局游戏的【观星者】星座来造成一些特殊效果。",
+      "icon": "ASSETS/Characters/TFT17_Lulu/HUD/Icons2D/TFT17_Lulu_Glitterbolt.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_lulu/hud/icons2d/tft17_lulu_glitterbolt.tft_set17.png",
+      "assetPath": "assets/s17/abilities/璐璐__TFT17_Lulu.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Lulu/Skins/Base/Images/TFT17_Lulu_splash_tile_14.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_lulu/skins/base/images/tft17_lulu_splash_tile_14.tft_set17.png",
+    "assetPath": "assets/s17/champions/璐璐__TFT17_Lulu.png",
+    "youxia": {
+      "name": "璐璐",
+      "cost": "3费卡",
+      "traits": [
+        "观星者",
+        "魔术师"
+      ],
+      "skillName": null,
+      "skillText": "【星辰雨】\n被动：\n璐璐的技能在每局游戏中会获得不同的次级效果。\n主动：\n从天空召唤星体轰击，对附近3名敌人造成魔法伤害，并根据本局的占星师星座触发特殊效果。",
+      "source": "https://m.ali213.net/news/gl2603/1758817.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Maokai",
+    "characterName": "TFT17_Maokai",
+    "zhName": "茂凯",
+    "aliases": [
+      "大树"
+    ],
+    "cost": 3,
+    "role": "APTank",
+    "traits": [
+      "新星特攻队",
+      "斗士"
+    ],
+    "cdragonTraits": [
+      "新星特攻队",
+      "斗士"
+    ],
+    "stats": {
+      "armor": 40,
+      "attackSpeed": 0.6000000238418579,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 60,
+      "hp": 1100,
+      "initialMana": 30,
+      "magicResist": 40,
+      "mana": 100,
+      "range": 1
+    },
+    "ability": {
+      "name": "聚合之握",
+      "desc": "被动：从所有来源获得@PassiveRatio*100@%额外最大生命值。\n主动：在目标处汇聚一个X形藤蔓，对每个命中敌人造成@DamageTotal@ (%i:scaleAP%)魔法伤害并使其晕眩@StunDuration@秒。\n新星特攻：向前派出一波龙潮，使所有敌人晕眩@NovaStunDuration@秒。战斗结束前，【茂凯】的普攻造成@ModifiedNovaDamage@ (%i:scaleHealth%)额外物理伤害。",
+      "icon": "ASSETS/Characters/TFT17_Maokai/HUD/Icons2D/TFT17_Maokai_W.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_maokai/hud/icons2d/tft17_maokai_w.tft_set17.png",
+      "assetPath": "assets/s17/abilities/茂凯__TFT17_Maokai.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Maokai/Skins/Base/Images/TFT17_Maokai_splash_tile_33.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_maokai/skins/base/images/tft17_maokai_splash_tile_33.tft_set17.png",
+    "assetPath": "assets/s17/champions/茂凯__TFT17_Maokai.png",
+    "youxia": {
+      "name": "大树",
+      "cost": "3费卡",
+      "traits": [
+        "新星特攻队",
+        "斗士"
+      ],
+      "skillName": null,
+      "skillText": "【聚合之握】\n被动：\n从所有来源获得额外40%最大生命值。\n主动：\n在目标身上汇聚X形藤蔓，对每个被击中的敌人造成魔法伤害并使其眩晕1.5秒。",
+      "source": "https://m.ali213.net/news/gl2603/1758513.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Samira",
+    "characterName": "TFT17_Samira",
+    "zhName": "莎弥拉",
+    "aliases": [],
+    "cost": 3,
+    "role": "ADCaster",
+    "traits": [
+      "太空律动",
+      "狙神"
+    ],
+    "cdragonTraits": [
+      "太空律动",
+      "狙神"
+    ],
+    "stats": {
+      "armor": 25,
+      "attackSpeed": 0.75,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 50,
+      "hp": 650,
+      "initialMana": 0,
+      "magicResist": 25,
+      "mana": 60,
+      "range": 6
+    },
+    "ability": {
+      "name": "蹦跳摇摆",
+      "desc": "被动：每当一个敌人被击飞时，对其射击，造成@ModifiedPassiveDamage@ (%i:scaleAD%%i:scaleAP%)物理伤害并进入{{TFT17_SpaceGroove_TheGroove}}状态@GrooveDuration@秒。\n主动：对目标发射一连串子弹，造成@ModifiedDamage@ (%i:scaleAD%)物理伤害和@StunDuration@秒击飞。",
+      "icon": "ASSETS/Characters/TFT17_Samira/HUD/Icons2D/TFT17_SamiraE.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_samira/hud/icons2d/tft17_samirae.tft_set17.png",
+      "assetPath": "assets/s17/abilities/莎弥拉__TFT17_Samira.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Samira/Skins/Base/Images/TFT17_Samira_splash_tile_10.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_samira/skins/base/images/tft17_samira_splash_tile_10.tft_set17.png",
+    "assetPath": "assets/s17/champions/莎弥拉__TFT17_Samira.png",
+    "youxia": {
+      "name": "莎弥拉",
+      "cost": "3费卡",
+      "traits": [
+        "太空律动",
+        "狙神"
+      ],
+      "skillName": null,
+      "skillText": "【跳跃与摇摆】\n被动：\n每当敌人被击飞时，对其射击，造成物理伤害，并进入律动状态1秒。\n主动：\n向目标发射一轮弹幕，造成物理伤害并将其击飞1.25秒。",
+      "source": "https://m.ali213.net/news/gl2603/1758651.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Viktor",
+    "characterName": "TFT17_Viktor",
+    "zhName": "维克托",
+    "aliases": [],
+    "cost": 3,
+    "role": "APCaster",
+    "traits": [
+      "灵能特工",
+      "神谕"
+    ],
+    "cdragonTraits": [
+      "灵能特工",
+      "神谕"
+    ],
+    "stats": {
+      "armor": 25,
+      "attackSpeed": 0.800000011920929,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 30,
+      "hp": 650,
+      "initialMana": 20,
+      "magicResist": 25,
+      "mana": 80,
+      "range": 4
+    },
+    "ability": {
+      "name": "灵能风暴",
+      "desc": "在战场上引导一个半径1格的灵能风暴跟随敌人@Duration@秒。每秒，它会变得更大并且对其中的敌人们造成@ModifiedDamage@ (%i:scaleAP%)魔法伤害，这个伤害每与中心相距1格就会衰减@FalloffPerHex*100@%。",
+      "icon": "ASSETS/Characters/TFT17_Viktor/HUD/Icons2D/TFT17_Viktor_R1.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_viktor/hud/icons2d/tft17_viktor_r1.tft_set17.png",
+      "assetPath": "assets/s17/abilities/维克托__TFT17_Viktor.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Viktor/Skins/Base/Images/TFT17_Viktor_splash_tile_5.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_viktor/skins/base/images/tft17_viktor_splash_tile_5.tft_set17.png",
+    "assetPath": "assets/s17/champions/维克托__TFT17_Viktor.png",
+    "youxia": {
+      "name": "维克托",
+      "cost": "3费卡",
+      "traits": [
+        "灵能特工",
+        "神谕"
+      ],
+      "skillName": null,
+      "skillText": "【灵能风暴】\n引导一个1格范围的灵能风暴，追踪敌人持续4秒。风暴每秒都会扩大范围，并对范围内的敌人造成魔法伤害，距离风暴中心每远1格，伤害降低60%。",
+      "source": "https://m.ali213.net/news/gl2603/1758871.html"
+    }
+  },
+  {
+    "apiName": "TFT17_AurelionSol",
+    "characterName": "TFT17_AurelionSol",
+    "zhName": "奥瑞利安·索尔",
+    "aliases": [
+      "龙王"
+    ],
+    "cost": 4,
+    "role": "APCaster",
+    "traits": [
+      "霸天机甲",
+      "神谕"
+    ],
+    "cdragonTraits": [
+      "霸天机甲",
+      "神谕"
+    ],
+    "stats": {
+      "armor": 30,
+      "attackSpeed": 0.75,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 30,
+      "hp": 850,
+      "initialMana": 15,
+      "magicResist": 30,
+      "mana": 75,
+      "range": 6
+    },
+    "ability": {
+      "name": "死亡射线",
+      "desc": "朝当前目标沿直线引导一道死亡射线@Duration@秒。它每秒造成@ModifiedDamage@ (%i:scaleAP%)魔法伤害，这个伤害每穿过一名敌人就会降低@DamageReductionPerTarget*100@%。死亡射线无视目标@MagicPen*100@%魔抗。",
+      "icon": "ASSETS/Characters/TFT17_AurelionSol/HUD/Icons2D/TFT17_AurelionSolQ.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_aurelionsol/hud/icons2d/tft17_aurelionsolq.tft_set17.png",
+      "assetPath": "assets/s17/abilities/奥瑞利安·索尔__TFT17_AurelionSol.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_AurelionSol/Skins/Base/Images/TFT17_AurelionSol_splash_tile_2.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_aurelionsol/skins/base/images/tft17_aurelionsol_splash_tile_2.tft_set17.png",
+    "assetPath": "assets/s17/champions/奥瑞利安·索尔__TFT17_AurelionSol.png",
+    "youxia": {
+      "name": "龙王",
+      "cost": "4费卡",
+      "traits": [
+        "霸天机甲",
+        "神谕"
+      ],
+      "skillName": null,
+      "skillText": "【死亡射线】\n引导一道死亡光束沿直线射向当前目标，持续3秒。每秒造成一定魔法伤害，每穿透一个敌人，伤害降低60%。\n死亡光束无视目标30%的魔法抗性。",
+      "source": "https://m.ali213.net/news/gl2603/1758581.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Galio",
+    "characterName": "TFT17_Galio",
+    "zhName": "超级机甲",
+    "aliases": [
+      "加里奥"
+    ],
+    "cost": 4,
+    "role": "ADTank",
+    "traits": [
+      "霸天机甲",
+      "旅人"
+    ],
+    "cdragonTraits": [
+      "霸天机甲",
+      "旅人"
+    ],
+    "stats": {
+      "armor": 60,
+      "attackSpeed": 0.6499999761581421,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 70,
+      "hp": 1300,
+      "initialMana": 40,
+      "magicResist": 60,
+      "mana": 100,
+      "range": 1
+    },
+    "ability": {
+      "name": "引力矩阵",
+      "desc": "进入持续@DurabilityDuration@秒的防御姿态，从而获得@Durability*100@% 伤害减免。处于防御姿态时，吸引附近的敌方投射物并持续回复@ModifiedHeal@ (%i:scaleAP%)生命值。当这个效果结束时，释放一道冲击波，在一个半径@HexRange@格的范围内造成@ModifiedDamage@ (%i:scaleArmor%%i:scaleMR%)物理伤害。",
+      "icon": "ASSETS/Characters/TFT17_Galio/HUD/Icons2D/TFT17_Galio_W.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_galio/hud/icons2d/tft17_galio_w.tft_set17.png",
+      "assetPath": "assets/s17/abilities/超级机甲__TFT17_Galio.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Galio/Skins/Base/Images/TFT17_Galio_Mobile.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_galio/skins/base/images/tft17_galio_mobile.tft_set17.png",
+    "assetPath": "assets/s17/champions/超级机甲__TFT17_Galio.png",
+    "youxia": {
+      "name": "加里奥",
+      "cost": "4费卡",
+      "traits": [
+        "霸天机甲",
+        "旅人"
+      ],
+      "skillName": null,
+      "skillText": "【重力矩阵】\n获得护盾，持续数秒，并在2格半径内造成物理伤害。随后沿直线朝当前目标向下猛击对命中的所有敌人造成物理伤害。",
+      "source": "https://m.ali213.net/news/gl2603/1758587.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Karma",
+    "characterName": "TFT17_Karma",
+    "zhName": "卡尔玛",
+    "aliases": [],
+    "cost": 4,
+    "role": "APCaster",
+    "traits": [
+      "暗星",
+      "旅人"
+    ],
+    "cdragonTraits": [
+      "暗星",
+      "旅人"
+    ],
+    "stats": {
+      "armor": 30,
+      "attackSpeed": 0.75,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 40,
+      "hp": 850,
+      "initialMana": 10,
+      "magicResist": 30,
+      "mana": 55,
+      "range": 4
+    },
+    "ability": {
+      "name": "奇点",
+      "desc": "召集黑洞之力，造成@ModifiedDamage@ (%i:scaleAP%)魔法伤害，由目标及与其相距最近的@NumEnemies@名敌人分摊。该目标受到额外的@ModifiedSecondaryDamage@ (%i:scaleAP%)魔法伤害。",
+      "icon": "ASSETS/Characters/TFT17_Karma/HUD/Icons2D/TFT17_Karma_Q1.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_karma/hud/icons2d/tft17_karma_q1.tft_set17.png",
+      "assetPath": "assets/s17/abilities/卡尔玛__TFT17_Karma.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Karma/Skins/Base/Images/TFT17_Karma_splash_tile_8.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_karma/skins/base/images/tft17_karma_splash_tile_8.tft_set17.png",
+    "assetPath": "assets/s17/champions/卡尔玛__TFT17_Karma.png",
+    "youxia": {
+      "name": "卡尔玛",
+      "cost": "4费卡",
+      "traits": [
+        "暗星",
+        "旅人"
+      ],
+      "skillName": null,
+      "skillText": "【奇点】\n聚集黑洞的力量，造成魔法伤害，由目标及其最近的2名敌人分摊。目标受到额外的魔法伤害。",
+      "source": "https://m.ali213.net/news/gl2603/1758559.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Corki",
+    "characterName": "TFT17_Corki",
+    "zhName": "库奇",
+    "aliases": [
+      "飞机"
+    ],
+    "cost": 4,
+    "role": "ADCaster",
+    "traits": [
+      "木灵族",
+      "织命者"
+    ],
+    "cdragonTraits": [
+      "木灵族",
+      "织命人"
+    ],
+    "stats": {
+      "armor": 30,
+      "attackSpeed": 0.800000011920929,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 45,
+      "hp": 850,
+      "initialMana": 0,
+      "magicResist": 30,
+      "mana": 60,
+      "range": 4
+    },
+    "ability": {
+      "name": "小行星魔炮",
+      "desc": "扫射至一个附近位置，释放@BaseMissiles@枚导弹，由目标与半径2格内的全体敌人分摊。导弹造成@ModifiedDamage@ (%i:scaleAD%%i:scaleAP%)物理伤害，有@ProcChance@%幸运几率发射一个究极导弹，转而造成@ModifiedProcDamage@ (%i:scaleAD%)伤害。\n木灵加成：每@ModifiedMeepCooldown@ (%i:set14AmpIcon%)秒，对目标发射一个爆炸木灵，碰撞时在半径1格内造成@ModifiedMeepDamage@ (%i:scaleAD%)物理伤害。\n幸运：进行两次判定，选择较优的结果。",
+      "icon": "ASSETS/Characters/TFT17_Corki/HUD/Icons2D/TFT17_Corki_MissileBarrage.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_corki/hud/icons2d/tft17_corki_missilebarrage.tft_set17.png",
+      "assetPath": "assets/s17/abilities/库奇__TFT17_Corki.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Corki/Skins/Base/Images/TFT17_Corki_splash_tile_26.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_corki/skins/base/images/tft17_corki_splash_tile_26.tft_set17.png",
+    "assetPath": "assets/s17/champions/库奇__TFT17_Corki.png",
+    "youxia": {
+      "name": "飞机",
+      "cost": "4费卡",
+      "traits": [
+        "木灵族",
+        "织命人"
+      ],
+      "skillName": null,
+      "skillText": "【小行星爆破】\n扫射至附近位置，发射21枚导弹，由目标及两格内所有敌人分摊承受。导弹造成物理伤害，并有20%几率发射巨型导弹，多造成伤害。\n木灵加成：\n每8秒向目标发射一枚爆破木灵命中时对1格半径内敌人造成物理伤害。",
+      "source": "https://m.ali213.net/news/gl2603/1758627.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Rammus",
+    "characterName": "TFT17_Rammus",
+    "zhName": "拉莫斯",
+    "aliases": [
+      "龙龟"
+    ],
+    "cost": 4,
+    "role": "APTank",
+    "traits": [
+      "木灵族",
+      "堡垒卫士"
+    ],
+    "cdragonTraits": [
+      "木灵族",
+      "堡垒卫士"
+    ],
+    "stats": {
+      "armor": 60,
+      "attackSpeed": 0.6499999761581421,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 60,
+      "hp": 1300,
+      "initialMana": 20,
+      "magicResist": 60,
+      "mana": 90,
+      "range": 1
+    },
+    "ability": {
+      "name": "引力旋转",
+      "desc": "获得@ModifiedShield@ (%i:scaleAP%)护盾值，持续@ShieldDuration@秒。随后，打击一条长3格的直线，造成 @ModifiedDamage@ (%i:scaleAP%%i:scaleArmor%)魔法伤害。\n木灵加成：令即将到来的攻击降低@ModifiedFlatDR@ (%i:set14AmpIcon%)伤害。受到@AttacksPerPassiveTrigger@次攻击后，在一个半径2格的范围内造成@ModifiedPassiveDamage@ (%i:scaleArmor%%i:set14AmpIcon%)魔法伤害。",
+      "icon": "ASSETS/Characters/TFT17_Rammus/HUD/Icons2D/Armordillo_Powerball.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_rammus/hud/icons2d/armordillo_powerball.tft_set17.png",
+      "assetPath": "assets/s17/abilities/拉莫斯__TFT17_Rammus.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Rammus/Skins/Base/Images/TFT17_Rammus_splash_tile_17.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_rammus/skins/base/images/tft17_rammus_splash_tile_17.tft_set17.png",
+    "assetPath": "assets/s17/champions/拉莫斯__TFT17_Rammus.png",
+    "youxia": {
+      "name": "龙龟",
+      "cost": "4费卡",
+      "traits": [
+        "木灵族",
+        "堡垒卫士"
+      ],
+      "skillName": null,
+      "skillText": "【引力旋转】\n获得护盾，持续4秒。随后对一条3格直线上最多的敌人发动打击，造成魔法伤害。\n木灵加成：\n受到的攻击伤害降低。被攻击20次后，对2格半径内的敌人造成魔法伤害。",
+      "source": "https://m.ali213.net/news/gl2603/1758631.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Leblanc",
+    "characterName": "TFT17_Leblanc",
+    "zhName": "乐芙兰",
+    "aliases": [
+      "妖姬"
+    ],
+    "cost": 4,
+    "role": "APCarry",
+    "traits": [
+      "法官",
+      "牧羊人"
+    ],
+    "cdragonTraits": [
+      "法官",
+      "牧羊人"
+    ],
+    "stats": {
+      "armor": 30,
+      "attackSpeed": 0.800000011920929,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 0,
+      "hp": 850,
+      "initialMana": 0,
+      "magicResist": 30,
+      "mana": 40,
+      "range": 4
+    },
+    "ability": {
+      "name": "破碎实界",
+      "desc": "被动：普攻转而造成@ModifiedBaseAttackDamage@ (%i:scaleAP%)魔法伤害。\n主动：召唤@NumClones@个复制体，伴随攻击@NumAttacks@次，从而造成@CloneDamageMultiplier*100@%伤害。发动最终攻击时，复制体发射一枚飞弹，造成@ModifiedBoltDamage@ (%i:scaleAP%)魔法伤害。",
+      "icon": "ASSETS/Characters/TFT17_Leblanc/HUD/Icons2D/TFT17_LeblancW.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_leblanc/hud/icons2d/tft17_leblancw.tft_set17.png",
+      "assetPath": "assets/s17/abilities/乐芙兰__TFT17_Leblanc.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Leblanc/Skins/Base/Images/TFT17_Leblanc_splash_tile_29.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_leblanc/skins/base/images/tft17_leblanc_splash_tile_29.tft_set17.png",
+    "assetPath": "assets/s17/champions/乐芙兰__TFT17_Leblanc.png",
+    "youxia": {
+      "name": "妖姬",
+      "cost": "4费卡",
+      "traits": [
+        "法官",
+        "牧羊人"
+      ],
+      "skillName": null,
+      "skillText": "【现实碎裂】\n被动：\n攻击转为造成魔法伤害。\n主动：\n向战场边缘派出多个复制体，持续到战斗结束。复制体和她并肩攻击但造成25%伤害。随后命令所有乐关兰朝她的当前目标发射一道雷电，造成魔法伤害。",
+      "source": "https://m.ali213.net/news/gl2603/1758949.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Nami",
+    "characterName": "TFT17_Nami",
+    "zhName": "娜美",
+    "aliases": [],
+    "cost": 4,
+    "role": "APCaster",
+    "traits": [
+      "太空律动",
+      "魔术师"
+    ],
+    "cdragonTraits": [
+      "太空律动",
+      "魔术师"
+    ],
+    "stats": {
+      "armor": 30,
+      "attackSpeed": 0.800000011920929,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 40,
+      "hp": 850,
+      "initialMana": 25,
+      "magicResist": 30,
+      "mana": 70,
+      "range": 4
+    },
+    "ability": {
+      "name": "泡泡弹跳",
+      "desc": "朝目标投掷一个迪斯科泡泡，造成@ModifiedDamage@ (%i:scaleAP%)伤害，由半径1格内的敌人们分摊。这个爆炸会朝附近的敌人们射出@NumProjectiles@团黏液，黏液造成@ModifiedFirstBounceDamage@ (%i:scaleAP%)魔法伤害。施放技能时，娜美进入{{TFT17_SpaceGroove_TheGroove}}状态，持续@GrooveDuration@秒。",
+      "icon": "ASSETS/Characters/TFT17_Nami/HUD/Icons2D/TFT17_NamiQ.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_nami/hud/icons2d/tft17_namiq.tft_set17.png",
+      "assetPath": "assets/s17/abilities/娜美__TFT17_Nami.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Nami/Skins/Base/Images/TFT17_Nami_splash_tile_41.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_nami/skins/base/images/tft17_nami_splash_tile_41.tft_set17.png",
+    "assetPath": "assets/s17/champions/娜美__TFT17_Nami.png",
+    "youxia": {
+      "name": "娜美",
+      "cost": "4费卡",
+      "traits": [
+        "太空律动",
+        "魔术师"
+      ],
+      "skillName": null,
+      "skillText": "【泡泡爆裂】\n向目标投掷一枚迪斯科泡泡，对1格半径内的敌人分摊造成的魔法伤害。爆炸会发射3团黏液射向附近敌人，每团造成少数魔法伤害。施放时，娜美进入律动状态，持续3秒。",
+      "source": "https://m.ali213.net/news/gl2603/1758659.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Nunu",
+    "characterName": "TFT17_Nunu",
+    "zhName": "努努和威朗普",
+    "aliases": [
+      "努努"
+    ],
+    "cost": 4,
+    "role": "APTank",
+    "traits": [
+      "观星者",
+      "重装战士"
+    ],
+    "cdragonTraits": [
+      "观星者",
+      "重装战士"
+    ],
+    "stats": {
+      "armor": 60,
+      "attackSpeed": 0.6499999761581421,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 60,
+      "hp": 1300,
+      "initialMana": 40,
+      "magicResist": 60,
+      "mana": 145,
+      "range": 1
+    },
+    "ability": {
+      "name": "祸患",
+      "desc": "获得持续@ShieldDuration@秒的@ModifiedShield@ (%i:scaleAP%)护盾值。召唤一个星盘并砸落到一个附近的格子上，对2格内的敌人们造成@ModifiedInitialDamage@ (%i:scaleAP%)魔法伤害。随后，将星盘推向战场尽头，造成@ModifiedFollowupDamage@ (%i:scaleAP%)魔法伤害。所有被星盘命中的敌人会被击飞@StunDuration@秒。",
+      "icon": "ASSETS/Characters/TFT17_Nunu/HUD/Icons2D/TFT17_NunuE.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_nunu/hud/icons2d/tft17_nunue.tft_set17.png",
+      "assetPath": "assets/s17/abilities/努努和威朗普__TFT17_Nunu.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Nunu/Skins/Base/Images/TFT17_Nunu_splash_tile_35.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_nunu/skins/base/images/tft17_nunu_splash_tile_35.tft_set17.png",
+    "assetPath": "assets/s17/champions/努努和威朗普__TFT17_Nunu.png",
+    "youxia": {
+      "name": "努努",
+      "cost": "4费卡",
+      "traits": [
+        "观星者",
+        "重装战士"
+      ],
+      "skillName": null,
+      "skillText": "【灾厄】\n获得护盾，持续4秒。召唤一个星盘砸向2格内最多的敌人，造成魔法伤害。然后努努将星盘推向棋盘边缘，造成魔法伤害。所有被星盘命中的敌人会被击飞。",
+      "source": "https://m.ali213.net/news/gl2603/1758833.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Kindred",
+    "characterName": "TFT17_Kindred",
+    "zhName": "千珏",
+    "aliases": [],
+    "cost": 4,
+    "role": "ADCarry",
+    "traits": [
+      "新星特攻队",
+      "挑战者"
+    ],
+    "cdragonTraits": [
+      "新星特攻队",
+      "挑战者"
+    ],
+    "stats": {
+      "armor": 30,
+      "attackSpeed": 0.800000011920929,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 55,
+      "hp": 850,
+      "initialMana": 0,
+      "magicResist": 30,
+      "mana": 40,
+      "range": 6
+    },
+    "ability": {
+      "name": "星界追寻",
+      "desc": "被动：普攻和技能会标记目标。当一个敌人身上的标记达到@MaxMarks@个时，狼灵消耗所有标记以造成@TotalDamage@ (%i:scaleAD%%i:scaleAP%)物理伤害。\n主动：跳跃至多@HexDistance@格，并朝相距最近的@NumTargets@个目标发射箭矢，每支箭矢造成@ModifiedDamage@ (%i:scaleAD%)物理伤害。新星特攻：获得@NovaDamageAmp*100@%伤害增幅。现在以及之后的每@NovaRepeatTimer@秒，添加一个标记至所有敌人。",
+      "icon": "ASSETS/Characters/TFT17_Kindred/HUD/Icons2D/TFT17_Kindred_Q.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_kindred/hud/icons2d/tft17_kindred_q.tft_set17.png",
+      "assetPath": "assets/s17/abilities/千珏__TFT17_Kindred.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Kindred/Skins/Base/Images/TFT17_Kindred_splash_tile_23.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_kindred/skins/base/images/tft17_kindred_splash_tile_23.tft_set17.png",
+    "assetPath": "assets/s17/champions/千珏__TFT17_Kindred.png",
+    "youxia": {
+      "name": "千珏",
+      "cost": "4费卡",
+      "traits": [
+        "新星特攻队",
+        "挑战者"
+      ],
+      "skillName": null,
+      "skillText": "【星际追击】\n被动：\n普攻和技能标记目标。敌人获得3个标记时，狼灵消耗所有标记，造成物理伤害。\n主动：\n跳跃最多1格，并朝最近的3名目标发射箭矢，每支造成少量物理伤害。",
+      "source": "https://m.ali213.net/news/gl2603/1758521.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Riven",
+    "characterName": "TFT17_Riven",
+    "zhName": "锐雯",
+    "aliases": [],
+    "cost": 4,
+    "role": "HFighter",
+    "traits": [
+      "未来战士",
+      "游侠"
+    ],
+    "cdragonTraits": [
+      "未来战士",
+      "游侠"
+    ],
+    "stats": {
+      "armor": 60,
+      "attackSpeed": 0.8500000238418579,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 0,
+      "hp": 1100,
+      "initialMana": 0,
+      "magicResist": 60,
+      "mana": 20,
+      "range": 1
+    },
+    "ability": {
+      "name": "时光发条",
+      "desc": "被动：此技能的伤害类型会基于物理加成或法术加成进行适应，取较高一项。普攻造成@ModifiedPassiveAPDamage@ (%i:scaleAP%)魔法@ModifiedPassiveADDamage@ (%i:scaleAD%)物理伤害。\n主动：冲向附近一个格子，获得持续@ShieldDuration@秒的@Shield@护盾值，并斩击邻格敌人们，造成@ModifiedAPDamage@ (%i:scaleAP%)魔法@ModifiedADDamage@ (%i:scaleAD%)物理伤害。每三次施放，跳到空中，发射一道能量波，对一条直线上的敌人造成@ModifiedAPWaveDamage@ (%i:scaleAP%)魔法@ModifiedADWaveDamage@ (%i:scaleAD%)物理伤害。",
+      "icon": "ASSETS/Characters/TFT17_Riven/HUD/Icons2D/TFT17_RivenPathoftheExile.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_riven/hud/icons2d/tft17_rivenpathoftheexile.tft_set17.png",
+      "assetPath": "assets/s17/abilities/锐雯__TFT17_Riven.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Riven/Skins/Base/Images/TFT17_Riven_splash_tile_18.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_riven/skins/base/images/tft17_riven_splash_tile_18.tft_set17.png",
+    "assetPath": "assets/s17/champions/锐雯__TFT17_Riven.png",
+    "youxia": {
+      "name": "锐雯",
+      "cost": "4费卡",
+      "traits": [
+        "未来战士",
+        "游侠"
+      ],
+      "skillName": null,
+      "skillText": "【时光扭曲】\n打击邻格敌人，造成物理伤害，并获得护盾值，持续2秒。每第三次施放，转而打击2格半径的敌人。",
+      "source": "https://m.ali213.net/news/gl2603/1758677.html"
+    }
+  },
+  {
+    "apiName": "TFT17_TahmKench",
+    "characterName": "TFT17_TahmKench",
+    "zhName": "塔姆",
+    "aliases": [],
+    "cost": 4,
+    "role": "APTank",
+    "traits": [
+      "命运祭司",
+      "斗士"
+    ],
+    "cdragonTraits": [
+      "命运祭司",
+      "斗士"
+    ],
+    "stats": {
+      "armor": 60,
+      "attackSpeed": 0.5,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 75,
+      "hp": 1300,
+      "initialMana": 50,
+      "magicResist": 60,
+      "mana": 120,
+      "range": 1
+    },
+    "ability": {
+      "name": "巨舌鞭笞",
+      "desc": "被动：每场战斗一次，在跌下@HPThreshold*100@%生命值时，获得持续@ShieldDuration@秒的护盾，护盾值相当于@PercentHealingToShield*100@%本场战斗受到的治疗值。\n主动：回复@ModifiedHeal@ (%i:scaleHealth%%i:scaleAP%)生命值，然后用舌头鞭笞两格内的所有敌人，造成@ModifiedDamage@ (%i:scaleAP%%i:scaleHealth%)魔法伤害。",
+      "icon": "ASSETS/Characters/TFT17_TahmKench/HUD/Icons2D/TFT17_TahmKenchQ.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_tahmkench/hud/icons2d/tft17_tahmkenchq.tft_set17.png",
+      "assetPath": "assets/s17/abilities/塔姆__TFT17_TahmKench.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_TahmKench/Skins/Base/Images/TFT17_TahmKench_splash_tile_11.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_tahmkench/skins/base/images/tft17_tahmkench_splash_tile_11.tft_set17.png",
+    "assetPath": "assets/s17/champions/塔姆__TFT17_TahmKench.png",
+    "youxia": {
+      "name": "塔姆",
+      "cost": "4费卡",
+      "traits": [
+        "命运祭司",
+        "斗士"
+      ],
+      "skillName": null,
+      "skillText": "【巨舌鞭笞】\n被动：\n将受到治疗量转化为攻击和技能的额外伤害。每场战斗在生命值降至35%以下后可触发一次效果：获得持续4秒的护盾，数值等同于本场战斗已受到治疗量的50%。\n主动：\n治疗自身生命值，随后用舌鞭抽打两格内所有敌人，造成魔法伤害。",
+      "source": "https://m.ali213.net/news/gl2603/1758979.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Xayah",
+    "characterName": "TFT17_Xayah",
+    "zhName": "霞",
+    "aliases": [],
+    "cost": 4,
+    "role": "ADCarry",
+    "traits": [
+      "观星者",
+      "狙神"
+    ],
+    "cdragonTraits": [
+      "观星者",
+      "狙神"
+    ],
+    "stats": {
+      "armor": 30,
+      "attackSpeed": 0.75,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 50,
+      "hp": 850,
+      "initialMana": 0,
+      "magicResist": 30,
+      "mana": 50,
+      "range": 6
+    },
+    "ability": {
+      "name": "星界弹射",
+      "desc": "被动：普攻会弹跳打击@AttackNumEnemies@次，每命中一个目标会使这次普攻的后续伤害降低@PassivePercentReducedDamage*100@%，并在最终目标身后留下一柄羽刃。\n主动：获得@AttackSpeed*100@%攻击速度，持续@Duration@秒。结束时，从相距最近的@RecallFeatherTargets@名敌人处召回羽刃，每支羽刃造成@TotalDamage@ (%i:scaleAD%)物理伤害。",
+      "icon": "ASSETS/Characters/TFT17_Xayah/HUD/Icons2D/TFT17_XayahW.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_xayah/hud/icons2d/tft17_xayahw.tft_set17.png",
+      "assetPath": "assets/s17/abilities/霞__TFT17_Xayah.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Xayah/Skins/Base/Images/TFT17_Xayah_splash_tile_1.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_xayah/skins/base/images/tft17_xayah_splash_tile_1.tft_set17.png",
+    "assetPath": "assets/s17/champions/霞__TFT17_Xayah.png",
+    "youxia": {
+      "name": "霞",
+      "cost": "4费卡",
+      "traits": [
+        "观星者",
+        "狙神"
+      ],
+      "skillName": null,
+      "skillText": "【星辰弹射】\n被动：\n攻击会进行3次弹跳，每命中一个目标伤害降低60%，并在最后一个目标身后留下一根羽毛。\n主动：\n获得75%攻击速度，持续4秒。技能结束时，召回所有羽毛，由距离最近的3名敌人分摊伤害，每根羽毛造成少量物理伤害。",
+      "source": "https://m.ali213.net/news/gl2603/1758843.html"
+    }
+  },
+  {
+    "apiName": "TFT17_MasterYi",
+    "characterName": "TFT17_MasterYi",
+    "zhName": "易",
+    "aliases": [
+      "剑圣"
+    ],
+    "cost": 4,
+    "role": "ADFighter",
+    "traits": [
+      "灵能特工",
+      "狂战士"
+    ],
+    "cdragonTraits": [
+      "灵能特工",
+      "狂战士"
+    ],
+    "stats": {
+      "armor": 65,
+      "attackSpeed": 0.8500000238418579,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 60,
+      "hp": 1100,
+      "initialMana": 30,
+      "magicResist": 65,
+      "mana": 70,
+      "range": 1
+    },
+    "ability": {
+      "name": "灵能打击",
+      "desc": "被动：每第三次攻击是一次双连斩，造成@ModifiedPassiveDamage@ (%i:scaleAD%)额外物理伤害。\n主动：在短暂的冥想之后，进入一个持续@Duration@秒的灵能状态，从而获得@Omnivamp*100@%全能吸血、@AttackSpeed*100@%攻击速度、以及额外移动速度。每秒两次，发射一道灵能投影至附近的一个随机敌人，造成@ModifiedDamage@ (%i:scaleAD%%i:scaleAP%)物理伤害。",
+      "icon": "ASSETS/Characters/TFT17_MasterYi/HUD/Icons2D/TFT17_MasterYi_Q.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_masteryi/hud/icons2d/tft17_masteryi_q.tft_set17.png",
+      "assetPath": "assets/s17/abilities/易__TFT17_MasterYi.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_MasterYi/Skins/Base/Images/TFT17_MasterYi_splash_tile_33.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_masteryi/skins/base/images/tft17_masteryi_splash_tile_33.tft_set17.png",
+    "assetPath": "assets/s17/champions/易__TFT17_MasterYi.png",
+    "youxia": {
+      "name": "剑圣",
+      "cost": "4费卡",
+      "traits": [
+        "灵能特工",
+        "狂战士"
+      ],
+      "skillName": null,
+      "skillText": "【灵能打击】\n被动：\n每第三次攻击会额外打击一次，造成少数额外物理伤害。\n主动：\n短暂冥想后，进入灵能状态持续5秒获得15%全能吸血、75%攻击速度以及移动速度提升。每0.5秒会向附近一名随机敌人发射一道灵能投影，造成物理伤害。",
+      "source": "https://m.ali213.net/news/gl2603/1758885.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Bard",
+    "characterName": "TFT17_Bard",
+    "zhName": "巴德",
+    "aliases": [],
+    "cost": 5,
+    "role": "APCaster",
+    "traits": [
+      "木灵族",
+      "神谕"
+    ],
+    "cdragonTraits": [
+      "木灵族",
+      "神谕"
+    ],
+    "stats": {
+      "armor": 40,
+      "attackSpeed": 0.8500000238418579,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 30,
+      "hp": 900,
+      "initialMana": 0,
+      "magicResist": 40,
+      "mana": 65,
+      "range": 4
+    },
+    "ability": {
+      "name": "超友好飞碟",
+      "desc": "在当前目标头上召唤一个持续@Duration@秒的飞碟。每秒，它对该目标造成@ModifiedDamagePerSecond@ (%i:scaleAP%)魔法伤害，外加由半径@SecondaryHexRange@格内的所有敌人们分摊的@ModifiedSplitDamagePerSecond@ (%i:scaleAP%)魔法伤害。飞碟对坦克造成@TankDamageIncrease*100@%额外伤害。\n如果飞碟下方的一个敌人阵亡，那么【巴德】有@AbductChance*100@%几率诱拐这个敌人并在你的备战席上生成该敌人的一个1星版本。\n木灵加成：在对战开始时，为相距最近的@ModifiedNumAllies@ (%i:set14AmpIcon%)个【木灵族】友军提供一个额外的木灵。\n已诱拐的朋友数量：@TFTUnitProperty.:TFT17_Bard_FriendsAbducted@",
+      "icon": "ASSETS/Characters/TFT17_Bard/HUD/Icons2D/TFT17_Bard_E.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_bard/hud/icons2d/tft17_bard_e.tft_set17.png",
+      "assetPath": "assets/s17/abilities/巴德__TFT17_Bard.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Bard/Skins/Base/Images/TFT17_Bard_splash_tile_8.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_bard/skins/base/images/tft17_bard_splash_tile_8.tft_set17.png",
+    "assetPath": "assets/s17/champions/巴德__TFT17_Bard.png",
+    "youxia": {
+      "name": "巴德",
+      "cost": "5费卡",
+      "traits": [
+        "木灵族",
+        "神谕"
+      ],
+      "skillName": null,
+      "skillText": "【超友善飞行物】\n在当前目标上空召唤一个飞碟，每秒造成大量魔法伤害。每秒消耗自身法力值，直到巴德的法力值耗尽。如果击杀目标，巴德有20%几率将其绑架，并在你的备战席上创建一个1星副本。\n木灵加成：\n战斗开始时，为距离最近宇航员额外提供一个木灵。",
+      "source": "https://m.ali213.net/news/gl2603/1758633.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Blitzcrank",
+    "characterName": "TFT17_Blitzcrank",
+    "zhName": "布里茨",
+    "aliases": [
+      "机器人"
+    ],
+    "cost": 5,
+    "role": "APFighter",
+    "traits": [
+      "汪星机器人",
+      "太空律动",
+      "重装战士"
+    ],
+    "cdragonTraits": [
+      "汪星机器人",
+      "太空律动",
+      "重装战士"
+    ],
+    "stats": {
+      "armor": 50,
+      "attackSpeed": 0.8999999761581421,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 50,
+      "hp": 1000,
+      "initialMana": 20,
+      "magicResist": 50,
+      "mana": 100,
+      "range": 1
+    },
+    "ability": {
+      "name": "派对破坏王",
+      "desc": "被动：每@BoltCooldown@秒，在附近生命值最高的那个敌人上空召唤一道雷电，以造成@ModifiedBoltDamage@ (%i:scaleAP%)魔法伤害。\n主动：在最大的敌群上空召唤一个迪斯科灯球，然后击飞当前目标到灯球中，造成@ModifiedUppercutDamage@ (%i:scaleAP%)魔法伤害并将其击飞。该敌人将撞到迪斯科灯球，在一个半径3格的范围内造成@ModifiedExplosionDamage@ (%i:scaleAP%)魔法伤害。进入{{TFT17_SpaceGroove_TheGroove}}状态，每命中一个敌人都会提供@GrooveDurationPerTarget@秒持续时长。",
+      "icon": "ASSETS/Characters/TFT17_Blitzcrank/HUD/Icons2D/TFT17_BlitzcrankW.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_blitzcrank/hud/icons2d/tft17_blitzcrankw.tft_set17.png",
+      "assetPath": "assets/s17/abilities/布里茨__TFT17_Blitzcrank.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Blitzcrank/Skins/Base/Images/TFT17_Blitzcrank_splash_tile_65.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_blitzcrank/skins/base/images/tft17_blitzcrank_splash_tile_65.tft_set17.png",
+    "assetPath": "assets/s17/champions/布里茨__TFT17_Blitzcrank.png",
+    "youxia": {
+      "name": "机器人",
+      "cost": "5费卡",
+      "traits": [
+        "太空律动",
+        "重装战士",
+        "汪星机器人"
+      ],
+      "skillName": null,
+      "skillText": "【派对破坏者】\n被动：每2秒，对附近生命值最高的敌人召唤道闪电轰击，造成魔法伤害。\n主动：在敌人最密集的位置召唤一个迪斯科球，然后对当前目标使出上勾拳，造成魔法伤害并将其击飞。目标砸向迪斯科球时，会对3格半径内的敌人造成200点魔法伤害。每命中一名敌人，就会进入律动状态1秒。",
+      "source": "https://m.ali213.net/news/gl2603/1758663.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Fiora",
+    "characterName": "TFT17_Fiora",
+    "zhName": "菲奥娜",
+    "aliases": [
+      "剑姬"
+    ],
+    "cost": 5,
+    "role": "ADFighter",
+    "traits": [
+      "斗神",
+      "幻灵战队",
+      "狂战士"
+    ],
+    "cdragonTraits": [
+      "斗神",
+      "幻灵战队",
+      "狂战士"
+    ],
+    "stats": {
+      "armor": 65,
+      "attackSpeed": 0.8999999761581421,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 80,
+      "hp": 1200,
+      "initialMana": 0,
+      "magicResist": 65,
+      "mana": 80,
+      "range": 1
+    },
+    "ability": {
+      "name": "完美剑技",
+      "desc": "被动：每@NumAttacks@次普攻，显露目标的一个破绽。如果存在一个破绽，则冲刺并攻击该破绽以造成@ModifiedVitalDamage@ (%i:scaleAD%)额外真实伤害，并回复相当于@PercentHealing*100@%造成伤害的生命值。\n主动：显露目标的@NumVitals@个破绽，并迅速攻击所有破绽。若目标阵亡，则剩余破绽将传递给相距最近的那个敌人。在攻击最后一个破绽时，创造一个半径2格的光环，为其中的友军回复@ModifiedHealing@ (%i:scaleAP%)生命值，持续@AuraDuration@秒。",
+      "icon": "ASSETS/Characters/TFT17_Fiora/HUD/Icons2D/TFT17_Fiora_P.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_fiora/hud/icons2d/tft17_fiora_p.tft_set17.png",
+      "assetPath": "assets/s17/abilities/菲奥娜__TFT17_Fiora.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Fiora/Skins/Base/Images/TFT17_Fiora_splash_tile_51.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_fiora/skins/base/images/tft17_fiora_splash_tile_51.tft_set17.png",
+    "assetPath": "assets/s17/champions/菲奥娜__TFT17_Fiora.png",
+    "youxia": {
+      "name": "剑姬",
+      "cost": "5费卡",
+      "traits": [
+        "狂战士",
+        "斗神",
+        "幻灵战队"
+      ],
+      "skillName": null,
+      "skillText": "【完美剑术】\n被动：\n每2次攻击，会在目标身上显露一个破绽。若目标存在破绽，会突进攻击该破绽，造成额外真实伤害，并基于该伤害值的15%治疗自身。\n主动：\n在目标身上显露6个破绽，并快速攻击全部破绽。若目标阵亡，剩余破绽将转移至最近的敌人身上。击破最后一个破绽时，会生成一个2格范围的光环，在5秒内为范围内友军治疗生命值。",
+      "source": "https://m.ali213.net/news/gl2603/1758491.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Graves",
+    "characterName": "TFT17_Graves",
+    "zhName": "格雷福斯",
+    "aliases": [
+      "男枪"
+    ],
+    "cost": 5,
+    "role": "ADCarry",
+    "traits": [
+      "军工1号"
+    ],
+    "cdragonTraits": [
+      "军工1号"
+    ],
+    "stats": {
+      "armor": 40,
+      "attackSpeed": 0.699999988079071,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 60,
+      "hp": 900,
+      "initialMana": 0,
+      "magicResist": 40,
+      "mana": 60,
+      "range": 4
+    },
+    "ability": {
+      "name": "终极爆弹",
+      "desc": "被动：普攻会在锥形范围内发射@NumProjectiles@枚飞弹，每枚造成@ModifiedPassiveDamage@ (%i:TFTBaseAD%)物理伤害。\n主动：发射一枚爆弹，对目标造成@ModifiedDamage@ (%i:scaleAD%)物理伤害，并对邻格的所有敌人造成@ModifiedSecondaryDamage@ %i:scaleAD%%i:scaleAP%)物理伤害。",
+      "icon": "ASSETS/Characters/TFT17_Graves/HUD/Icons2D/TFT17_GravesR.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_graves/hud/icons2d/tft17_gravesr.tft_set17.png",
+      "assetPath": "assets/s17/abilities/格雷福斯__TFT17_Graves.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Graves/Skins/Base/Images/TFT17_Graves_splash_tile_18.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_graves/skins/base/images/tft17_graves_splash_tile_18.tft_set17.png",
+    "assetPath": "assets/s17/champions/格雷福斯__TFT17_Graves.png",
+    "youxia": {
+      "name": "男枪",
+      "cost": "5费卡",
+      "traits": [
+        "军工1号"
+      ],
+      "skillName": null,
+      "skillText": "【终极爆弹】\n被动：普攻会发射锥形5发弹体，每发都造成物理伤害。\n主动：发射一枚爆破弹，对目标造成物理伤害，并对目标周围1格半径内所有敌人造成物理伤害。",
+      "source": "https://m.ali213.net/news/gl2603/1758993.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Zed",
+    "characterName": "TFT17_Zed",
+    "zhName": "劫",
+    "aliases": [],
+    "cost": 5,
+    "role": "ADFighter",
+    "traits": [
+      "天煞"
+    ],
+    "cdragonTraits": [
+      "天煞"
+    ],
+    "stats": {
+      "armor": 60,
+      "attackSpeed": 0.8500000238418579,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 85,
+      "hp": 1300,
+      "initialMana": 50,
+      "magicResist": 60,
+      "mana": 100,
+      "range": 1
+    },
+    "ability": {
+      "name": "量子克隆",
+      "desc": "在目标身后创造一个分身，其最大生命值降低@HPPenalty*100@%且法力消耗提高@ManaCostIncrease@。分身会继承本尊的装备、属性和当前生命值，并且可以施放【量子克隆】。",
+      "icon": "ASSETS/Characters/TFT17_Zed/HUD/Icons2D/3.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_zed/hud/icons2d/3.tft_set17.png",
+      "assetPath": "assets/s17/abilities/劫__TFT17_Zed.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Zed/Skins/Base/Images/TFT17_Zed_splash_tile_68.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_zed/skins/base/images/tft17_zed_splash_tile_68.tft_set17.png",
+    "assetPath": "assets/s17/champions/劫__TFT17_Zed.png",
+    "youxia": null
+  },
+  {
+    "apiName": "TFT17_Jhin",
+    "characterName": "TFT17_Jhin",
+    "zhName": "烬",
+    "aliases": [],
+    "cost": 5,
+    "role": "ADCarry",
+    "traits": [
+      "暗星",
+      "灭星尊",
+      "狙神"
+    ],
+    "cdragonTraits": [
+      "暗星",
+      "灭星尊",
+      "狙神"
+    ],
+    "stats": {
+      "armor": 40,
+      "attackSpeed": 0.8999999761581421,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 80,
+      "hp": 900,
+      "initialMana": 0,
+      "magicResist": 40,
+      "mana": 44,
+      "range": 6
+    },
+    "ability": {
+      "name": "太空歌剧",
+      "desc": "被动：【烬】的攻击速度固定为@FixedAS@，并将每@PercentBonusASToConvert*100@%额外攻击速度转化为@ADConversionRate@额外物理加成。\n主动：召唤@NumHands@个幽魂之手，在接下来@NumAttacks@次攻击与【烬】一同射击。每个幽魂之手每次射击造成@TotalDamage@ (%i:scaleAD%)物理伤害。最后一击造成@FinalShotPercentDamageIncrease*100@%额外伤害，并穿透敌人最多的那一条直线，每命中一个目标，这个伤害就衰减@PercentDamageReductionPerTargetHit*100@%。",
+      "icon": "ASSETS/Characters/TFT17_Jhin/HUD/Icons2D/TFT17_Jhin_Spell_Icon.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_jhin/hud/icons2d/tft17_jhin_spell_icon.tft_set17.png",
+      "assetPath": "assets/s17/abilities/烬__TFT17_Jhin.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Jhin/Skins/Base/Images/TFT17_Jhin_splash_tile_37.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_jhin/skins/base/images/tft17_jhin_splash_tile_37.tft_set17.png",
+    "assetPath": "assets/s17/champions/烬__TFT17_Jhin.png",
+    "youxia": {
+      "name": "烬",
+      "cost": "5费卡",
+      "traits": [
+        "暗星",
+        "灭星尊",
+        "狙神"
+      ],
+      "skillName": null,
+      "skillText": "【太空歌剧】\n被动：\n烬拥有固定0.9的攻击速度，每1%额外攻击速度会转化为0.8额外攻击力。\n主动：\n召唤4只幽灵之手，在接下来4次攻击中与烬一同射击。每只幽灵之手每次射击造成物理伤害，并削减目标4点护甲。最后一击造成244%额外伤害并穿透一条直线上最多的敌人，每命中一个后续目标伤害降低44%。",
+      "source": "https://m.ali213.net/news/gl2603/1758565.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Morgana",
+    "characterName": "TFT17_Morgana",
+    "zhName": "莫甘娜",
+    "aliases": [],
+    "cost": 5,
+    "role": "APFighter",
+    "traits": [
+      "黑暗魔女"
+    ],
+    "cdragonTraits": [
+      "黑暗魔女"
+    ],
+    "stats": {
+      "armor": 50,
+      "attackSpeed": 0.8999999761581421,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 50,
+      "hp": 1000,
+      "initialMana": 20,
+      "magicResist": 50,
+      "mana": 60,
+      "range": 2
+    },
+    "ability": {
+      "name": "黑暗形态",
+      "desc": "被动：回复相当于@OmnivampPercent*100@%技能伤害的生命值。\n主动：变身为黑暗形态，持续@Duration@秒，在此期间获得@ModifiedShield@ (%i:scaleAP%)护盾值。处于黑暗形态期间，系住相距最近的@NumEnemies@个敌人，每秒对每个敌人造成@ModifiedDamagePerSecond@ (%i:scaleAP%)魔法伤害。\n变身效果结束时，对所有被系住的敌人造成@ModifiedFinalDamage@ (%i:scaleAP%)魔法伤害。",
+      "icon": "ASSETS/Characters/TFT17_Morgana/HUD/Icons2D/FallenAngel_Empathize.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_morgana/hud/icons2d/fallenangel_empathize.tft_set17.png",
+      "assetPath": "assets/s17/abilities/莫甘娜__TFT17_Morgana.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Morgana/Skins/Base/Images/TFT17_Morgana_splash_tile_50.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_morgana/skins/base/images/tft17_morgana_splash_tile_50.tft_set17.png",
+    "assetPath": "assets/s17/champions/莫甘娜__TFT17_Morgana.png",
+    "youxia": {
+      "name": "莫甘娜",
+      "cost": "5费卡",
+      "traits": [
+        "黑暗魔女"
+      ],
+      "skillName": null,
+      "skillText": "【黑暗形态】\n变身为黑暗形态朝最近的3名敌人扔出锁链持续造成魔法伤害，在此期间获得护盾。结束黑暗形态时造成额外伤害。",
+      "source": "https://m.ali213.net/news/gl2603/1758985.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Shen",
+    "characterName": "TFT17_Shen",
+    "zhName": "慎",
+    "aliases": [],
+    "cost": 5,
+    "role": "APFighter",
+    "traits": [
+      "暮光铁壁",
+      "堡垒卫士"
+    ],
+    "cdragonTraits": [
+      "暮光铁壁",
+      "堡垒卫士"
+    ],
+    "stats": {
+      "armor": 65,
+      "attackSpeed": 0.8999999761581421,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 50,
+      "hp": 1200,
+      "initialMana": 10,
+      "magicResist": 65,
+      "mana": 70,
+      "range": 1
+    },
+    "ability": {
+      "name": "实界撕裂",
+      "desc": "被动：施放时，攻击获得@ModifiedBonusDamage@ (%i:scaleAP%)可叠加的额外魔法伤害。从第三次施放开始，转而获得真实伤害。\n主动：获得持续@ShieldDuration@秒的@ModifiedShield@ (%i:scaleHealth%%i:scaleAP%)护盾值，然后在最大弈子群的上方切割开一条裂隙，对其中的所有敌人造成被动的额外伤害。敌人被减缓@ASSlow*100@%攻击速度同时友军获得@BonusAS*100@%攻击速度，两个效果都会在@BuffDebuffDuration@秒里急速衰减。",
+      "icon": "ASSETS/Characters/TFT17_Shen/HUD/Icons2D/TFT17_Shen_RShield.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_shen/hud/icons2d/tft17_shen_rshield.tft_set17.png",
+      "assetPath": "assets/s17/abilities/慎__TFT17_Shen.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Shen/Skins/Base/Images/TFT17_shen_splash_tile_49.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_shen/skins/base/images/tft17_shen_splash_tile_49.tft_set17.png",
+    "assetPath": "assets/s17/champions/慎__TFT17_Shen.png",
+    "youxia": null
+  },
+  {
+    "apiName": "TFT17_Sona",
+    "characterName": "TFT17_Sona",
+    "zhName": "娑娜",
+    "aliases": [
+      "琴女"
+    ],
+    "cost": 5,
+    "role": "APCaster",
+    "traits": [
+      "最高指挥官",
+      "灵能特工",
+      "牧羊人"
+    ],
+    "cdragonTraits": [
+      "最高指挥官",
+      "灵能特工",
+      "牧羊人"
+    ],
+    "stats": {
+      "armor": 40,
+      "attackSpeed": 0.8999999761581421,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 35,
+      "hp": 900,
+      "initialMana": 0,
+      "magicResist": 40,
+      "mana": 25,
+      "range": 4
+    },
+    "ability": {
+      "name": "灵能碾压",
+      "desc": "对距离最近且没有磁性残片的目标投掷一大块残片，造成@ModifiedDebrisDamage@ (%i:scaleAP%)魔法伤害并将它附着在其身上。如果带有残片的敌人阵亡，则会把残片传递给相距最近且没有残片的敌人。\n每@NumCasts@次施放，转而将所有残片撕扯下来，造成@ModifiedDebrisRipDamage@ (%i:scaleAP%)魔法伤害，然后将所有残片碾向目标，造成@ModifiedSlamDamage@ (%i:scaleAP%)魔法伤害，并将其短暂晕眩。",
+      "icon": "ASSETS/Characters/TFT17_Sona/HUD/Icons2D/TFT17_Sona_E.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_sona/hud/icons2d/tft17_sona_e.tft_set17.png",
+      "assetPath": "assets/s17/abilities/娑娜__TFT17_Sona.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Sona/Skins/Base/Images/TFT17_Sona_splash_tile_17.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_sona/skins/base/images/tft17_sona_splash_tile_17.tft_set17.png",
+    "assetPath": "assets/s17/champions/娑娜__TFT17_Sona.png",
+    "youxia": {
+      "name": "琴女",
+      "cost": "5费卡",
+      "traits": [
+        "灵能特工",
+        "牧羊人",
+        "最高指挥官"
+      ],
+      "skillName": null,
+      "skillText": "【灵能打击】\n被动：每第三次攻击会额外打击一次，造成少数额外物理伤害。\n主动：短暂冥想后，进入灵能状态持续5秒获得15%全能吸血、75%攻击速度以及移动速度提升。每0.5秒会向附近一名随机敌人发射一道灵能投影，造成物理伤害。",
+      "source": "https://m.ali213.net/news/gl2603/1758909.html"
+    }
+  },
+  {
+    "apiName": "TFT17_Vex",
+    "characterName": "TFT17_Vex",
+    "zhName": "薇古丝",
+    "aliases": [],
+    "cost": 5,
+    "role": "APCarry",
+    "traits": [
+      "末日使者"
+    ],
+    "cdragonTraits": [
+      "末日使者"
+    ],
+    "stats": {
+      "armor": 40,
+      "attackSpeed": 0.800000011920929,
+      "critChance": 0.25,
+      "critMultiplier": 1.399999976158142,
+      "damage": 15,
+      "hp": 900,
+      "initialMana": 0,
+      "magicResist": 40,
+      "mana": 60,
+      "range": 10
+    },
+    "ability": {
+      "name": "帮我一手，黑影！",
+      "desc": "被动：【薇古丝】每次攻击时，【黑影】就会打击一个附近的敌人，造成@ModifiedShadowHandDamage@ (%i:scaleAP%)魔法伤害。每当一个敌人被【黑影】击中@NumStrikesForPassive@次时，【黑影】就会再次打击这个敌人。\n主动：【黑影】进行@NumActiveStrikes@次强化打击，转而造成@ModifiedShadowHandMagicDamage@ (%i:scaleAP%)魔法伤害。",
+      "icon": "ASSETS/Characters/TFT17_Vex/HUD/Icons2D/Icons_TFT17_Vex_E01.TFT_Set17.tex",
+      "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_vex/hud/icons2d/icons_tft17_vex_e01.tft_set17.png",
+      "assetPath": "assets/s17/abilities/薇古丝__TFT17_Vex.png"
+    },
+    "squareIcon": "ASSETS/Characters/TFT17_Vex/Skins/Base/Images/TFT17_vex_splash_tile_10.TFT_Set17.tex",
+    "assetUrl": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_vex/skins/base/images/tft17_vex_splash_tile_10.tft_set17.png",
+    "assetPath": "assets/s17/champions/薇古丝__TFT17_Vex.png",
+    "youxia": {
+      "name": "薇古丝",
+      "cost": "5费卡",
+      "traits": [
+        "末日使者"
+      ],
+      "skillName": null,
+      "skillText": "【帮我一把，黑影！】\n被动：\n薇古丝每次攻击时，暗影都会打击一名附近的敌人，造成少量魔法伤害。每当一名敌人被命中5次，暗影会对其额外打击一次。\n主动：\n暗影发动3次强化打击，造成大量魔法伤害。",
+      "source": "https://m.ali213.net/news/gl2603/1758999.html"
+    }
+  }
+]

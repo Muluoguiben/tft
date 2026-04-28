@@ -1,0 +1,206 @@
+{
+  "generatedAt": "2026-04-28T09:46:14.560Z",
+  "sources": {
+    "cdragonZh": "https://raw.communitydragon.org/latest/cdragon/tft/zh_cn.json",
+    "youxiaTraits": "https://m.ali213.net/news/gl2603/1758483.html",
+    "youxiaChampions": "https://m.ali213.net/news/gl2603/1758465.html",
+    "youxiaStarGods": "https://app.ali213.net/gl/1767593.html"
+  },
+  "officialAnnouncementSources": [
+    {
+      "key": "riotTftPatch17_1",
+      "name": "Teamfight Tactics patch 17.1",
+      "url": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-17-1",
+      "authorityTier": 0,
+      "platform": "TFT",
+      "role": "TFT 全球服官方版本公告，用于确认 Set 17、版本号、机制和补丁方向。",
+      "title": "TFT patch 17.1",
+      "publishTime": "2026-04-14T18:00:00.000Z",
+      "parserStatus": "parsed",
+      "matchedSignals": [
+        "17.1",
+        "17.1B",
+        "Set 17",
+        "Space Gods",
+        "Realm of the Gods"
+      ]
+    },
+    {
+      "key": "riotTftPatchNotesIndex",
+      "name": "Teamfight Tactics Patch Notes",
+      "url": "https://teamfighttactics.leagueoflegends.com/en-us/news/tags/patch-notes/",
+      "authorityTier": 0,
+      "platform": "TFT",
+      "role": "TFT 官方补丁列表，用于确认最新官方补丁入口。",
+      "title": "Patch Notes",
+      "publishTime": "2026-04-14T18:00:00.000Z",
+      "parserStatus": "parsed",
+      "matchedSignals": [
+        "17.1",
+        "Space Gods"
+      ]
+    },
+    {
+      "key": "goldenSpatulaOfficialSite",
+      "name": "金铲铲之战官网",
+      "url": "https://jcc.qq.com/",
+      "authorityTier": 0,
+      "platform": "金铲铲之战",
+      "role": "金铲铲官方站点，用于确认官方主体；该页面依赖 JavaScript，简单脚本通常无法直接抓取公告正文。",
+      "title": "金铲铲之战-英雄联盟云顶之弈正版授权手游",
+      "publishTime": null,
+      "parserStatus": "parsed",
+      "matchedSignals": []
+    },
+    {
+      "key": "goldenSpatulaPatch17_1OfficialMirror17173",
+      "name": "《金铲铲之战》17.1版本 4月23日更新公告",
+      "url": "https://news.17173.com/content/04222026/161402748.shtml",
+      "authorityTier": 1,
+      "platform": "金铲铲之战",
+      "role": "金铲铲 17.1 公告正文镜像，用于补充官网动态页无法直接抓取时的文本校准；最终仍以游戏内和官网为准。",
+      "title": "《金铲铲之战》17.1版本 4月23日更新公告 | 欢迎来到「星神」_网络游戏新闻_17173.com中国游戏门户站",
+      "publishTime": "2026-04-22 16:14:02",
+      "parserStatus": "parsed",
+      "matchedSignals": [
+        "17.1",
+        "星神",
+        "星神领域",
+        "4月23日",
+        "装备轮换调整"
+      ]
+    }
+  ],
+  "knownSourceConflicts": [
+    {
+      "field": "trait.name",
+      "communityDragon": "织命人",
+      "goldSpatulaZh": "织命者",
+      "decision": "项目展示、阵容卡和图卡提示词使用“织命者”；保留 CommunityDragon 原名用于溯源。"
+    }
+  ],
+  "s17AuditSummary": "棋子与羁绊为 Set 17；装备/物品来自 Set 17 item 清单，但包含通用和历史 apiName 复用资源；星神为 Set 17 机制，头像为历史弈子图兜底。",
+  "counts": {
+    "cdragonChampions": 63,
+    "cdragonTraits": 43,
+    "cdragonItems": 667,
+    "youxiaTraits": 35,
+    "youxiaChampions": 61,
+    "starGods": 9,
+    "officialAnnouncements": 4,
+    "downloads": 853,
+    "failedDownloads": 0
+  },
+  "gaps": {
+    "missingYouxiaChampionPages": [
+      {
+        "zhName": "劫",
+        "apiName": "TFT17_Zed",
+        "reason": "未在游侠手游棋子大全主列表中匹配到独立页面；技能文本和图片使用 CommunityDragon 兜底。"
+      },
+      {
+        "zhName": "慎",
+        "apiName": "TFT17_Shen",
+        "reason": "未在游侠手游棋子大全主列表中匹配到独立页面；技能文本和图片使用 CommunityDragon 兜底。"
+      }
+    ],
+    "missingYouxiaTraitPages": [
+      {
+        "zhName": "选择羁绊",
+        "apiName": "TFT17_MissFortuneUndeterminedTrait",
+        "reason": "未在游侠手游羁绊大全主列表中匹配到独立页面；效果和图片使用 CommunityDragon 兜底。"
+      }
+    ],
+    "itemsWithoutCdragonZhName": [
+      {
+        "apiName": "TFT17_FavoredCause_CombatStartRerolled",
+        "reason": "CommunityDragon 未提供中文展示名，项目暂用 apiName 兜底。"
+      },
+      {
+        "apiName": "TFT17_FavoredCause_DealDamage",
+        "reason": "CommunityDragon 未提供中文展示名，项目暂用 apiName 兜底。"
+      },
+      {
+        "apiName": "TFT17_FavoredCause_EveryInterest",
+        "reason": "CommunityDragon 未提供中文展示名，项目暂用 apiName 兜底。"
+      },
+      {
+        "apiName": "TFT17_FavoredCause_EveryXAttacks",
+        "reason": "CommunityDragon 未提供中文展示名，项目暂用 apiName 兜底。"
+      },
+      {
+        "apiName": "TFT17_FavoredCause_EveryXSeconds",
+        "reason": "CommunityDragon 未提供中文展示名，项目暂用 apiName 兜底。"
+      },
+      {
+        "apiName": "TFT17_FavoredCause_FallBelowXHealth",
+        "reason": "CommunityDragon 未提供中文展示名，项目暂用 apiName 兜底。"
+      },
+      {
+        "apiName": "TFT17_FavoredCause_SpendMana",
+        "reason": "CommunityDragon 未提供中文展示名，项目暂用 apiName 兜底。"
+      },
+      {
+        "apiName": "TFT17_FavoredCause_StarLevels",
+        "reason": "CommunityDragon 未提供中文展示名，项目暂用 apiName 兜底。"
+      },
+      {
+        "apiName": "TFT17_FavoredCause_Takedown",
+        "reason": "CommunityDragon 未提供中文展示名，项目暂用 apiName 兜底。"
+      },
+      {
+        "apiName": "TFT17_FavoredEffect_GainLeona",
+        "reason": "CommunityDragon 未提供中文展示名，项目暂用 apiName 兜底。"
+      },
+      {
+        "apiName": "TFT17_FavoredEffect_GainMana",
+        "reason": "CommunityDragon 未提供中文展示名，项目暂用 apiName 兜底。"
+      },
+      {
+        "apiName": "TFT17_FavoredEffect_GainShield",
+        "reason": "CommunityDragon 未提供中文展示名，项目暂用 apiName 兜底。"
+      },
+      {
+        "apiName": "TFT17_FavoredEffect_GainsAbilityPower",
+        "reason": "CommunityDragon 未提供中文展示名，项目暂用 apiName 兜底。"
+      },
+      {
+        "apiName": "TFT17_FavoredEffect_GainsArmor",
+        "reason": "CommunityDragon 未提供中文展示名，项目暂用 apiName 兜底。"
+      },
+      {
+        "apiName": "TFT17_FavoredEffect_GainsAttackSpeed",
+        "reason": "CommunityDragon 未提供中文展示名，项目暂用 apiName 兜底。"
+      },
+      {
+        "apiName": "TFT17_FavoredEffect_GainsPermanentMaxHealth",
+        "reason": "CommunityDragon 未提供中文展示名，项目暂用 apiName 兜底。"
+      },
+      {
+        "apiName": "TFT17_FavoredEffect_GenerateGold",
+        "reason": "CommunityDragon 未提供中文展示名，项目暂用 apiName 兜底。"
+      },
+      {
+        "apiName": "TFT17_FavoredEffect_GenerateReroll",
+        "reason": "CommunityDragon 未提供中文展示名，项目暂用 apiName 兜底。"
+      },
+      {
+        "apiName": "TFT6_Augment_FourScore",
+        "reason": "CommunityDragon 未提供中文展示名，项目暂用 apiName 兜底。"
+      },
+      {
+        "apiName": "TFT7_Item_TreasureDragonBlankSlot",
+        "reason": "CommunityDragon 未提供中文展示名，项目暂用 apiName 兜底。"
+      },
+      {
+        "apiName": "TFT_Item_Blank",
+        "reason": "CommunityDragon 未提供中文展示名，项目暂用 apiName 兜底。"
+      },
+      {
+        "apiName": "TFT_Item_EmptyBag",
+        "reason": "CommunityDragon 未提供中文展示名，项目暂用 apiName 兜底。"
+      }
+    ]
+  },
+  "failures": []
+}

@@ -1,0 +1,231 @@
+{
+  "generatedAt": "2026-04-28T09:46:14.559Z",
+  "conclusion": "棋子与羁绊为 Set 17；装备/物品来自 Set 17 item 清单，但包含通用和历史 apiName 复用资源；星神为 Set 17 机制，头像为历史弈子图兜底。",
+  "checks": {
+    "champions": {
+      "total": 63,
+      "apiPrefixRule": "apiName 必须以 TFT17_ 开头",
+      "apiNotTFT17": 0,
+      "status": "pass"
+    },
+    "traits": {
+      "total": 43,
+      "apiPrefixRule": "apiName 必须以 TFT17_ 开头",
+      "apiNotTFT17": 0,
+      "duplicateDisplayNames": [
+        {
+          "key": "观星者",
+          "count": 8,
+          "apiNames": [
+            "TFT17_Stargazer_Wolf",
+            "TFT17_Stargazer_Medallion",
+            "TFT17_Stargazer_Huntress",
+            "TFT17_Stargazer_Serpent",
+            "TFT17_Stargazer_Shield",
+            "TFT17_Stargazer_Fountain",
+            "TFT17_Stargazer_Mountain",
+            "TFT17_Stargazer"
+          ]
+        }
+      ],
+      "status": "pass-with-variants",
+      "note": "重复展示名是 Set 17 内部变体。例如观星者有多个子类型，写阵容卡时应按展示名合并理解。"
+    },
+    "items": {
+      "total": 667,
+      "sourceRule": "来自 CommunityDragon setData[number=17].items 清单",
+      "apiBuckets": {
+        "TFT_Item": 111,
+        "TFT_Shared": 105,
+        "TFT11": 1,
+        "TFT14": 5,
+        "TFT16": 5,
+        "TFT17": 378,
+        "TFT4": 8,
+        "TFT5": 37,
+        "TFT6": 1,
+        "TFT7": 9,
+        "TFT9": 7
+      },
+      "nonTFT17ApiCount": 289,
+      "nonTFT17ApiExamples": [
+        {
+          "apiName": "TFT16_Consumable_GwensScissors_2",
+          "zhName": "【格温的剪子】(还可使用2次！)"
+        },
+        {
+          "apiName": "TFT16_Consumable_GwensScissors_3",
+          "zhName": "【格温的剪子】(还可使用3次！)"
+        },
+        {
+          "apiName": "TFT16_Consumable_GwensScissors_4",
+          "zhName": "【格温的剪子】(还可使用4次！)"
+        },
+        {
+          "apiName": "TFT16_Consumable_GwensScissors_5",
+          "zhName": "【格温的剪子】(还可使用5次！)"
+        },
+        {
+          "apiName": "TFT_Assist_Gold_10",
+          "zhName": "10金币"
+        },
+        {
+          "apiName": "TFT14_CypherArmoryItem_SpecificRadiantItems",
+          "zhName": "12个光明武器"
+        },
+        {
+          "apiName": "TFT_Assist_Gold_12",
+          "zhName": "12金币"
+        },
+        {
+          "apiName": "TFT_Assist_Gold_15",
+          "zhName": "15金币"
+        },
+        {
+          "apiName": "TFT_Assist_Gold_16",
+          "zhName": "16金币"
+        },
+        {
+          "apiName": "TFT_Assist_Gold_1",
+          "zhName": "1金币"
+        },
+        {
+          "apiName": "TFT_Assist_1x4cost",
+          "zhName": "1星4费弈子"
+        },
+        {
+          "apiName": "TFT_Assist_1x5cost",
+          "zhName": "1星5费弈子"
+        },
+        {
+          "apiName": "TFT_Assist_Gold_20",
+          "zhName": "20金币"
+        },
+        {
+          "apiName": "TFT_Assist_Gold_25",
+          "zhName": "25金币"
+        },
+        {
+          "apiName": "TFT_Assist_1x2cost",
+          "zhName": "2费弈子"
+        },
+        {
+          "apiName": "TFT_Assist_TacticiansCape_2",
+          "zhName": "2个【金锅铲冠冕】"
+        },
+        {
+          "apiName": "TFT_Assist_Deathblade_2",
+          "zhName": "2个【死亡之刃】"
+        },
+        {
+          "apiName": "TFT_Assist_ChampionDuplicator_2",
+          "zhName": "2个【英雄复制器】"
+        },
+        {
+          "apiName": "TFT_Assist_Remover_2",
+          "zhName": "2个【装备拆卸器】"
+        },
+        {
+          "apiName": "TFT_Assist_Reforger_2",
+          "zhName": "2个【装备重铸器】"
+        },
+        {
+          "apiName": "TFT_Assist_2x2star2cost",
+          "zhName": "2个2星2费弈子"
+        },
+        {
+          "apiName": "TFT_Assist_2x3cost",
+          "zhName": "2个3费弈子"
+        },
+        {
+          "apiName": "TFT_Assist_2x4cost",
+          "zhName": "2个4费弈子"
+        },
+        {
+          "apiName": "TFT_Assist_2x5cost",
+          "zhName": "2个5费弈子"
+        },
+        {
+          "apiName": "TFT_Assist_RandomRadiantItem_2",
+          "zhName": "2个光明武器"
+        },
+        {
+          "apiName": "TFT_Assist_RandomComponent_2",
+          "zhName": "2件基础装备"
+        },
+        {
+          "apiName": "TFT_Assist_Gold_2",
+          "zhName": "2金币"
+        },
+        {
+          "apiName": "TFT_Assist_1x2star2cost",
+          "zhName": "2星2费弈子"
+        },
+        {
+          "apiName": "TFT_Assist_1x2star3cost",
+          "zhName": "2星3费弈子"
+        },
+        {
+          "apiName": "TFT_Assist_1x2star4cost",
+          "zhName": "2星4费弈子"
+        }
+      ],
+      "status": "pass-with-shared-api-names",
+      "note": "装备、金币、复制器、拆卸器、光明装备、神器和奖励包经常复用通用或旧赛季 apiName。它们出现在 Set 17 items 清单中，因此属于当前资源基线，但不能用 apiName 前缀简单判断为非 S17。"
+    },
+    "starGods": {
+      "total": 9,
+      "dataSourceRule": "来自 S17 星神奖励页面",
+      "historicalFallbackIconCount": 9,
+      "historicalFallbackIconExamples": [
+        {
+          "fullName": "阿狸 · 财富之神",
+          "assetPath": "assets/s17/star-gods/阿狸__TFT16_Ahri.png",
+          "iconSource": "CommunityDragon historical TFT champion icon"
+        },
+        {
+          "fullName": "奥瑞利安·索尔 · 造物之神",
+          "assetPath": "assets/s17/star-gods/奥瑞利安·索尔__TFT16_AurelionSol.png",
+          "iconSource": "CommunityDragon historical TFT champion icon"
+        },
+        {
+          "fullName": "艾克 · 时间之神",
+          "assetPath": "assets/s17/star-gods/艾克__TFT14_Ekko.png",
+          "iconSource": "CommunityDragon historical TFT champion icon"
+        },
+        {
+          "fullName": "伊芙琳 · 诱惑之神",
+          "assetPath": "assets/s17/star-gods/伊芙琳__TFT4_Evelynn.png",
+          "iconSource": "CommunityDragon historical TFT champion icon"
+        },
+        {
+          "fullName": "凯尔 · 秩序之神",
+          "assetPath": "assets/s17/star-gods/凯尔__TFT15_Kayle.png",
+          "iconSource": "CommunityDragon historical TFT champion icon"
+        },
+        {
+          "fullName": "索拉卡 · 众星之神",
+          "assetPath": "assets/s17/star-gods/索拉卡__TFT7_Soraka.png",
+          "iconSource": "CommunityDragon historical TFT champion icon"
+        },
+        {
+          "fullName": "锤石 · 契约之神",
+          "assetPath": "assets/s17/star-gods/锤石__TFT7_Thresh.png",
+          "iconSource": "CommunityDragon historical TFT champion icon"
+        },
+        {
+          "fullName": "韦鲁斯 · 爱神",
+          "assetPath": "assets/s17/star-gods/韦鲁斯__TFT15_Varus.png",
+          "iconSource": "CommunityDragon historical TFT champion icon"
+        },
+        {
+          "fullName": "亚索 · 深渊之神",
+          "assetPath": "assets/s17/star-gods/亚索__TFT5_Yasuo.png",
+          "iconSource": "CommunityDragon historical TFT champion icon"
+        }
+      ],
+      "status": "pass-with-fallback-icons",
+      "note": "星神本身是 S17 机制；当前本地头像是用历史 TFT 弈子头像兜底，不能当作官方 S17 星神原画。"
+    }
+  }
+}
