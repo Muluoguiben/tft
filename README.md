@@ -8,7 +8,10 @@ Teamfight Tactics is Riot Games' auto-battler game mode based on the League of L
 
 - `docs/what-is-tft.md` - A short introduction to Teamfight Tactics
 - `docs/tft-vs-golden-spatula.md` - The relationship between TFT and Golden Spatula
+- `docs/competition-prep-2026-05.md` - Competition preparation plan for the May 2026 Golden Spatula event
+- `docs/competition-cheatsheet-2026-05.md` - Compact in-game decision sheet
 - `data/` - Placeholder for structured TFT data
+- `templates/` - Review templates for practice games
 
 ## Goals
 
@@ -19,3 +22,4 @@ This repository may include:
 - notes about champions, traits, items, and mechanics
 - comparisons between TFT and Golden Spatula
 - structured data for future tools or analysis
+- competition preparation notes, matchup logs, and review templates
