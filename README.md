@@ -12,6 +12,7 @@
 - `docs/competition-cheatsheet-2026-05.md` - 比赛临场小抄
 - `docs/S17中文翻译对照.md` - S17 羁绊和阵容中文名对照，避免英文直译错误
 - `docs/S17资源基线.md` - S17 棋子、羁绊、技能、星神、装备、图片和官方公告校准源说明
+- `docs/S17星神4-7恩赐与阵容适配.md` - S17 星神 4-7 奖励核对、旧攻略冲突和阵容适配速查
 - `docs/三站交叉阵容推荐-2026-04-28.md` - 基于 tactics.tools、DataTFT、TFTAcademy，并保留 MetaTFT、LoLCHESS.GG、MetaBot 补充复核的阵容推荐
 - `docs/阵容图卡规范.md` - 阵容组成、站位和装备合成一张图的制作规范
 - `docs/阵容图卡工作流.md` - 从阵容卡到 GPT Image2 图卡的完整生产流程
