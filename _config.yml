@@ -1,0 +1,10 @@
+exclude:
+  - prototype
+  - scripts
+  - data
+  - templates
+  - assets/s17/abilities
+  - assets/s17/champions/*.png
+  - assets/s17/items/*.png
+  - assets/s17/star-gods/*.png
+  - assets/s17/star-gods/*.jpg

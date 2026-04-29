@@ -129,7 +129,7 @@ const comps = [
     avoid: "低血量、前排不二星、装备太散，或 4 阶段没有上 9 经济。",
     gods: "阿狸/龙王用于高血速 9；艾克修装备；索拉卡低血止损。",
     pivot: "血量低转重装妖姬或机甲龙王；AD 装多保留男枪线。",
-    image: "./assets/comps/nova-95-17.2-early.png",
+    image: "./assets/comps/full/nova-95-17.2-early.jpg",
     doc: "./docs/comps/新星九五.md",
     hasFullDetail: true,
   },
@@ -147,7 +147,7 @@ const comps = [
     avoid: "只有 3 机甲、龙王没法装、超级机甲没坦装，或低血还想贪上 9。",
     gods: "亚索格子最契合；凯尔补光明装；艾克拆装；索拉卡低血止损。",
     pivot: "机甲断档转新星九五或重装妖姬；只胡厄加特可降为机甲 Flex。",
-    image: "./assets/comps/mecha-asol-17.2-early.png",
+    image: "./assets/comps/full/mecha-asol-17.2-early.jpg",
     doc: "./docs/comps/机甲龙王.md",
     hasFullDetail: true,
   },
@@ -165,7 +165,7 @@ const comps = [
     avoid: "无 AP 装，妖姬/卡尔玛被多人卡，或 4-2 经济过差。",
     gods: "韦鲁斯找四费二星；凯尔补装备；艾克拆装；高血可选阿狸。",
     pivot: "妖姬卡住转牧羊维克托；AP 五费来得早转新星九五。",
-    image: "./assets/comps/leblanc-vanguard-17.2-early.png",
+    image: "./assets/comps/full/leblanc-vanguard-17.2-early.jpg",
     doc: "./docs/comps/重装妖姬.md",
     hasFullDetail: true,
   },
@@ -183,7 +183,7 @@ const comps = [
     avoid: "观星效果差、格子危险、无破甲装，或霞/努努被多人卡。",
     gods: "阿狸/龙王适合高血速 9；凯尔补物理装；亚索只在格子好时选。",
     pivot: "观星不强转新星九五；AP 装多转重装妖姬。",
-    image: "./assets/comps/stargazer-xayah-17.2-early.png",
+    image: "./assets/comps/full/stargazer-xayah-17.2-early.jpg",
     doc: "./docs/comps/观星霞.md",
     hasFullDetail: true,
   },
@@ -201,7 +201,7 @@ const comps = [
     avoid: "无维克托、无 AP 输出装，前排弱，或同行卡维克托/俄洛伊。",
     gods: "韦鲁斯首选追星级；凯尔补装备；艾克修装备；索拉卡低血止损。",
     pivot: "维克托被卡转重装妖姬；前排/机甲牌多转机甲龙王。",
-    image: "./assets/comps/shepherd-viktor-17.2-early.png",
+    image: "./assets/comps/full/shepherd-viktor-17.2-early.jpg",
     doc: "./docs/comps/牧羊维克托.md",
     hasFullDetail: true,
   },
@@ -219,7 +219,7 @@ const comps = [
     avoid: "无转职时降级，同行多，锐雯无法二星。",
     gods: "有转职时优先上限和即时战力。",
     pivot: "无转职可转机甲 Flex 或四费拼。",
-    image: "./assets/comps/space-riven-17.2-early.png",
+    image: "./assets/comps/full/space-riven-17.2-early.jpg",
     doc: "./docs/comps/太空律动转.md",
     hasFullDetail: true,
   },
@@ -237,7 +237,7 @@ const comps = [
     avoid: "无木灵基础、血量太低、同行抢四费，或无法二星主 C 主 T。",
     gods: "优先经济、复制器、装备类支持。",
     pivot: "可转机甲 Flex 或其他四费拼。",
-    image: "./assets/comps/woodling-corki-17.2-early.png",
+    image: "./assets/comps/full/woodling-corki-17.2-early.jpg",
     doc: "./docs/comps/木灵飞机.md",
     hasFullDetail: true,
   },
@@ -255,7 +255,7 @@ const comps = [
     avoid: "没有前排质量，或者没有可用主 C 装备。",
     gods: "亚索/凯尔优先，其次艾克。",
     pivot: "可转重装妖姬、薇古丝九五、太空律动转。",
-    image: "./assets/comps/mecha-flex-17.2-early.png",
+    image: "./assets/comps/full/mecha-flex-17.2-early.jpg",
     doc: "./docs/comps/机甲Flex.md",
     hasFullDetail: true,
   },
@@ -273,7 +273,7 @@ const comps = [
     avoid: "开局不胡、装备不对，或 3 阶段 D 不出二星核心。",
     gods: "按局势选即时战力或经济。",
     pivot: "可转新星战士或其他 NOVA 线。",
-    image: "./assets/comps/sea-belveth-17.2-early.png",
+    image: "./assets/comps/full/sea-belveth-17.2-early.jpg",
     doc: "./docs/comps/海魔大卑.md",
     hasFullDetail: true,
   },
@@ -291,7 +291,7 @@ const comps = [
     avoid: "普通积分局、无连败节奏、收菜阈值不清，或血量不足。",
     gods: "索拉卡/韦鲁斯/凯尔较优。",
     pivot: "收菜后转稳血，不继续贪。",
-    image: "./assets/comps/anima-aurora-17.2-early.png",
+    image: "./assets/comps/full/anima-aurora-17.2-early.jpg",
     doc: "./docs/comps/幻灵阿萝拉.md",
     hasFullDetail: true,
   },
@@ -309,7 +309,7 @@ const comps = [
     avoid: "4-2 搜不出 7 木灵框架，装备偏物理，拉莫斯/库奇不能二星，同行抢木灵。",
     gods: "韦鲁斯首选；凯尔补装备；亚索/艾克看格子和突变；索拉卡低血止损。",
     pivot: "小法不胡转木灵飞机；法装多可转重装妖姬；8 级质量差转机甲 Flex。",
-    image: "./assets/comps/woodland-veigar-17.1b.png",
+    image: "./assets/comps/full/woodland-veigar-17.1b.jpg",
     doc: "./docs/comps/木灵小法师.md",
     hasFullDetail: true,
   },
@@ -371,8 +371,12 @@ function el(tag, className, text) {
 
 function previewAsset(src) {
   if (!src) return src;
+  if (src.includes("/preview/")) return src;
   if (src.startsWith("./assets/s17/champions/")) {
     return src.replace("./assets/s17/champions/", "./assets/s17/champions/preview/").replace(/\.png$/, ".jpg");
+  }
+  if (src.startsWith("./assets/s17/items/")) {
+    return src.replace("./assets/s17/items/", "./assets/s17/items/preview/").replace(/\.png$/, ".jpg");
   }
   if (src.startsWith("./assets/s17/star-gods/")) {
     return src.replace("./assets/s17/star-gods/", "./assets/s17/star-gods/preview/").replace(/\.png$/, ".jpg");
@@ -382,12 +386,25 @@ function previewAsset(src) {
 
 function compPreviewImage(comp) {
   if (!comp.image) return "";
+  if (comp.image.startsWith("./assets/comps/full/")) {
+    return comp.image.replace("./assets/comps/full/", "./assets/comps/preview/");
+  }
+  if (comp.image.startsWith("./assets/comps/preview/")) return comp.image;
   return comp.image.replace("./assets/comps/", "./assets/comps/preview/").replace(/\.png$/, ".jpg");
+}
+
+function compFullImage(comp) {
+  if (!comp.image) return "";
+  if (comp.image.startsWith("./assets/comps/full/")) return comp.image;
+  if (comp.image.startsWith("./assets/comps/preview/")) {
+    return comp.image.replace("./assets/comps/preview/", "./assets/comps/full/");
+  }
+  return comp.image.replace("./assets/comps/", "./assets/comps/full/").replace(/\.png$/, ".jpg");
 }
 
 function img(src, alt, options = {}) {
   const node = document.createElement("img");
-  node.src = src;
+  node.src = options.raw ? src : previewAsset(src);
   node.alt = alt;
   node.loading = options.loading || "lazy";
   node.decoding = "async";
@@ -566,11 +583,11 @@ function renderOneflowImage(comp) {
       <div class="section-heading">阵容一图流</div>
       <p class="muted">包含阵容组成、站位、装备、星神、运营节奏和风险点。</p>
     </div>
-    <a class="image-link" href="${comp.image}">查看原图</a>
+    <a class="image-link" href="${compFullImage(comp)}">查看高清图</a>
   `;
   panel.append(header);
   const link = document.createElement("a");
-  link.href = comp.image;
+  link.href = compFullImage(comp);
   link.className = "oneflow-link";
   const preview = img(compPreviewImage(comp), `${comp.name} 一图流预览`);
   preview.className = "oneflow-image";
@@ -679,7 +696,7 @@ function renderBoardPanel(comp, units) {
       <div class="section-heading">阵容组成</div>
       <p class="muted">8 人口成型，9 人口补卡尔玛；棋盘从上到下是前排到后排。</p>
     </div>
-    <a class="image-link" href="./assets/comps/woodland-veigar-17.1b.png">查看大图</a>
+    <a class="image-link" href="./assets/comps/full/woodland-veigar-17.1b.jpg">查看高清图</a>
   `;
   panel.append(title);
   const row = el("div", "comp-row");
