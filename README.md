@@ -6,8 +6,10 @@
 
 ## 内容导航
 
+- `index.html` - 静态阵容网站首页，按 OP / T1 / T2 展示多套阵容，点击进入阵容详情
 - `docs/what-is-tft.md` - 云顶之弈基础介绍
 - `docs/tft-vs-golden-spatula.md` - 云顶之弈与金铲铲之战的关系
+- `docs/静态站点部署.md` - 静态网站本地预览和部署说明
 - `docs/competition-prep-2026-05.md` - 2026 年 5 月金铲铲比赛备赛方案
 - `docs/competition-cheatsheet-2026-05.md` - 比赛临场小抄
 - `docs/S17中文翻译对照.md` - S17 羁绊和阵容中文名对照，避免英文直译错误
@@ -28,9 +30,10 @@
 
 日常备赛优先看这些 Markdown：
 
-1. 先看 `docs/三站交叉阵容推荐-2026-04-28.md`，确定今天主练哪些阵容。
-2. 再看 `docs/comps/` 下的单套阵容卡，照着练阵容组成、装备、运营和站位。
-3. 比赛当天看 `docs/competition-cheatsheet-2026-05.md`，只做临场决策。
+1. 先打开 `index.html`，从 OP / T1 / T2 阵容梯度首页选择要练的阵容。
+2. 再看 `docs/三站交叉阵容推荐-2026-04-28.md`，确定今天主练哪些阵容。
+3. 需要细节时看 `docs/comps/` 下的单套阵容卡。
+4. 比赛当天看 `docs/competition-cheatsheet-2026-05.md`，只做临场决策。
 
 如果某个结论只存在于 CSV，而没有写成 Markdown 阵容卡或小抄，那它还不算可用备赛资料。
 
