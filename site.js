@@ -11,6 +11,7 @@ const assets = {
     aatrox: "./assets/s17/champions/亚托克斯__TFT17_Aatrox.png",
     akali: "./assets/s17/champions/阿卡丽__TFT17_Akali.png",
     aurora: "./assets/s17/champions/阿萝拉__TFT17_Aurora.png",
+    asol: "./assets/s17/champions/奥瑞利安·索尔__TFT17_AurelionSol.png",
     bard: "./assets/s17/champions/巴德__TFT17_Bard.png",
     belveth: "./assets/s17/champions/卑尔维斯__TFT17_Belveth.png",
     briar: "./assets/s17/champions/贝蕾亚__TFT17_Briar.png",
@@ -23,6 +24,7 @@ const assets = {
     graves: "./assets/s17/champions/格雷福斯__TFT17_Graves.png",
     illaoi: "./assets/s17/champions/俄洛伊__TFT17_Illaoi.png",
     ivern: "./assets/s17/champions/小木灵__TFT17_IvernMinion.png",
+    jhin: "./assets/s17/champions/烬__TFT17_Jhin.png",
     jinx: "./assets/s17/champions/金克丝__TFT17_Jinx.png",
     karma: "./assets/s17/champions/卡尔玛__TFT17_Karma.png",
     kayn: "./assets/s17/champions/拉亚斯特__TFT17_Rhaast.png",
@@ -30,6 +32,7 @@ const assets = {
     leblanc: "./assets/s17/champions/乐芙兰__TFT17_Leblanc.png",
     leona: "./assets/s17/champions/蕾欧娜__TFT17_Leona.png",
     lissandra: "./assets/s17/champions/丽桑卓__TFT17_Lissandra.png",
+    lulu: "./assets/s17/champions/璐璐__TFT17_Lulu.png",
     maokai: "./assets/s17/champions/茂凯__TFT17_Maokai.png",
     masterYi: "./assets/s17/champions/易__TFT17_MasterYi.png",
     milio: "./assets/s17/champions/米利欧__TFT17_Milio.png",
@@ -38,6 +41,7 @@ const assets = {
     nami: "./assets/s17/champions/娜美__TFT17_Nami.png",
     gnar: "./assets/s17/champions/纳尔__TFT17_Gnar.png",
     nunu: "./assets/s17/champions/努努和威朗普__TFT17_Nunu.png",
+    pantheon: "./assets/s17/champions/潘森__TFT17_Pantheon.png",
     poppy: "./assets/s17/champions/波比__TFT17_Poppy.png",
     pyke: "./assets/s17/champions/派克__TFT17_Pyke.png",
     rammus: "./assets/s17/champions/拉莫斯__TFT17_Rammus.png",
@@ -49,6 +53,7 @@ const assets = {
     veigar: "./assets/s17/champions/维迦__TFT17_Veigar.png",
     vex: "./assets/s17/champions/薇古丝__TFT17_Vex.png",
     viktor: "./assets/s17/champions/维克托__TFT17_Viktor.png",
+    xayah: "./assets/s17/champions/霞__TFT17_Xayah.png",
     zoe: "./assets/s17/champions/佐伊__TFT17_Zoe.png",
   },
   traits: {
@@ -57,13 +62,18 @@ const assets = {
     darkStar: "./assets/s17/traits/暗星__TFT17_DarkStar.png",
     drx: "./assets/s17/traits/新星特攻队__TFT17_DRX.png",
     flex: "./assets/s17/traits/旅人__TFT17_FlexTrait.png",
+    hptank: "./assets/s17/traits/斗士__TFT17_HPTank.png",
     magician: "./assets/s17/traits/魔术师__TFT17_APTrait.png",
+    mana: "./assets/s17/traits/神谕__TFT17_ManaTrait.png",
+    melee: "./assets/s17/traits/狂战士__TFT17_MeleeTrait.png",
     mecha: "./assets/s17/traits/霸天机甲__TFT17_Mecha.png",
     meeple: "./assets/s17/traits/木灵族__TFT17_Astronaut.png",
     primordian: "./assets/s17/traits/海魔人__TFT17_Primordian.png",
     psyops: "./assets/s17/traits/灵能特工__TFT17_PsyOps.png",
+    ranged: "./assets/s17/traits/狙神__TFT17_RangedTrait.png",
     shieldTank: "./assets/s17/traits/重装战士__TFT17_ShieldTank.png",
     space: "./assets/s17/traits/太空律动__TFT17_SpaceGroove.png",
+    stargazer: "./assets/s17/traits/观星者__TFT17_Stargazer.png",
     summon: "./assets/s17/traits/牧羊人__TFT17_SummonTrait.png",
   },
   items: {
@@ -74,6 +84,10 @@ const assets = {
     deathblade: "./assets/s17/items/死亡之刃__TFT_Item_Deathblade.png",
     sunfire: "./assets/s17/items/日炎斗篷__TFT_Item_RedBuff.png",
     bramble: "./assets/s17/items/棘刺背心__TFT_Item_BrambleVest.png",
+    gargoyle: "./assets/s17/items/石像鬼石板甲__TFT_Item_GargoyleStoneplate.png",
+    giantSlayer: "./assets/s17/items/巨人杀手__TFT_Item_MadredsBloodrazor.png",
+    rabadon: "./assets/s17/items/灭世者的死亡之帽__TFT_Item_RabadonsDeathcap.png",
+    gunblade: "./assets/s17/items/海克斯科技枪刃__TFT_Item_HextechGunblade.png",
     ionic: "./assets/s17/items/离子火花__TFT_Item_IonicSpark.png",
     guinsoo: "./assets/s17/items/鬼索的狂暴之刃__TFT_Item_GuinsoosRageblade.png",
     archangel: "./assets/s17/items/大天使之杖__TFT_Item_ArchangelsStaff.png",
@@ -87,6 +101,9 @@ const assets = {
     runaan: "./assets/s17/items/海妖之怒__TFT_Item_RunaansHurricane.png",
     crownguard: "./assets/s17/items/冕卫__TFT_Item_Crownguard.png",
     redemption: "./assets/s17/items/振奋盔甲__TFT_Item_Redemption.png",
+    warmog: "./assets/s17/items/狂徒铠甲__TFT_Item_WarmogsArmor.png",
+    adaptive: "./assets/s17/items/适应性头盔__TFT_Item_AdaptiveHelm.png",
+    voidStaff: "./assets/s17/items/虚空之杖__TFT_Item_StatikkShiv.png",
   },
   starGods: {
     varus: "./assets/s17/star-gods/韦鲁斯__TFT15_Varus.png",
@@ -102,76 +119,73 @@ const comps = [
     id: "nova-95",
     name: "新星九五",
     tier: "OP",
-    label: "运营",
+    label: "运营九五",
     rating: "A",
     primary: "graves",
-    traits: ["drx", "mecha", "bastion"],
-    units: ["aatrox", "akali", "maokai", "tahm", "fiora", "shen", "morgana", "graves", "vex"],
-    itemsText: "男枪/剑姬：水银或夜刃 + 巨杀 + 血手；薇古丝：羊刀 + 增伤 + 科技枪",
-    play: "经济好、连胜、血量高，有上 8/9 节奏。",
-    avoid: "低血量、无前排、4 阶段无法到高等级，或同行过多。",
-    gods: "领先选经济/上限；落后选即时战力。",
-    pivot: "可转薇古丝九五或其他高费拼。",
+    traits: ["drx", "bastion", "hptank"],
+    units: ["caitlyn", "aatrox", "akali", "maokai", "kindred", "tahm", "shen", "graves", "vex"],
+    itemsText: "男枪：水银 + 巨杀 + 血手；薇古丝：羊刀 + 法爆 + 科技枪；塔姆/慎吃通用肉装。",
+    play: "连胜、高血量、高经济，有 4-2 上 8 稳住并上 9 的节奏。",
+    avoid: "低血量、前排不二星、装备太散，或 4 阶段没有上 9 经济。",
+    gods: "阿狸/龙王用于高血速 9；艾克修装备；索拉卡低血止损。",
+    pivot: "血量低转重装妖姬或机甲龙王；AD 装多保留男枪线。",
+    image: "./assets/comps/nova-95-17.2-early.png",
+    doc: "./docs/comps/新星九五.md",
+    hasFullDetail: true,
+  },
+  {
+    id: "mecha-asol",
+    name: "6机甲龙王",
+    tier: "OP",
+    label: "快8机甲",
+    rating: "A",
+    primary: "asol",
+    traits: ["mecha", "hptank", "darkStar", "melee"],
+    units: ["urgot", "asol", "galio", "maokai", "akali", "karma", "jhin"],
+    itemsText: "超级机甲：板甲 + 饮血 + 血手；龙王：法爆 + 帽子 + 虚空杖；厄加特/烬吃多余物理装。",
+    play: "经济或战力好，4-2 上 8 能搜出三机甲变形框架，目标是 6 机甲。",
+    avoid: "只有 3 机甲、龙王没法装、超级机甲没坦装，或低血还想贪上 9。",
+    gods: "亚索格子最契合；凯尔补光明装；艾克拆装；索拉卡低血止损。",
+    pivot: "机甲断档转新星九五或重装妖姬；只胡厄加特可降为机甲 Flex。",
+    image: "./assets/comps/mecha-asol-17.2-early.png",
+    doc: "./docs/comps/机甲龙王.md",
+    hasFullDetail: true,
   },
   {
     id: "leblanc-vanguard",
     name: "重装妖姬",
-    tier: "OP",
+    tier: "T1",
     label: "AP 运营",
     rating: "A-",
     primary: "leblanc",
-    traits: ["shieldTank", "magician", "flex"],
+    traits: ["shieldTank", "summon", "mana"],
     units: ["leblanc", "karma", "nunu", "illaoi", "ivern", "mordekaiser", "zoe", "leona"],
-    itemsText: "妖姬：羊刀 + 法爆 + 大天使；卡尔玛：青龙刀 + 虚空杖 + 法爆。",
+    itemsText: "妖姬：羊刀 + 法爆 + 大天使；卡尔玛：青龙刀 + 虚空杖 + 法爆；俄洛伊/努努吃肉装。",
     play: "法系装，8 级能 D 体系四费二星，前期能稳血或经济好。",
     avoid: "无 AP 装，妖姬/卡尔玛被多人卡，或 4-2 经济过差。",
-    gods: "韦鲁斯优先；其次艾克、阿狸、亚索。",
-    pivot: "可转薇古丝九五或重装娜美。",
+    gods: "韦鲁斯找四费二星；凯尔补装备；艾克拆装；高血可选阿狸。",
+    pivot: "妖姬卡住转牧羊维克托；AP 五费来得早转新星九五。",
+    image: "./assets/comps/leblanc-vanguard-17.2-early.png",
+    doc: "./docs/comps/重装妖姬.md",
+    hasFullDetail: true,
   },
   {
-    id: "space-riven",
-    name: "太空律动转",
+    id: "stargazer-xayah",
+    name: "观星霞",
     tier: "T1",
-    label: "转职上限",
+    label: "物理运营",
     rating: "A-",
-    primary: "riven",
-    traits: ["space", "bastion"],
-    units: ["riven", "shen", "milio", "fizz", "karma", "bard"],
-    itemsText: "锐雯：饮血 + 泰坦 + 羊刀/无尽/巨杀；慎：狂徒 + 板甲 + 龙牙。",
-    play: "有太空律动转、有铲/转职，锐雯装备好。",
-    avoid: "无转职时降级，同行多，锐雯无法二星。",
-    gods: "有转职时优先上限和即时战力。",
-    pivot: "无转职可转机甲 Flex 或四费拼。",
-  },
-  {
-    id: "woodling-corki",
-    name: "木灵飞机",
-    tier: "T1",
-    label: "高上限",
-    rating: "B+",
-    primary: "corki",
-    traits: ["meeple", "bastion"],
-    units: ["corki", "rammus", "riven", "bard", "fizz", "ivern", "milio", "gnar", "poppy"],
-    itemsText: "库奇：法爆 + 无尽 + 正义/蓝 BUFF；拉莫斯：冕卫 + 日炎 + 板甲。",
-    play: "3 木灵开、经济强化、4-2 能上 8，体系牌多。",
-    avoid: "无木灵基础、血量太低、同行抢四费，或无法二星主 C 主 T。",
-    gods: "优先经济、复制器、装备类支持。",
-    pivot: "可转机甲 Flex 或其他四费拼。",
-  },
-  {
-    id: "mecha-flex",
-    name: "机甲 Flex",
-    tier: "T1",
-    label: "稳定兜底",
-    rating: "B+",
-    primary: "urgot",
-    traits: ["mecha", "flex"],
-    units: ["urgot", "viktor", "galio", "tahm", "masterYi", "karma"],
-    itemsText: "主 C 按装备给龙王/剑圣/卡尔玛；加里奥吃通用肉装。",
-    play: "法装 + 肉装，需要 4 阶段锁血，拿到光装/神器/幻灵装备。",
-    avoid: "没有前排质量，或者没有可用主 C 装备。",
-    gods: "亚索/凯尔优先，其次艾克。",
-    pivot: "可转重装妖姬、薇古丝九五、太空律动转。",
+    primary: "xayah",
+    traits: ["stargazer", "ranged", "shieldTank"],
+    units: ["lulu", "leona", "mordekaiser", "pantheon", "nunu", "xayah", "jhin", "shen", "bard"],
+    itemsText: "霞：羊刀 + 无尽 + 轻语；努努：狂徒 + 冕卫 + 适应性；烬吃多余物理装。",
+    play: "观星效果强、物理装顺，4-2 能上 8 找霞和努努质量。",
+    avoid: "观星效果差、格子危险、无破甲装，或霞/努努被多人卡。",
+    gods: "阿狸/龙王适合高血速 9；凯尔补物理装；亚索只在格子好时选。",
+    pivot: "观星不强转新星九五；AP 装多转重装妖姬。",
+    image: "./assets/comps/stargazer-xayah-17.2-early.png",
+    doc: "./docs/comps/观星霞.md",
+    hasFullDetail: true,
   },
   {
     id: "shepherd-viktor",
@@ -180,13 +194,70 @@ const comps = [
     label: "条件 AP",
     rating: "B+",
     primary: "viktor",
-    traits: ["summon", "psyops", "magician"],
-    units: ["lissandra", "mordekaiser", "ivern", "pyke", "illaoi", "kayn", "viktor", "nami"],
-    itemsText: "维克托：法爆 + 大天使 + 无人机/帽子/破防；娜美：虚空杖 + 法爆 + 青龙刀。",
+    traits: ["summon", "mana", "psyops", "magician"],
+    units: ["lissandra", "mordekaiser", "ivern", "pyke", "illaoi", "kayn", "viktor", "nami", "bard"],
+    itemsText: "维克托：法爆 + 大天使 + 帽子；俄洛伊：板甲 + 狂徒 + 离子；娜美：虚空杖 + 青龙刀。",
     play: "有维克托装备/灵能装备，前排来得早，同行少。",
-    avoid: "无维克托、无 AP 输出装，或前排弱。",
-    gods: "韦鲁斯优先。",
-    pivot: "可转机甲 Flex 或重装妖姬。",
+    avoid: "无维克托、无 AP 输出装，前排弱，或同行卡维克托/俄洛伊。",
+    gods: "韦鲁斯首选追星级；凯尔补装备；艾克修装备；索拉卡低血止损。",
+    pivot: "维克托被卡转重装妖姬；前排/机甲牌多转机甲龙王。",
+    image: "./assets/comps/shepherd-viktor-17.2-early.png",
+    doc: "./docs/comps/牧羊维克托.md",
+    hasFullDetail: true,
+  },
+  {
+    id: "space-riven",
+    name: "太空律动转",
+    tier: "T2",
+    label: "转职上限",
+    rating: "B",
+    primary: "riven",
+    traits: ["space", "bastion", "melee", "mana"],
+    units: ["riven", "masterYi", "tahm", "shen", "milio", "fizz", "karma", "bard", "kayn"],
+    itemsText: "锐雯：饮血 + 泰坦 + 无尽/巨杀；易：羊刀 + 水银 + 巨杀；慎/塔姆吃通用肉装。",
+    play: "有太空律动转、有铲/转职，锐雯装备好。",
+    avoid: "无转职时降级，同行多，锐雯无法二星。",
+    gods: "有转职时优先上限和即时战力。",
+    pivot: "无转职可转机甲 Flex 或四费拼。",
+    image: "./assets/comps/space-riven-17.2-early.png",
+    doc: "./docs/comps/太空律动转.md",
+    hasFullDetail: true,
+  },
+  {
+    id: "woodling-corki",
+    name: "木灵飞机",
+    tier: "T2",
+    label: "条件上限",
+    rating: "B",
+    primary: "corki",
+    traits: ["meeple", "bastion"],
+    units: ["corki", "rammus", "riven", "bard", "fizz", "ivern", "milio", "gnar", "poppy"],
+    itemsText: "库奇：法爆 + 无尽 + 正义/蓝 BUFF；拉莫斯：冕卫 + 日炎 + 板甲。",
+    play: "3 木灵开、经济强化、4-2 能上 8，体系牌多。",
+    avoid: "无木灵基础、血量太低、同行抢四费，或无法二星主 C 主 T。",
+    gods: "优先经济、复制器、装备类支持。",
+    pivot: "可转机甲 Flex 或其他四费拼。",
+    image: "./assets/comps/woodling-corki-17.2-early.png",
+    doc: "./docs/comps/木灵飞机.md",
+    hasFullDetail: true,
+  },
+  {
+    id: "mecha-flex",
+    name: "机甲 Flex",
+    tier: "T2",
+    label: "稳定兜底",
+    rating: "B",
+    primary: "urgot",
+    traits: ["mecha", "hptank", "darkStar", "melee"],
+    units: ["galio", "urgot", "asol", "tahm", "masterYi", "karma", "maokai", "akali", "jhin"],
+    itemsText: "主 C 按装备给龙王/剑圣/卡尔玛；加里奥吃通用肉装。",
+    play: "法装 + 肉装，需要 4 阶段锁血，拿到光装/神器/幻灵装备。",
+    avoid: "没有前排质量，或者没有可用主 C 装备。",
+    gods: "亚索/凯尔优先，其次艾克。",
+    pivot: "可转重装妖姬、薇古丝九五、太空律动转。",
+    image: "./assets/comps/mecha-flex-17.2-early.png",
+    doc: "./docs/comps/机甲Flex.md",
+    hasFullDetail: true,
   },
   {
     id: "sea-belveth",
@@ -202,6 +273,9 @@ const comps = [
     avoid: "开局不胡、装备不对，或 3 阶段 D 不出二星核心。",
     gods: "按局势选即时战力或经济。",
     pivot: "可转新星战士或其他 NOVA 线。",
+    image: "./assets/comps/sea-belveth-17.2-early.png",
+    doc: "./docs/comps/海魔大卑.md",
+    hasFullDetail: true,
   },
   {
     id: "anima-aurora",
@@ -217,6 +291,9 @@ const comps = [
     avoid: "普通积分局、无连败节奏、收菜阈值不清，或血量不足。",
     gods: "索拉卡/韦鲁斯/凯尔较优。",
     pivot: "收菜后转稳血，不继续贪。",
+    image: "./assets/comps/anima-aurora-17.2-early.png",
+    doc: "./docs/comps/幻灵阿萝拉.md",
+    hasFullDetail: true,
   },
   {
     id: "woodland-veigar",
@@ -232,6 +309,8 @@ const comps = [
     avoid: "4-2 搜不出 7 木灵框架，装备偏物理，拉莫斯/库奇不能二星，同行抢木灵。",
     gods: "韦鲁斯首选；凯尔补装备；亚索/艾克看格子和突变；索拉卡低血止损。",
     pivot: "小法不胡转木灵飞机；法装多可转重装妖姬；8 级质量差转机甲 Flex。",
+    image: "./assets/comps/woodland-veigar-17.1b.png",
+    doc: "./docs/comps/木灵小法师.md",
     hasFullDetail: true,
   },
 ];
@@ -245,14 +324,14 @@ const woodlingDetail = {
     { id: "bastion", count: 2, name: "堡垒卫士", desc: "波比 + 拉莫斯", tiers: [2, 4, 6] },
   ],
   boardUnits: [
-    { id: "poppy", name: "波比", cost: 1, star: "★★", row: 1, col: 2 },
-    { id: "rammus", name: "拉莫斯", cost: 4, star: "★★", row: 1, col: 4, items: ["sunfire", "bramble", "ionic"] },
-    { id: "fizz", name: "菲兹", cost: 3, star: "★★", row: 1, col: 6 },
-    { id: "ivern", name: "小木灵", cost: 2, star: "★", row: 2, col: 3 },
-    { id: "lissandra", name: "丽桑卓", cost: 1, star: "★★", row: 3, col: 2 },
-    { id: "karma", name: "卡尔玛", cost: 4, star: "★", row: 3, col: 6 },
-    { id: "corki", name: "库奇", cost: 4, star: "★★", row: 4, col: 1, items: ["lastWhisper", "deathblade", "guardbreaker"] },
+    { id: "poppy", name: "波比", cost: 1, star: "★★", row: 1, col: 1 },
+    { id: "ivern", name: "小木灵", cost: 2, star: "★", row: 1, col: 3 },
+    { id: "rammus", name: "拉莫斯", cost: 4, star: "★★", row: 1, col: 5, items: ["sunfire", "bramble", "ionic"] },
+    { id: "fizz", name: "菲兹", cost: 3, star: "★★", row: 1, col: 7 },
+    { id: "lissandra", name: "丽桑卓", cost: 1, star: "★★", row: 4, col: 1 },
+    { id: "corki", name: "库奇", cost: 4, star: "★★", row: 4, col: 2, items: ["lastWhisper", "deathblade", "guardbreaker"] },
     { id: "veigar", name: "小法", cost: 1, star: "三星", row: 4, col: 4, items: ["nashor", "jeweled", "shojin"] },
+    { id: "karma", name: "卡尔玛", cost: 4, star: "★", row: 4, col: 6 },
     { id: "bard", name: "巴德", cost: 5, star: "★", row: 4, col: 7 },
   ],
   builds: [
@@ -314,17 +393,17 @@ function miniCard(unitId) {
 
 function findUnit(id) {
   const named = {
-    aatrox: ["亚托克斯", 2], akali: ["阿卡丽", 4], aurora: ["阿萝拉", 4], bard: ["巴德", 5],
+    aatrox: ["亚托克斯", 1], akali: ["阿卡丽", 2], aurora: ["阿萝拉", 4], asol: ["龙王", 4], bard: ["巴德", 5],
     belveth: ["卑尔维斯", 4], briar: ["贝蕾亚", 3], caitlyn: ["凯特琳", 1], corki: ["库奇", 4],
-    diana: ["黛安娜", 3], fiora: ["菲奥娜", 4], fizz: ["菲兹", 3], galio: ["加里奥", 4],
-    graves: ["格雷福斯", 5], illaoi: ["俄洛伊", 4], ivern: ["小木灵", 2], jinx: ["金克丝", 2],
-    karma: ["卡尔玛", 4], kayn: ["拉亚斯特", 3], kindred: ["千珏", 2], leblanc: ["妖姬", 4],
-    leona: ["蕾欧娜", 4], lissandra: ["丽桑卓", 1], maokai: ["茂凯", 4], masterYi: ["易", 4],
-    milio: ["米利欧", 5], mordekaiser: ["莫德凯撒", 3], morgana: ["莫甘娜", 5], nami: ["娜美", 4],
-    gnar: ["纳尔", 3], nunu: ["努努", 4], poppy: ["波比", 1], pyke: ["派克", 2],
-    rammus: ["拉莫斯", 4], reksai: ["雷克塞", 2], riven: ["锐雯", 4], shen: ["慎", 4],
-    tahm: ["塔姆", 5], urgot: ["厄加特", 3], veigar: ["小法", 1], vex: ["薇古丝", 5],
-    viktor: ["维克托", 4], zoe: ["佐伊", 2],
+    diana: ["黛安娜", 3], fiora: ["菲奥娜", 5], fizz: ["菲兹", 3], galio: ["超级机甲", 4],
+    graves: ["格雷福斯", 5], illaoi: ["俄洛伊", 3], ivern: ["小木灵", 2], jhin: ["烬", 5], jinx: ["金克丝", 2],
+    karma: ["卡尔玛", 4], kayn: ["拉亚斯特", 3], kindred: ["千珏", 4], leblanc: ["妖姬", 4],
+    leona: ["蕾欧娜", 1], lissandra: ["丽桑卓", 1], lulu: ["璐璐", 3], maokai: ["茂凯", 3], masterYi: ["易", 4],
+    milio: ["米利欧", 2], mordekaiser: ["莫德凯撒", 2], morgana: ["莫甘娜", 5], nami: ["娜美", 4],
+    gnar: ["纳尔", 3], nunu: ["努努", 4], pantheon: ["潘森", 2], poppy: ["波比", 1], pyke: ["派克", 2],
+    rammus: ["拉莫斯", 4], reksai: ["雷克塞", 2], riven: ["锐雯", 4], shen: ["慎", 5],
+    tahm: ["塔姆", 4], urgot: ["厄加特", 3], veigar: ["小法", 1], vex: ["薇古丝", 5],
+    viktor: ["维克托", 3], xayah: ["霞", 4], zoe: ["佐伊", 2],
   };
   const [name, cost] = named[id] || [id, 3];
   return { name, cost };
@@ -385,8 +464,8 @@ function renderHome(filterTier) {
     <section class="panel">
       <div class="section-heading">版本提醒</div>
       <ul class="bullet-list">
-        <li>当前按项目 17.1 / 17.1b 数据口径整理。</li>
-        <li>早期赛季波动大，阵容强度必须继续用实战和数据复核。</li>
+        <li>当前按 17.2 早期判断整理，金铲铲端内更新后仍需复核。</li>
+        <li>早期赛季波动大，阵容强度必须继续用实战和数据站复核。</li>
         <li>比赛目标冠军，优先练 OP 和 T1，T2 只在胡牌或特殊条件下进。</li>
       </ul>
     </section>
@@ -429,6 +508,9 @@ function renderBasicDetail(comp) {
   left.append(textPanel("适玩条件", [comp.play], "condition-panel"));
   left.append(textPanel("放弃条件 / 风险", [comp.avoid], "danger-panel"));
   const center = el("section", "center-column");
+  if (comp.image) {
+    center.append(renderOneflowImage(comp));
+  }
   const unitsPanel = el("section", "panel");
   unitsPanel.append(el("div", "section-heading", "阵容组成"));
   const row = el("div", "comp-row flexible");
@@ -448,9 +530,35 @@ function renderBasicDetail(comp) {
   });
   traitsPanel.append(tags);
   right.append(traitsPanel);
-  right.append(textPanel("后续状态", [comp.hasFullDetail ? "已完成详细站位。" : "基础详情已接入；完整站位图卡后续补齐。"]));
+  right.append(textPanel("后续状态", [comp.hasFullDetail ? "已完成一图流结构稿。" : "基础详情已接入；完整站位图卡后续补齐。"]));
+  if (comp.doc) {
+    const docPanel = el("section", "panel");
+    docPanel.innerHTML = `<a class="image-link" href="${comp.doc}">查看中文阵容卡</a>`;
+    right.append(docPanel);
+  }
   grid.append(left, center, right);
   app.append(grid);
+}
+
+function renderOneflowImage(comp) {
+  const panel = el("section", "panel oneflow-panel");
+  const header = el("div", "panel-title-row");
+  header.innerHTML = `
+    <div>
+      <div class="section-heading">阵容一图流</div>
+      <p class="muted">包含阵容组成、站位、装备、星神、运营节奏和风险点。</p>
+    </div>
+    <a class="image-link" href="${comp.image}">查看大图</a>
+  `;
+  panel.append(header);
+  const link = document.createElement("a");
+  link.href = comp.image;
+  link.className = "oneflow-link";
+  const preview = img(comp.image, `${comp.name} 一图流`);
+  preview.className = "oneflow-image";
+  link.append(preview);
+  panel.append(link);
+  return panel;
 }
 
 function detailHero(comp) {
@@ -484,9 +592,9 @@ function textPanel(title, lines, className = "") {
 function traitName(id) {
   return {
     anima: "幻灵战队", bastion: "堡垒卫士", darkStar: "暗星", drx: "新星特攻队",
-    flex: "旅人", magician: "魔术师", mecha: "霸天机甲", meeple: "木灵族",
+    flex: "旅人", hptank: "斗士", magician: "魔术师", mana: "神谕", melee: "狂战士", mecha: "霸天机甲", meeple: "木灵族",
     primordian: "海魔人", psyops: "灵能特工", shieldTank: "重装战士",
-    space: "太空律动", summon: "牧羊人",
+    ranged: "狙神", space: "太空律动", stargazer: "观星者", summon: "牧羊人",
   }[id] || id;
 }
 
@@ -499,6 +607,9 @@ function renderWoodlingDetail(comp) {
   left.append(numberPanel("适玩条件", woodlingDetail.conditions, "condition-panel"));
   left.append(numberPanel("放弃条件 / 风险", woodlingDetail.risks, "danger-panel"));
   const center = el("section", "center-column");
+  if (comp.image) {
+    center.append(renderOneflowImage(comp));
+  }
   center.append(renderBoardPanel(comp, woodlingDetail.boardUnits));
   center.append(renderTimeline());
   center.append(renderTwoUp());

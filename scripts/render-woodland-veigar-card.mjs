@@ -3,7 +3,12 @@ import { createRequire } from 'node:module';
 import path from 'node:path';
 
 const require = createRequire(import.meta.url);
-const sharp = require('sharp');
+let sharp = null;
+try {
+  sharp = require('sharp');
+} catch {
+  // PNG can be exported with Chrome headless when sharp is unavailable.
+}
 
 const ROOT = process.cwd();
 const CARD_WIDTH = 1600;
@@ -243,14 +248,14 @@ function boardSlots() {
 async function main() {
   const assets = await loadAssets();
   const champs = [
-    { id: 'poppy', name: '波比', cost: 1, star: '★★', x: 540, y: 330 },
-    { id: 'rammus', name: '拉莫斯', cost: 4, star: '★★', x: 716, y: 330, items: ['sunfire', 'bramble', 'ionic'] },
-    { id: 'fizz', name: '菲兹', cost: 3, star: '★★', x: 892, y: 330 },
-    { id: 'ivern', name: '小木灵', cost: 2, star: '★', x: 628, y: 434 },
-    { id: 'lissandra', name: '丽桑卓', cost: 1, star: '★★', x: 540, y: 538 },
-    { id: 'karma', name: '卡尔玛', cost: 4, star: '★', x: 892, y: 538 },
-    { id: 'corki', name: '库奇', cost: 4, star: '★★', x: 452, y: 642, items: ['lastWhisper', 'deathblade', 'guardbreaker'] },
+    { id: 'poppy', name: '波比', cost: 1, star: '★★', x: 452, y: 330 },
+    { id: 'ivern', name: '小木灵', cost: 2, star: '★', x: 628, y: 330 },
+    { id: 'rammus', name: '拉莫斯', cost: 4, star: '★★', x: 804, y: 330, items: ['sunfire', 'bramble', 'ionic'] },
+    { id: 'fizz', name: '菲兹', cost: 3, star: '★★', x: 980, y: 330 },
+    { id: 'lissandra', name: '丽桑卓', cost: 1, star: '★★', x: 452, y: 642 },
+    { id: 'corki', name: '库奇', cost: 4, star: '★★', x: 540, y: 642, items: ['lastWhisper', 'deathblade', 'guardbreaker'] },
     { id: 'veigar', name: '小法', cost: 1, star: '三星', x: 716, y: 642, items: ['nashor', 'jeweled', 'shojin'] },
+    { id: 'karma', name: '卡尔玛', cost: 4, star: '★', x: 892, y: 642 },
     { id: 'bard', name: '巴德', cost: 5, star: '★', x: 980, y: 642 },
   ];
   const compRow = [
@@ -408,7 +413,7 @@ async function main() {
     <text x="408" y="207" class="note">8 人口成型；9 人口补卡尔玛，上限更高。</text>
     ${compRow.map((champ, i) => miniChampCard(assets, champ, 420 + i * 70, 222)).join('\n')}
     <text x="650" y="320" class="sectionTitle">棋盘站位</text>
-    <text x="790" y="320" class="note">从上到下：前排 -> 后排；第三排可放保护位。</text>
+    <text x="790" y="320" class="note">纯前排默认第一排；常规后排默认第四排。</text>
     ${boardSlots()}
     ${champs.map(champ => champCard(assets, champ)).join('\n')}
 
@@ -470,8 +475,10 @@ async function main() {
 
   const cleanSvg = svg.replace(/[ \t]+$/gm, '');
   await writeFile(OUT_SVG, cleanSvg);
-  await sharp(Buffer.from(cleanSvg)).png().toFile(OUT_PNG);
-  console.log(JSON.stringify({ svg: OUT_SVG, png: OUT_PNG }, null, 2));
+  if (sharp) {
+    await sharp(Buffer.from(cleanSvg)).png().toFile(OUT_PNG);
+  }
+  console.log(JSON.stringify({ svg: OUT_SVG, png: sharp ? OUT_PNG : null }, null, 2));
 }
 
 main().catch(error => {

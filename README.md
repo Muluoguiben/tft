@@ -21,6 +21,7 @@
 - `docs/comps/` - 比赛训练阵容卡
 - `data/` - 阵容池、训练日志、数据复核表和 `data/s17/` 资源基线
 - `assets/` - 装备、弈子、羁绊、站位、阵容截图和 `assets/s17/` 本地图片素材
+- `scripts/render-meta-comp-cards.mjs` - 读取本地 S17 资源并生成 17.2 早期 OP / T1 / T2 阵容一图流 SVG
 - `templates/` - 单局复盘和训练模板
 - `templates/GPT-Image2-阵容图卡提示词.md` - 用 GPT Image2 生成最终阵容图卡的提示词模板
 
@@ -30,7 +31,7 @@
 
 日常备赛优先看这些 Markdown：
 
-1. 先打开 `index.html`，从 OP / T1 / T2 阵容梯度首页选择要练的阵容。
+1. 先打开 `index.html`，从 OP / T1 / T2 阵容梯度首页选择要练的阵容。当前 17.2 早期主练池已接入新星九五、机甲龙王、重装妖姬、观星霞、牧羊维克托、太空律动转、木灵飞机、机甲 Flex、海魔大卑、幻灵阿萝拉的一图流。
 2. 再看 `docs/三站交叉阵容推荐-2026-04-28.md`，确定今天主练哪些阵容。
 3. 需要细节时看 `docs/comps/` 下的单套阵容卡。
 4. 比赛当天看 `docs/competition-cheatsheet-2026-05.md`，只做临场决策。
