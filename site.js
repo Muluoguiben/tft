@@ -369,16 +369,34 @@ function el(tag, className, text) {
   return node;
 }
 
-function img(src, alt) {
+function previewAsset(src) {
+  if (!src) return src;
+  if (src.startsWith("./assets/s17/champions/")) {
+    return src.replace("./assets/s17/champions/", "./assets/s17/champions/preview/").replace(/\.png$/, ".jpg");
+  }
+  if (src.startsWith("./assets/s17/star-gods/")) {
+    return src.replace("./assets/s17/star-gods/", "./assets/s17/star-gods/preview/").replace(/\.png$/, ".jpg");
+  }
+  return src;
+}
+
+function compPreviewImage(comp) {
+  if (!comp.image) return "";
+  return comp.image.replace("./assets/comps/", "./assets/comps/preview/").replace(/\.png$/, ".jpg");
+}
+
+function img(src, alt, options = {}) {
   const node = document.createElement("img");
   node.src = src;
   node.alt = alt;
-  node.loading = "lazy";
+  node.loading = options.loading || "lazy";
+  node.decoding = "async";
+  if (options.fetchPriority) node.fetchPriority = options.fetchPriority;
   return node;
 }
 
 function iconForUnit(id) {
-  return assets.champions[id] || assets.traits.meeple;
+  return previewAsset(assets.champions[id]) || assets.traits.meeple;
 }
 
 function miniCard(unitId) {
@@ -479,12 +497,12 @@ function compCard(comp) {
   card.className = `comp-card tier-${comp.tier.toLowerCase()}`;
   card.href = `#/comp/${comp.id}`;
   card.innerHTML = `
-    <div class="comp-card-bg"><img src="${iconForUnit(comp.primary)}" alt="${comp.name}" /></div>
+    <div class="comp-card-bg"><img src="${iconForUnit(comp.primary)}" alt="${comp.name}" loading="lazy" decoding="async" /></div>
     <div class="comp-card-top">
       <span class="tier-chip">${comp.tier}</span>
       <span class="label-chip">${comp.label}</span>
     </div>
-    <div class="comp-card-traits">${comp.traits.map((id) => `<img src="${assets.traits[id]}" alt="${id}" />`).join("")}</div>
+    <div class="comp-card-traits">${comp.traits.map((id) => `<img src="${assets.traits[id]}" alt="${id}" loading="lazy" decoding="async" />`).join("")}</div>
     <div class="comp-card-name">${comp.name}</div>
     <div class="comp-card-rating">${comp.rating}</div>
   `;
@@ -548,14 +566,16 @@ function renderOneflowImage(comp) {
       <div class="section-heading">阵容一图流</div>
       <p class="muted">包含阵容组成、站位、装备、星神、运营节奏和风险点。</p>
     </div>
-    <a class="image-link" href="${comp.image}">查看大图</a>
+    <a class="image-link" href="${comp.image}">查看原图</a>
   `;
   panel.append(header);
   const link = document.createElement("a");
   link.href = comp.image;
   link.className = "oneflow-link";
-  const preview = img(comp.image, `${comp.name} 一图流`);
+  const preview = img(compPreviewImage(comp), `${comp.name} 一图流预览`);
   preview.className = "oneflow-image";
+  preview.width = 2200;
+  preview.height = 1265;
   link.append(preview);
   panel.append(link);
   return panel;
@@ -565,7 +585,7 @@ function detailHero(comp) {
   const hero = el("section", "hero-panel");
   hero.innerHTML = `
     <div class="comp-identity">
-      <img class="comp-avatar" src="${iconForUnit(comp.primary)}" alt="${comp.name}" />
+      <img class="comp-avatar" src="${iconForUnit(comp.primary)}" alt="${comp.name}" loading="eager" decoding="async" fetchpriority="high" />
       <div>
         <div class="eyebrow">${comp.label} / ${comp.tier}</div>
         <h1>${comp.name}</h1>
@@ -737,7 +757,7 @@ function renderStarGods(gods) {
   const root = el("div", "star-god-list");
   gods.forEach(([key, name, desc]) => {
     const row = el("div", "star-god-row");
-    row.append(img(assets.starGods[key], name));
+    row.append(img(previewAsset(assets.starGods[key]), name));
     row.append(el("div", "star-god-name", name));
     row.append(el("div", "star-god-desc", desc));
     root.append(row);
