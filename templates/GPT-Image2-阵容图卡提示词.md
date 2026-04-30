@@ -97,6 +97,7 @@ D 牌节奏：
 
 ## 保存规则
 
-- 生成后的最终图保存到 `assets/comps/阵容名-版本.png`。
+- 生成后的最终源图可以保存到 `assets/comps/阵容名-版本.png`。
+- 入站前必须导出 `assets/comps/preview/阵容名-版本.avif` 和 `assets/comps/full/阵容名-版本.avif`。
 - 如果有可编辑结构稿，保存为 `assets/comps/阵容名-版本.svg`。
-- 对应阵容卡顶部引用 PNG，不直接引用临时外链。
+- 对应阵容卡顶部优先引用高清 AVIF，不直接引用临时外链。

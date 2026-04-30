@@ -3,7 +3,7 @@
 适用版本：金铲铲 S17「星神」/ TFT Set 17 / 17.2 早期判断
 阵容定位：8 级锁血，装备 Flex，T2 稳定兜底。
 
-![机甲 Flex 一图流](../../assets/comps/full/mecha-flex-17.2-early.jpg)
+![机甲 Flex 一图流](../../assets/comps/full/mecha-flex-17.2-early.avif)
 
 ## 阵容组成
 
