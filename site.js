@@ -371,7 +371,7 @@ function el(tag, className, text) {
 
 function previewAsset(src) {
   if (!src) return src;
-  if (src.includes("/preview/")) return src;
+  if (src.includes("/preview/")) return src.replace(/\.(?:png|jpe?g)$/i, ".avif");
   if (src.startsWith("./assets/s17/champions/")) {
     return src.replace("./assets/s17/champions/", "./assets/s17/champions/preview/").replace(/\.png$/, ".avif");
   }
@@ -439,7 +439,7 @@ function picture(src, alt, options = {}) {
 }
 
 function iconForUnit(id) {
-  return previewAsset(assets.champions[id]) || assets.traits.meeple;
+  return previewAsset(assets.champions[id]) || previewAsset(assets.traits.meeple);
 }
 
 function miniCard(unitId) {
