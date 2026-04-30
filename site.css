@@ -558,6 +558,10 @@ p {
   border-color: var(--line-strong);
 }
 
+.oneflow-link picture {
+  display: block;
+}
+
 .oneflow-image {
   width: 100%;
   height: auto;

@@ -402,6 +402,14 @@ function compFullImage(comp) {
   return comp.image.replace("./assets/comps/", "./assets/comps/full/").replace(/\.png$/, ".jpg");
 }
 
+function imageExtension(src, extension) {
+  return src.replace(/\.(?:png|jpe?g)$/i, `.${extension}`);
+}
+
+function compFullImageAvif(comp) {
+  return imageExtension(compFullImage(comp), "avif");
+}
+
 function img(src, alt, options = {}) {
   const node = document.createElement("img");
   node.src = options.raw ? src : previewAsset(src);
@@ -409,6 +417,21 @@ function img(src, alt, options = {}) {
   node.loading = options.loading || "lazy";
   node.decoding = "async";
   if (options.fetchPriority) node.fetchPriority = options.fetchPriority;
+  return node;
+}
+
+function picture(src, alt, options = {}) {
+  const node = document.createElement("picture");
+  const source = document.createElement("source");
+  source.type = "image/avif";
+  source.srcset = imageExtension(src, "avif");
+  node.append(source);
+
+  const fallback = img(src, alt, { raw: true, loading: options.loading, fetchPriority: options.fetchPriority });
+  if (options.className) fallback.className = options.className;
+  if (options.width) fallback.width = options.width;
+  if (options.height) fallback.height = options.height;
+  node.append(fallback);
   return node;
 }
 
@@ -583,16 +606,17 @@ function renderOneflowImage(comp) {
       <div class="section-heading">阵容一图流</div>
       <p class="muted">包含阵容组成、站位、装备、星神、运营节奏和风险点。</p>
     </div>
-    <a class="image-link" href="${compFullImage(comp)}">查看高清图</a>
+    <a class="image-link" href="${compFullImageAvif(comp)}">查看高清图</a>
   `;
   panel.append(header);
   const link = document.createElement("a");
-  link.href = compFullImage(comp);
+  link.href = compFullImageAvif(comp);
   link.className = "oneflow-link";
-  const preview = img(compPreviewImage(comp), `${comp.name} 一图流预览`);
-  preview.className = "oneflow-image";
-  preview.width = 2200;
-  preview.height = 1265;
+  const preview = picture(compPreviewImage(comp), `${comp.name} 一图流预览`, {
+    className: "oneflow-image",
+    width: 2200,
+    height: 1265,
+  });
   link.append(preview);
   panel.append(link);
   return panel;
@@ -696,7 +720,7 @@ function renderBoardPanel(comp, units) {
       <div class="section-heading">阵容组成</div>
       <p class="muted">8 人口成型，9 人口补卡尔玛；棋盘从上到下是前排到后排。</p>
     </div>
-    <a class="image-link" href="./assets/comps/full/woodland-veigar-17.1b.jpg">查看高清图</a>
+    <a class="image-link" href="${compFullImageAvif(comp)}">查看高清图</a>
   `;
   panel.append(title);
   const row = el("div", "comp-row");
