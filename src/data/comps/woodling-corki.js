@@ -4,8 +4,6 @@
  * 注意：
  *   - .md 没标 star level；按默认规则：1-4 费 ★★，5 费 ★。
  *   - .md 行 13 核心羁绊："木灵族、堡垒卫士、旅人、织命者"，未给 count。
- *     "织命者" 在 src/data/assets.js traits 表里没有对应 id；TBD 暂用 flex 占位。
- *   - .md 没有 ## 星神选择 段，starGods 留空数组。
  *   - .md 装备段（行 36-38）三组装备分别落到库奇 / 拉莫斯 / 锐雯。
  */
 export default {
@@ -13,8 +11,7 @@ export default {
     { id: "meeple",  count: 3, name: "木灵族",   desc: "TBD：.md 未给 count，按 '3 木灵' 取 3", tiers: [3, 5, 7, 9] },
     { id: "bastion", count: 2, name: "堡垒卫士", desc: "TBD：.md 未给 count", tiers: [2, 4, 6] },
     { id: "flex",    count: 2, name: "旅人",     desc: "TBD：.md 未给 count", tiers: [2] },
-    // "织命者" 未在 traits 映射表，TBD：临时复用 flex
-    { id: "flex",    count: 2, name: "织命者",   desc: "TBD：织命者 trait id 未确认，临时复用 flex 资源", tiers: [2] },
+    { id: "fateweaver", count: 2, name: "织命者", desc: "TBD：.md 未给 count", tiers: [2, 4] },
   ],
   // 棋盘 9 单位。.md 行 14-19：
   //   前排 | 波比 . 拉莫斯 . 小木灵 . 菲兹
@@ -36,17 +33,24 @@ export default {
     { title: "拉莫斯：冕卫、日炎斗篷、石像鬼石板甲", items: [["crownguard", "冕卫"], ["sunfire", "日炎"], ["gargoyle", "板甲"]] },
     { title: "锐雯：饮血剑、泰坦的坚决、最后的轻语", items: [["bloodthirster", "饮血"], ["titan", "泰坦"], ["lastWhisper", "轻语"]] },
   ],
-  // .md 没有星神段，留空数组。
-  starGods: [],
+  starGods: [
+    ["varus",  "韦鲁斯", "木灵核心和四费质量都吃星级，胡牌局收益高"],
+    ["kayle",  "凯尔",   "补库奇输出装或拉莫斯坦装，立刻提战力"],
+    ["ekko",   "艾克",   "拆装修正库奇、拉莫斯、锐雯的装备分配"],
+    ["ahri",   "阿狸",   "高血高经济时上 9 补高费功能"],
+    ["soraka", "索拉卡", "低血止损，不继续贪四费三星"],
+  ],
   conditions: [
-    "3 木灵或木灵牌自然来得多。",
-    "有经济强化或连胜开局，能按快 8 节奏打。",
-    "库奇和拉莫斯装备至少各两件。",
-    "同行少，4-2 能搜到四费二星。",
+    "3 木灵或木灵牌自然来得多，并且有经济强化或连胜开局。",
+    "能按快 8 节奏打，4-2 有钱搜库奇和拉莫斯。",
+    "库奇和拉莫斯装备至少各两件，不为了完美装拖战力。",
+    "TFTFlow 条件线给得高，但 OP.GG 当前同名数据偏弱；只在牌、装备、强化同时满足时玩。",
+    "同行少，4-2 能搜到库奇 / 拉莫斯二星或接近二星。",
   ],
   risks: [
     "没有木灵底座时不要强玩。",
     "库奇没启动装，伤害不够锁血。",
     "拉莫斯一星或无肉装，前排会塌。",
+    "如果 4-2 搜不到框架，优先转机甲 Flex、妖姬卡尔玛或新星九五。",
   ],
 };

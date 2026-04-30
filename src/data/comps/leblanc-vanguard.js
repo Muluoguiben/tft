@@ -4,16 +4,12 @@
  * 注意：
  *   - .md 没标 star level；按默认规则：1-4 费 ★★，5 费 ★。
  *   - .md 行 18 列出"4 重装战士、3 法官、3 牧羊人、2 神谕"。
- *     "法官" 在 src/data/assets.js traits 表里没有对应 id；
- *     fallback 到最近的功能羁绊 mana(神谕)，并在 desc 里注明 TBD。
- *     当 traits 表更新时需要修正。
  *   - .md 装备段（行 42-44）只列出三组装备，棋盘上对应单位写到 items。
  */
 export default {
   traits: [
     { id: "shieldTank", count: 4, name: "重装战士", desc: "", tiers: [2, 4, 6] },
-    // "法官" 未在 traits 映射表，TBD：暂用 mana 占位
-    { id: "mana",       count: 3, name: "法官",     desc: "TBD：法官 trait id 未确认，临时复用 mana 资源", tiers: [3] },
+    { id: "arbiter",    count: 3, name: "法官",     desc: "", tiers: [3] },
     { id: "summon",     count: 3, name: "牧羊人",   desc: "", tiers: [3] },
     { id: "mana",       count: 2, name: "神谕",     desc: "", tiers: [2, 4, 6] },
   ],
@@ -47,11 +43,13 @@ export default {
     "4-2 有足够金币上 8 大搜。",
     "重装牌来得顺，前排能二星。",
     "乐芙兰和卡尔玛同行少。",
+    "当前多来源对同名阵容评价分歧较大，比赛里更适合作为 AP 装兜底线。",
   ],
   risks: [
     "无 AP 装或前排不成。",
     "4-2 搜不到乐芙兰二星且血量低。",
     "乐芙兰、卡尔玛被多人卡。",
     "后排站位被切入或范围控制针对。",
+    "如果 OP.GG 同名数据继续偏低，不把它作为主练阵容。",
   ],
 };

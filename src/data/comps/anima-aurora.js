@@ -4,7 +4,6 @@
  * 注意：
  *   - .md 没标 star level；按默认规则：1-4 费 ★★，5 费 ★。
  *   - .md 行 13 核心羁绊："幻灵战队、重装战士、牧羊人、法官"，未给 count。
- *     "法官" 在 src/data/assets.js traits 表里没有对应 id；TBD 复用 mana 占位。
  *   - .md 行 36 阿萝拉装备 "炽烈短弓" 在 items 映射表里没有对应 id；
  *     按用户指引 fallback 到 sterak（站点渲染时的 fallback 短名）。
  *   - .md 没有 ## 星神选择 段，starGods 留空数组。
@@ -15,8 +14,7 @@ export default {
     { id: "anima",      count: 3, name: "幻灵战队", desc: "TBD：.md 未给 count，按 '3 幻灵' 取 3", tiers: [3, 5, 7] },
     { id: "shieldTank", count: 2, name: "重装战士", desc: "TBD：.md 未给 count", tiers: [2, 4, 6] },
     { id: "summon",     count: 2, name: "牧羊人",   desc: "TBD：.md 未给 count", tiers: [3] },
-    // "法官" 未在 traits 映射表，TBD：临时复用 mana
-    { id: "mana",       count: 2, name: "法官",     desc: "TBD：法官 trait id 未确认，临时复用 mana 资源", tiers: [3] },
+    { id: "arbiter",    count: 2, name: "法官",     desc: "TBD：.md 未给 count", tiers: [3] },
   ],
   // 棋盘 8 单位。.md 行 14-19：
   //   前排 | . 蕾欧娜 小木灵 俄洛伊 . 努努 .
@@ -39,8 +37,12 @@ export default {
     { title: "俄洛伊：石像鬼石板甲、振奋盔甲、狂徒铠甲", items: [["gargoyle", "板甲"], ["redemption", "救赎"], ["warmog", "狂徒"]] },
     { title: "黛安娜：饮血剑、泰坦的坚决、冕卫", items: [["bloodthirster", "饮血"], ["titan", "泰坦"], ["crownguard", "冕卫"]] },
   ],
-  // .md 没有星神段，留空数组。
-  starGods: [],
+  starGods: [
+    ["soraka", "索拉卡", "收菜线容错低，低血优先止损"],
+    ["varus",  "韦鲁斯", "追核心星级和复制器"],
+    ["kayle",  "凯尔",   "补阿萝拉法装或前排装"],
+    ["ekko",   "艾克",   "拆装修正收菜后的装备分配"],
+  ],
   conditions: [
     "开局 3 幻灵或 3-2 前明确连败条件。",
     "阿萝拉装备能成型，前排有二星。",

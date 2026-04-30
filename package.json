@@ -8,6 +8,7 @@
     "build": "npm run lint:data && vite build && npm run copy:static",
     "copy:static": "node scripts/copy-vite-static.mjs",
     "lint:data": "node scripts/lint-comp-data.mjs",
+    "render:cards": "node scripts/render-meta-comp-cards.mjs && node scripts/export-comp-card-images.mjs",
     "preview": "vite preview"
   },
   "dependencies": {

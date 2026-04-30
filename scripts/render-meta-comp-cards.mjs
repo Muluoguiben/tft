@@ -2,7 +2,7 @@ import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import path from 'node:path';
 
 const ROOT = process.cwd();
-const OUT_DIR = path.join(ROOT, 'assets/comps');
+const OUT_DIR = path.join(ROOT, '.tmp/comp-card-svgs');
 const CARD_WIDTH = 1600;
 const CARD_HEIGHT = 920;
 const OUTPUT_SCALE = 4;
@@ -31,11 +31,11 @@ const COMPS = [
     id: 'nova-95',
     title: '新星九五',
     emblem: '新星特攻队',
-    tier: 'OP',
-    rating: 'A',
-    position: '运营九五 / 高血经济局冲冠',
-    headline: '高血量上 9 后用五费质量压制，前四率和登顶率兼顾。',
-    subtitle: '17.2 经济更紧，优势局才贪上限；劣势局 4-2 先锁血。',
+    tier: 'T1',
+    rating: 'A-',
+    position: '高血速 9 / 优势局上限',
+    headline: '只有高血量高经济才冲 9，用五费质量压制终盘。',
+    subtitle: '17.2 经济更紧，低血局不要强行贪九五；4-2 先锁血。',
     traits: [
       { name: '新星特攻队', count: 5, desc: '凯特琳、亚托克斯、阿卡丽、茂凯、千珏', marks: [2, 5] },
       { name: '堡垒卫士', count: 2, desc: '亚托克斯 + 慎，补前排抗性', marks: [2, 4, 6] },
@@ -155,11 +155,11 @@ const COMPS = [
     id: 'leblanc-vanguard',
     title: '重装妖姬',
     emblem: '重装战士',
-    tier: 'T1',
-    rating: 'A-',
-    position: 'AP 四费运营 / 4-2 锁血',
-    headline: '妖姬和卡尔玛吃 17.2 加强，AP 装局优先级上升。',
-    subtitle: '主线是 8 级大搜四费质量，不是硬等九五。',
+    tier: 'T2',
+    rating: 'B+',
+    position: 'AP 四费兜底 / 4-2 锁血',
+    headline: 'AP 装兜底线，前排和妖姬质量顺时能稳住中期。',
+    subtitle: '多来源数据有分歧，比赛里不要把它当默认主练。',
     traits: [
       { name: '重装战士', count: 4, desc: '蕾欧娜、铁男、俄洛伊、努努', marks: [2, 4, 6] },
       { name: '法官', count: 3, desc: '蕾欧娜、佐伊、乐芙兰', marks: [2, 3] },
@@ -217,11 +217,11 @@ const COMPS = [
     id: 'stargazer-xayah',
     title: '观星霞',
     emblem: '观星者',
-    tier: 'T1',
-    rating: 'A-',
-    position: '物理四费运营 / 观星格上限',
-    headline: '强观星效果 + 霞装备齐时，前四和吃鸡能力都足够。',
-    subtitle: '观星效果差或格子危险时，不要硬玩。',
+    tier: 'OP',
+    rating: 'A',
+    position: '高登顶物理 / 观星格上限',
+    headline: '强观星效果 + 霞装备齐时，是当前冲冠军物理主线。',
+    subtitle: '必须有攻速、破甲和安全格子；观星效果差时直接转线。',
     traits: [
       { name: '观星者', count: 3, desc: '璐璐、努努、霞；看星座效果进场', marks: [3, 4, 5, 6] },
       { name: '狙神', count: 2, desc: '霞 + 烬，拉距离补伤害', marks: [2, 3, 4] },
@@ -280,11 +280,11 @@ const COMPS = [
     id: 'shepherd-viktor',
     title: '牧羊维克托',
     emblem: '牧羊人',
-    tier: 'T1',
-    rating: 'B+',
-    position: '条件 AP / 低同行质量局',
-    headline: '17.2 维克托被削后不能无脑玩，但胡装备和低同行仍能冲名次。',
-    subtitle: '核心是 4-2 找维克托二星和前排，不是盲目追三星。',
+    tier: 'OP',
+    rating: 'A-',
+    position: '高前四 AP / 低同行质量局',
+    headline: '当前公开数据前四率突出，AP 装局优先作为稳定主线。',
+    subtitle: '仍然要看维克托装备、前排质量和同行，不能无脑硬玩。',
     traits: [
       { name: '牧羊人', count: 3, desc: '丽桑卓、小木灵、俄洛伊', marks: [3, 5, 7] },
       { name: '神谕', count: 3, desc: '莫德凯撒、维克托、巴德', marks: [2, 3, 4, 5] },
@@ -322,7 +322,7 @@ const COMPS = [
       '有灵能/无人机/装备类条件再提高优先级。',
     ],
     risks: [
-      '17.2 维克托被削，无装备不要强玩。',
+      '无 AP 装或前排不成时不要强玩。',
       '前排弱时维克托放不出第二轮技能。',
       '同行卡维克托或俄洛伊，必须及时转阵。',
     ],
@@ -532,10 +532,10 @@ const COMPS = [
     id: 'sea-belveth',
     title: '海魔大卑',
     emblem: '海魔人',
-    tier: 'T2',
-    rating: 'B',
-    position: '条件赌阵 / 低费胡牌',
-    headline: '只有胡牌、装备和同行都满足时才玩，目标先锁前四。',
+    tier: 'OP',
+    rating: 'A-',
+    position: '稳定赌阵 / 胡牌进场',
+    headline: '胡牌、装备和同行同时满足时，前四率和登顶率都能看。',
     subtitle: '赌阵不是默认路线；不胡要及时转新星或四费拼。',
     traits: [
       { name: '海魔人', count: 3, desc: '雷克塞、贝蕾亚、卑尔维斯', marks: [3, 5] },

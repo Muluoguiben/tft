@@ -399,10 +399,11 @@ function textPanel(title, lines, className = "") {
 
 function traitName(id) {
   return {
-    anima: "幻灵战队", bastion: "堡垒卫士", darkStar: "暗星", drx: "新星特攻队",
+    anima: "幻灵战队", arbiter: "法官", bastion: "堡垒卫士", challenger: "挑战者",
+    darkStar: "暗星", drx: "新星特攻队", fateweaver: "织命者",
     flex: "旅人", hptank: "斗士", magician: "魔术师", mana: "神谕", melee: "狂战士", mecha: "霸天机甲", meeple: "木灵族",
-    primordian: "海魔人", psyops: "灵能特工", shieldTank: "重装战士",
-    ranged: "狙神", space: "太空律动", stargazer: "观星者", summon: "牧羊人",
+    primordian: "海魔人", psyops: "灵能特工", rogue: "游侠", shieldTank: "重装战士",
+    ranged: "狙神", space: "太空律动", stargazer: "观星者", summon: "牧羊人", timebreaker: "未来战士",
   }[id] || id;
 }
 
