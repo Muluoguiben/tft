@@ -8,28 +8,9 @@
       name="description"
       content="TFT / 金铲铲 S17 阵容静态站，按 OP、T1、T2 展示阵容，并提供站位、装备、星神和运营思路详情。"
     />
-    <link rel="stylesheet" href="./site.css" />
   </head>
   <body>
-    <header class="topbar">
-      <a class="brand" href="#/">
-        <span class="brand-mark" aria-hidden="true">T</span>
-        <div>
-          <div class="brand-title">TFT 阵容库</div>
-          <div class="brand-subtitle">金铲铲 S17「星神」 / TFT Set 17 / 17.2 早期判断</div>
-        </div>
-      </a>
-      <nav class="nav">
-        <a href="#/">梯度首页</a>
-        <a href="#/tier/OP">OP</a>
-        <a href="#/tier/T1">T1</a>
-        <a href="#/tier/T2">T2</a>
-        <a href="./docs/静态站点部署.md">部署说明</a>
-      </nav>
-    </header>
-
-    <main id="app" class="page-shell"></main>
-
-    <script src="./site.js" defer></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

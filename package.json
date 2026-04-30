@@ -1,0 +1,21 @@
+{
+  "name": "tft-comp-library",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run lint:data && vite build && npm run copy:static",
+    "copy:static": "node scripts/copy-vite-static.mjs",
+    "lint:data": "node scripts/lint-comp-data.mjs",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.0"
+  }
+}
