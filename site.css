@@ -59,12 +59,20 @@ img {
   text-decoration: none;
 }
 
-.brand img {
+.brand-mark {
   width: 42px;
   height: 42px;
+  display: grid;
+  place-items: center;
   border: 2px solid var(--line-strong);
   border-radius: 50%;
-  background: #061111;
+  background:
+    radial-gradient(circle at 50% 35%, rgba(244, 191, 102, .22), transparent 44%),
+    #061111;
+  color: var(--gold-soft);
+  font-size: 25px;
+  font-weight: 1000;
+  line-height: 1;
 }
 
 .brand-title {
@@ -273,13 +281,19 @@ img {
   margin-left: 10px;
 }
 
-.comp-card-traits img {
+.comp-card-traits span {
   width: 28px;
   height: 28px;
-  object-fit: contain;
+  display: grid;
+  place-items: center;
   border: 1px solid rgba(244,191,102,.7);
   border-radius: 4px;
   background: rgba(0,0,0,.55);
+  color: #fff1c7;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1;
+  text-shadow: 0 1px 2px #000;
 }
 
 .comp-card-name {

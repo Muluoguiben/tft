@@ -373,13 +373,16 @@ function previewAsset(src) {
   if (!src) return src;
   if (src.includes("/preview/")) return src;
   if (src.startsWith("./assets/s17/champions/")) {
-    return src.replace("./assets/s17/champions/", "./assets/s17/champions/preview/").replace(/\.png$/, ".jpg");
+    return src.replace("./assets/s17/champions/", "./assets/s17/champions/preview/").replace(/\.png$/, ".avif");
   }
   if (src.startsWith("./assets/s17/items/")) {
-    return src.replace("./assets/s17/items/", "./assets/s17/items/preview/").replace(/\.png$/, ".jpg");
+    return src.replace("./assets/s17/items/", "./assets/s17/items/preview/").replace(/\.png$/, ".avif");
+  }
+  if (src.startsWith("./assets/s17/traits/")) {
+    return src.replace("./assets/s17/traits/", "./assets/s17/traits/preview/").replace(/\.png$/, ".avif");
   }
   if (src.startsWith("./assets/s17/star-gods/")) {
-    return src.replace("./assets/s17/star-gods/", "./assets/s17/star-gods/preview/").replace(/\.png$/, ".jpg");
+    return src.replace("./assets/s17/star-gods/", "./assets/s17/star-gods/preview/").replace(/\.png$/, ".avif");
   }
   return src;
 }
@@ -536,13 +539,19 @@ function compCard(comp) {
   const card = document.createElement("a");
   card.className = `comp-card tier-${comp.tier.toLowerCase()}`;
   card.href = `#/comp/${comp.id}`;
+  const traitTags = comp.traits
+    .map((id) => {
+      const name = traitName(id);
+      return `<span title="${name}">${name.slice(0, 2)}</span>`;
+    })
+    .join("");
   card.innerHTML = `
     <div class="comp-card-bg"><img src="${iconForUnit(comp.primary)}" alt="${comp.name}" loading="lazy" decoding="async" /></div>
     <div class="comp-card-top">
       <span class="tier-chip">${comp.tier}</span>
       <span class="label-chip">${comp.label}</span>
     </div>
-    <div class="comp-card-traits">${comp.traits.map((id) => `<img src="${assets.traits[id]}" alt="${id}" loading="lazy" decoding="async" />`).join("")}</div>
+    <div class="comp-card-traits" aria-label="${comp.traits.map(traitName).join("、")}">${traitTags}</div>
     <div class="comp-card-name">${comp.name}</div>
     <div class="comp-card-rating">${comp.rating}</div>
   `;

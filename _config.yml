@@ -5,6 +5,10 @@ exclude:
   - templates
   - assets/s17/abilities
   - assets/s17/champions/*.png
+  - assets/s17/champions/preview/*.jpg
   - assets/s17/items/*.png
+  - assets/s17/items/preview/*.jpg
+  - assets/s17/traits/*.png
   - assets/s17/star-gods/*.png
   - assets/s17/star-gods/*.jpg
+  - assets/s17/star-gods/preview/*.jpg
