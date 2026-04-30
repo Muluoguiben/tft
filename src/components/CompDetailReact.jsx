@@ -177,6 +177,46 @@ function StarGodsPanel({ starGods }) {
   );
 }
 
+function AugmentsPanel({ augments }) {
+  if (!augments?.length) return null;
+  return (
+    <section className="panel">
+      <div className="section-heading">推荐海克斯</div>
+      <div className="recommend-list">
+        {augments.map((augment, i) => (
+          <div key={i} className="recommend-row">
+            <span className="recommend-type">{augment.type}</span>
+            <div>
+              <div className="recommend-name">{augment.name}</div>
+              {augment.note && <div className="recommend-note">{augment.note}</div>}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function EmblemsPanel({ emblems }) {
+  if (!emblems?.length) return null;
+  return (
+    <section className="panel">
+      <div className="section-heading">纹章 / 转职</div>
+      <div className="recommend-list">
+        {emblems.map((emblem, i) => (
+          <div key={i} className="recommend-row">
+            <img src={previewAsset(assets.traits[emblem.trait])} alt={emblem.name} loading="lazy" />
+            <div>
+              <div className="recommend-name">{emblem.name}</div>
+              {emblem.note && <div className="recommend-note">{emblem.note}</div>}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function ConditionPanel({ title, items, className = "" }) {
   if (!items?.length) return null;
   return (
@@ -258,6 +298,8 @@ export default function CompDetailReact({ compId }) {
       <BoardPanel comp={comp} detail={detail} />
       <TraitsPanel traits={detail.traits} />
       <BuildsPanel builds={detail.builds} />
+      <AugmentsPanel augments={comp.augments} />
+      <EmblemsPanel emblems={comp.emblems} />
       <ConditionPanel title="适玩条件" items={detail.conditions} className="condition-panel" />
       <ConditionPanel title="放弃条件 / 风险" items={detail.risks} className="danger-panel" />
       <StarGodsPanel starGods={detail.starGods} />

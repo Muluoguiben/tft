@@ -849,7 +849,8 @@ p {
 }
 
 .build-list,
-.star-god-list {
+.star-god-list,
+.recommend-list {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -943,6 +944,49 @@ p {
 }
 
 .star-god-note {
+  color: #dce4e6;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.recommend-row {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #293b3a;
+  border-radius: 8px;
+  background: rgba(4, 12, 14, 0.84);
+}
+
+.recommend-row img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  justify-self: center;
+}
+
+.recommend-type {
+  display: inline-grid;
+  place-items: center;
+  min-width: 58px;
+  height: 28px;
+  border: 1px solid #66b3ef;
+  border-radius: 8px;
+  color: #d9f1ff;
+  background: rgba(72, 150, 214, 0.18);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.recommend-name {
+  color: #ffe2a3;
+  font-weight: 900;
+}
+
+.recommend-note {
+  margin-top: 3px;
   color: #dce4e6;
   font-size: 13px;
   font-weight: 800;

@@ -1,5 +1,5 @@
 import { existsSync, mkdirSync, readdirSync, statSync } from "node:fs";
-import { rm } from "node:fs/promises";
+import { rm, writeFile } from "node:fs/promises";
 import { dirname, join, parse } from "node:path";
 import { spawn, spawnSync } from "node:child_process";
 import { fileURLToPath, pathToFileURL } from "node:url";
@@ -11,7 +11,7 @@ const previewDir = join(repoRoot, "assets/comps/preview");
 const tmpDir = join(repoRoot, ".tmp/comp-card-export");
 const chromePath = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
 
-const fullSize = "3000:1725";
+const fullSize = "3000:-2";
 const previewSize = "1500:-2";
 
 mkdirSync(fullDir, { recursive: true });
@@ -22,7 +22,7 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-async function waitForScreenshot(file, timeoutMs = 30000) {
+async function waitForScreenshot(file, timeoutMs = 60000) {
   const started = Date.now();
   let lastSize = -1;
   let stableCount = 0;
@@ -43,7 +43,31 @@ async function waitForScreenshot(file, timeoutMs = 30000) {
 async function chromeScreenshot(svgPath, pngPath, name) {
   await rm(pngPath, { force: true });
   const profileDir = join(tmpDir, `chrome-profile-${name}`);
+  const htmlPath = join(tmpDir, `${name}.html`);
   await rm(profileDir, { recursive: true, force: true });
+  await writeFile(htmlPath, `<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+        background: #101418;
+      }
+      img {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="${pathToFileURL(svgPath).href}" alt="">
+  </body>
+</html>`);
   const proc = spawn(chromePath, [
     "--headless=new",
     "--disable-gpu",
@@ -60,8 +84,8 @@ async function chromeScreenshot(svgPath, pngPath, name) {
     "--virtual-time-budget=1000",
     `--user-data-dir=${profileDir}`,
     `--screenshot=${pngPath}`,
-    "--window-size=6400,3680",
-    pathToFileURL(svgPath).href,
+    "--window-size=3200,2160",
+    pathToFileURL(htmlPath).href,
   ], { stdio: "ignore" });
 
   try {

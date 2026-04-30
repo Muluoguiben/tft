@@ -1,11 +1,12 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import path from 'node:path';
+import { pathToFileURL } from 'node:url';
 
 const ROOT = process.cwd();
 const OUT_DIR = path.join(ROOT, '.tmp/comp-card-svgs');
 const CARD_WIDTH = 1600;
-const CARD_HEIGHT = 920;
-const OUTPUT_SCALE = 4;
+const CARD_HEIGHT = 1080;
+const OUTPUT_SCALE = 2;
 
 const COST_COLORS = {
   1: '#7bbf77',
@@ -24,6 +25,152 @@ const STAR_GODS = {
   '阿狸': 'assets/s17/star-gods/阿狸__TFT16_Ahri.png',
   '奥瑞利安·索尔': 'assets/s17/star-gods/奥瑞利安·索尔__TFT16_AurelionSol.png',
   '伊芙琳': 'assets/s17/star-gods/伊芙琳__TFT4_Evelynn.png',
+};
+
+const RECOMMENDATIONS = {
+  'nova-95': {
+    augments: [
+      ['经济', '储蓄账户 / Hedge Fund', '高血上 9 的核心'],
+      ['节奏', 'Money Monsoon / Upward Mobility', '加速 8/9 节奏'],
+      ['战力', 'Late Game Scaling / Just Hit', '后期补质量'],
+      ['装备', 'Max Build / 通用装备类', '修正双 C 装备'],
+    ],
+    emblems: [
+      ['新星特攻队', '给塔姆/慎/五费，开 7 新星上限'],
+      ['堡垒卫士', '给高费前排，补抗性和容错'],
+      ['斗士', '给慎/五费前排，撑血量'],
+    ],
+  },
+  'mecha-asol': {
+    augments: [
+      ['条件', 'Ahri’s Aura / Feeling Lucky', '经济好时冲 6 机甲'],
+      ['经济', '储蓄账户 / AFK', '快 8 后仍有钱搜'],
+      ['战力', 'Climb The Ladder / Charge Transfer', '补中期强度'],
+      ['装备', 'Gold Collector / 光明法装', '补龙王和机甲装'],
+    ],
+    emblems: [
+      ['霸天机甲', '优先给龙王/烬，稳定开 6 机甲'],
+      ['暗星', '给龙王或副 C，补终盘伤害'],
+      ['斗士', '给超级机甲/前排，提高锁血'],
+    ],
+  },
+  'leblanc-vanguard': {
+    augments: [
+      ['经济', 'Money Monsoon / Hedge Fund', '保证 4-2 大搜质量'],
+      ['节奏', 'Upward Mobility / Late Game Specialist', '稳血后上 9'],
+      ['装备', 'Statikk Shiv / AP 装备类', '补魔抗削减和启动'],
+      ['战力', 'Late Game Scaling / 战斗类', '弥补 T2 下限'],
+    ],
+    emblems: [
+      ['重装战士', '给乐芙兰/卡尔玛外单位，开 6 重装'],
+      ['法官', '给卡尔玛/努努，补法官收益'],
+      ['牧羊人', '给卡尔玛/娜美，补前四稳定性'],
+    ],
+  },
+  'stargazer-xayah': {
+    augments: [
+      ['条件', 'Battle Bunny Crossbow / 物理神器', '霞上限条件'],
+      ['经济', '储蓄账户 / Feeling Lucky', '高血上 9 补烬'],
+      ['战力', 'Speedy Double Kill / 物理战力', '提升收割能力'],
+      ['装备', 'Backline Blueprint / 物理装备类', '保护后排输出'],
+    ],
+    emblems: [
+      ['观星者', '给烬/巴德，开 4/5 观星上限'],
+      ['狙神', '给副 C，补后排伤害'],
+      ['重装战士', '给慎/前排，保护霞启动'],
+    ],
+  },
+  'shepherd-viktor': {
+    augments: [
+      ['战力', 'Arcane Viktor-y / 珠光类', '维克托直接吃收益'],
+      ['装备', 'Pandora’s Items / AP 装备类', '修正法装和前排装'],
+      ['经济', 'Epic Rolldown / Feeling Lucky', '4-2 搜核心二星'],
+      ['容错', 'Healing Orbs / Partial Ascension', '前排不足时补续航'],
+    ],
+    emblems: [
+      ['牧羊人', '给维克托/娜美，冲 5/7 牧羊'],
+      ['灵能特工', '给娜美/副 C，补技能爆发'],
+      ['神谕', '给功能牌，提升技能频率'],
+    ],
+  },
+  'space-riven': {
+    augments: [
+      ['必需', '太空律动转 / Voyager Emblem', '没转职不优先玩'],
+      ['战力', 'Flickerblades / Radiant Guinsoo', '锐雯/易启动'],
+      ['经济', 'Epic Rolldown / Feeling Lucky', '8 级找四费二星'],
+      ['防线', 'Frontline Foundation / Hold the Line', '前排质量优先'],
+    ],
+    emblems: [
+      ['太空律动', '优先给锐雯/易，是进阵条件'],
+      ['狂战士', '给副 C，提高近战爆发'],
+      ['堡垒卫士', '给塔姆/高费前排，补坦度'],
+    ],
+  },
+  'woodling-corki': {
+    augments: [
+      ['条件', 'Gold Collector / 光明物理装', '库奇上限来源'],
+      ['经济', '储蓄账户 / Money Hungry', '快 8 找库奇拉莫斯'],
+      ['装备', 'Backline Blueprint / 装备类', '补库奇三件套'],
+      ['战力', 'Frontline Foundation / 战斗类', '拉莫斯先站住'],
+    ],
+    emblems: [
+      ['木灵族', '给非木灵高费，冲 7 木灵'],
+      ['织命者', '给副 C，补暴击和输出'],
+      ['堡垒卫士', '给高费前排，保护库奇'],
+    ],
+  },
+  'mecha-flex': {
+    augments: [
+      ['经济', '储蓄账户 / AFK', '给 8 级大搜预算'],
+      ['装备', '装备重随 / 光明装备类', '谁二星谁吃装'],
+      ['战力', 'Charge Transfer / Climb The Ladder', '中期锁血'],
+      ['转线', 'Trait Tree / Branching Out', '补机甲或暗星上限'],
+    ],
+    emblems: [
+      ['霸天机甲', '能转 6 机甲就升为龙王线'],
+      ['暗星', '给龙王/卡尔玛，补后期伤害'],
+      ['狂战士', '给易/厄加特，补近战输出'],
+    ],
+  },
+  'sea-belveth': {
+    augments: [
+      ['条件', 'Mittens / Missed Connections', '大卑胡牌才玩'],
+      ['装备', 'Radiant Giant Slayer / Wit’s End', '补大卑输出'],
+      ['战力', 'Kayle’s Exaltation / Crown of Demacia', '即时战力优先'],
+      ['D牌', 'On a Roll / Prismatic Ticket', '追核心质量'],
+    ],
+    emblems: [
+      ['海魔人', '给阿卡丽/千珏，冲 5 海魔'],
+      ['游侠', '给副 C，补收割和切入'],
+      ['新星特攻队', '给卑尔维斯/前排，补新星层级'],
+    ],
+  },
+  'anima-aurora': {
+    augments: [
+      ['条件', 'Anima Commander / 经济收菜', '只在幻灵开局进'],
+      ['D牌', 'Patience is a Virtue / Prismatic Ticket', '找阿萝拉和前排'],
+      ['装备', 'AP 装备类 / 光明法装', '保证阿萝拉能收菜'],
+      ['容错', 'Tiny Titans / 索拉卡类', '低血防第七第八'],
+    ],
+    emblems: [
+      ['幻灵战队', '给乐芙兰/俄洛伊，冲高幻灵'],
+      ['重装战士', '给阿萝拉外单位，补前排'],
+      ['法官', '给阿萝拉/卡尔玛，补法系收益'],
+    ],
+  },
+  'woodland-veigar': {
+    augments: [
+      ['最强', '值得等待：小法/波比', '直接抬到高上限'],
+      ['D牌', '攀阶 / Prismatic Ticket', '帮助追小法三星'],
+      ['经济', '储蓄账户 / AFK / Money Hungry', '快 8 找 7 木灵'],
+      ['装备', '阿狸光环 / Gold Collector', '补小法和库奇装备'],
+    ],
+    emblems: [
+      ['木灵族', '给卡尔玛/巴德，冲 7/9 木灵'],
+      ['魔术师', '给库奇/卡尔玛，补小法输出'],
+      ['暗星', '给小法/库奇，补后期伤害'],
+    ],
+  },
 };
 
 const COMPS = [
@@ -652,10 +799,74 @@ const COMPS = [
     ],
     pivot: '收菜失败转重装妖姬；前排胡转机甲 Flex。',
   },
+  {
+    id: 'woodland-veigar',
+    title: '木灵小法师',
+    emblem: '木灵族',
+    tier: 'T2',
+    rating: 'C+',
+    position: '7木灵 / 条件快 8',
+    headline: '木灵/AP 胡牌线，不是默认 5 级硬赌小法。',
+    subtitle: '关键是 4-2/4-5 上 8 找 7 木灵，用克隆格自然追三星。',
+    traits: [
+      { name: '木灵族', count: 7, desc: '主羁绊，克隆格做三星小法', marks: [3, 5, 7, 9] },
+      { name: '魔术师', count: 2, desc: '小法 + 丽桑卓', marks: [2, 4, 6] },
+      { name: '暗星', count: 2, desc: '丽桑卓 + 卡尔玛', marks: [2, 4, 6, 9] },
+      { name: '旅人', count: 2, desc: '小木灵 + 卡尔玛', marks: [2] },
+      { name: '堡垒卫士', count: 2, desc: '波比 + 拉莫斯', marks: [2, 4, 6] },
+    ],
+    row: ['波比', '小木灵', '拉莫斯', '菲兹', '丽桑卓', '库奇', '小法', '卡尔玛', '巴德'],
+    board: [
+      unit('波比', 1, 1, 1),
+      unit('小木灵', 2, 1, 3),
+      unit('拉莫斯', 4, 1, 5, ['日炎斗篷', '棘刺背心', '离子火花']),
+      unit('菲兹', 3, 1, 7),
+      unit('丽桑卓', 1, 4, 1),
+      unit('库奇', 4, 4, 2, ['最后的轻语', '死亡之刃', '破防者']),
+      unit('小法', 1, 4, 4, ['纳什之牙', '珠光护手', '朔极之矛']),
+      unit('卡尔玛', 4, 4, 6),
+      unit('巴德', 5, 4, 7),
+    ],
+    builds: [
+      { title: '小法：纳什 + 法爆 + 青龙刀', items: ['纳什之牙', '珠光护手', '朔极之矛'] },
+      { title: '库奇：轻语 + 杀人剑 + 破防', items: ['最后的轻语', '死亡之刃', '破防者'] },
+      { title: '拉莫斯：日炎 + 反甲 + 离子', items: ['日炎斗篷', '棘刺背心', '离子火花'] },
+    ],
+    starGods: [
+      ['韦鲁斯', '首选：三星/复制器'],
+      ['凯尔', '补装备，抬上限'],
+      ['亚索', '格子好才选'],
+      ['艾克', '拆装/突变'],
+      ['索拉卡', '低血止损'],
+    ],
+    conditions: [
+      '木灵/AP 开局，小法或波比自然来得多。',
+      '能早合纳什、法爆、青龙刀等启动装。',
+      '4-2 或 4-5 上 8 找 7 木灵框架。',
+      '有值得等待、攀阶、复制器、D 牌或经济强化。',
+    ],
+    risks: [
+      '在 5/6 级硬 D 到经济崩。',
+      '没有 7 木灵框架还继续空等小法三星。',
+      '装备明显偏物理，无法做小法启动装。',
+    ],
+    timeline: [
+      ['2 阶段', '木灵/AP 打工，优先保血和经济。'],
+      ['3-2', '不为一张小法乱搜，保持快 8 节奏。'],
+      ['4-2', '上 8 找 7 木灵和拉莫斯/库奇质量。'],
+      ['后期', '用克隆格追三星小法，上 9 补卡尔玛/巴德。'],
+    ],
+    tips: [
+      '拉莫斯和波比第一排，确保小法有启动时间。',
+      '小法、库奇、巴德分散第四排，防范围伤害。',
+      '自然小法不多时不要硬赌，优先转木灵飞机。',
+    ],
+    pivot: '小法不胡转木灵飞机；法装多可转重装妖姬。',
+  },
 ];
 
-function unit(name, cost, row, col, items = []) {
-  return { name, cost, row, col, items };
+function unit(name, cost, row, col, items = [], star = null) {
+  return { name, cost, row, col, items, star };
 }
 
 function esc(value) {
@@ -700,6 +911,16 @@ async function loadAssetMaps() {
   };
 }
 
+async function loadDetailStars(compId) {
+  const detailPath = path.join(ROOT, 'src/data/comps', `${compId}.js`);
+  try {
+    const { default: detail } = await import(pathToFileURL(detailPath).href);
+    return new Map((detail.boardUnits || []).map((unitData) => [unitData.name, unitData.star]));
+  } catch {
+    return new Map();
+  }
+}
+
 async function assetUri(maps, group, name) {
   const relPath = maps[group].get(name);
   if (!relPath) return null;
@@ -709,7 +930,7 @@ async function assetUri(maps, group, name) {
 async function buildAssets(comp, maps) {
   const names = {
     champions: new Set([...comp.row, ...comp.board.map((u) => u.name)]),
-    traits: new Set([comp.emblem, ...comp.traits.map((t) => t.name)]),
+    traits: new Set([comp.emblem, ...comp.traits.map((t) => t.name), ...(comp.emblems || []).map(([name]) => name)]),
     items: new Set(comp.board.flatMap((u) => u.items || []).concat(comp.builds.flatMap((b) => b.items))),
     starGods: new Set(comp.starGods.map(([name]) => name)),
   };
@@ -776,6 +997,8 @@ function champCard(assets, champ) {
   const height = 104;
   const border = COST_COLORS[champ.cost] || '#8d98a0';
   const href = assets.champions[champ.name];
+  const star = starLabel(champ.star, champ.cost);
+  const starWidth = Math.min(58, 8 + star.length * 12);
   const itemSize = 22;
   const itemStart = x + 6;
   const itemY = y + height - itemSize - 6;
@@ -786,6 +1009,8 @@ function champCard(assets, champ) {
       <rect x="${x}" y="${y}" width="${width}" height="${height}" rx="12" fill="#071116" stroke="#061015" stroke-width="1"/>
       <clipPath id="clip-${esc(champ.name)}"><rect x="${x + 7}" y="${y + 7}" width="64" height="54" rx="9"/></clipPath>
       ${image(href, x + 7, y + 7, 64, 54, `clip-path="url(#clip-${esc(champ.name)})"`)}
+      <rect x="${x + 9}" y="${y + 9}" width="${starWidth}" height="16" rx="6" class="starBadge"/>
+      <text x="${x + 13}" y="${y + 22}" class="starText">${esc(star)}</text>
       <rect x="${x + 7}" y="${y + 42}" width="64" height="25" rx="8" fill="rgba(0,0,0,.7)"/>
       <text x="${x + width / 2}" y="${y + 60}" text-anchor="middle" class="champName">${esc(shortName(champ.name))}</text>
       <circle cx="${x + width - 10}" cy="${y + 16}" r="12" fill="${border}"/>
@@ -793,6 +1018,13 @@ function champCard(assets, champ) {
       ${items}
     </g>
   `;
+}
+
+function starLabel(star, cost) {
+  if (star === 3 || star === '3' || star === '三星' || star === '★★★') return '★★★';
+  if (star === 2 || star === '2' || star === '二星' || star === '★★') return '★★';
+  if (star === 1 || star === '1' || star === '一星' || star === '★') return '★';
+  return cost === 5 ? '★' : '★★';
 }
 
 function shortName(name) {
@@ -806,13 +1038,17 @@ function shortName(name) {
   }[name] || name;
 }
 
-function miniChampCard(assets, name, cost, x, y) {
+function miniChampCard(assets, name, cost, x, y, star) {
   const border = COST_COLORS[cost] || '#8d98a0';
+  const starText = starLabel(star, cost);
+  const starWidth = Math.min(44, 7 + starText.length * 9);
   return `
     <g>
       <rect x="${x - 2}" y="${y - 2}" width="58" height="78" rx="9" fill="#0a1519" stroke="${border}" stroke-width="2"/>
       <clipPath id="mini-${esc(name)}"><rect x="${x + 3}" y="${y + 3}" width="48" height="48" rx="7"/></clipPath>
       ${image(assets.champions[name], x + 3, y + 3, 48, 48, `clip-path="url(#mini-${esc(name)})"`)}
+      <rect x="${x + 5}" y="${y + 5}" width="${starWidth}" height="13" rx="5" class="starBadge"/>
+      <text x="${x + 8}" y="${y + 15}" class="miniStarText">${esc(starText)}</text>
       <rect x="${x + 3}" y="${y + 42}" width="48" height="19" rx="6" fill="rgba(0,0,0,.72)"/>
       <text x="${x + 27}" y="${y + 57}" text-anchor="middle" class="miniName">${esc(shortName(name))}</text>
       <circle cx="${x + 48}" cy="${y + 11}" r="9" fill="${border}"/>
@@ -922,6 +1158,49 @@ function starGodPanel(assets, comp) {
   `;
 }
 
+function augmentPanel(comp) {
+  const rows = (comp.augments || []).slice(0, 4).map(([type, name, note], i) => {
+    const y = 898 + i * 31;
+    return `
+      <g>
+        <rect x="410" y="${y - 22}" width="360" height="29" rx="9" class="recommendRow"/>
+        <rect x="420" y="${y - 18}" width="46" height="21" rx="7" class="augmentTag"/>
+        <text x="443" y="${y - 3}" text-anchor="middle" class="augmentTagText">${esc(type)}</text>
+        <text x="476" y="${y}" class="recommendName">${esc(compact(name, 18))}</text>
+        <text x="622" y="${y}" class="recommendNote">${esc(compact(note, 14))}</text>
+      </g>
+    `;
+  }).join('');
+  return `
+    <g>
+      <rect x="398" y="866" width="390" height="146" rx="14" class="recommendPanel"/>
+      <text x="420" y="892" class="panelLabel">推荐海克斯</text>
+      ${rows}
+    </g>
+  `;
+}
+
+function emblemPanel(assets, comp) {
+  const rows = (comp.emblems || []).slice(0, 3).map(([trait, note], i) => {
+    const y = 902 + i * 38;
+    return `
+      <g>
+        <rect x="816" y="${y - 28}" width="350" height="35" rx="10" class="recommendRow"/>
+        ${image(assets.traits[trait], 826, y - 25, 28, 28)}
+        <text x="864" y="${y - 5}" class="recommendName">${esc(`${trait}纹章`)}</text>
+        <text x="960" y="${y - 5}" class="recommendNote">${esc(compact(note, 18))}</text>
+      </g>
+    `;
+  }).join('');
+  return `
+    <g>
+      <rect x="804" y="866" width="374" height="146" rx="14" class="recommendPanel"/>
+      <text x="826" y="892" class="panelLabel">纹章 / 转职</text>
+      ${rows}
+    </g>
+  `;
+}
+
 function renderList(items, x, y, colorClass, maxChars = 18, rowGap = 52) {
   return items.map((text, index) => {
     const rowY = y + index * rowGap;
@@ -954,10 +1233,20 @@ function timeline(comp) {
 }
 
 async function renderComp(comp, maps) {
+  comp = { ...comp, ...(RECOMMENDATIONS[comp.id] || {}) };
+  const detailStars = await loadDetailStars(comp.id);
+  comp.board = comp.board.map((unitData) => ({
+    ...unitData,
+    star: unitData.star || detailStars.get(unitData.name) || starLabel(null, unitData.cost),
+  }));
   const assets = await buildAssets(comp, maps);
+  const conditionTitleY = Math.max(496, 194 + comp.traits.length * 68 + 30);
+  const conditionListY = conditionTitleY + 32;
+  const riskY = Math.max(842, conditionListY + comp.conditions.slice(0, 4).length * 52 + 38);
+  const leftPanelHeight = riskY - 154;
   const compRow = comp.row.map((name, i) => {
     const u = comp.board.find((unitData) => unitData.name === name);
-    return miniChampCard(assets, name, u?.cost || 3, 420 + i * 70, 222);
+    return miniChampCard(assets, name, u?.cost || 3, 420 + i * 70, 222, u?.star);
   }).join('\n');
   const svg = `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="${CARD_WIDTH * OUTPUT_SCALE}" height="${CARD_HEIGHT * OUTPUT_SCALE}" viewBox="0 0 ${CARD_WIDTH} ${CARD_HEIGHT}" role="img">
@@ -1013,6 +1302,9 @@ async function renderComp(comp, maps) {
       .costText { font-size: 14px; fill: #121212; font-weight: 900; }
       .miniName { font-size: 12px; fill: #fff7e4; font-weight: 900; }
       .miniCost { font-size: 10px; fill: #121212; font-weight: 900; }
+      .starBadge { fill: rgba(0,0,0,.72); stroke: rgba(255,216,105,.5); stroke-width: .8; }
+      .starText { font-size: 13px; fill: #ffd75e; font-weight: 900; letter-spacing: 0; }
+      .miniStarText { font-size: 9px; fill: #ffd75e; font-weight: 900; letter-spacing: 0; }
       .itemFrame { fill: #11181b; stroke: #d8a85a; stroke-width: 1.5; }
       .placeholderItem { fill: #25303a; stroke: #d8a85a; stroke-width: 1.5; }
       .itemPanel { fill: rgba(5,15,20,.92); stroke: #354249; stroke-width: 1.8; }
@@ -1023,6 +1315,12 @@ async function renderComp(comp, maps) {
       .godName { font-size: 15px; fill: #ffe2a3; font-weight: 900; }
       .godText { font-size: 13px; fill: #dce4e6; font-weight: 900; }
       .godHint { font-size: 11px; fill: #aeb8be; font-weight: 800; }
+      .recommendPanel { fill: rgba(5,15,20,.92); stroke: #3e5e59; stroke-width: 1.7; }
+      .recommendRow { fill: #0c1316; stroke: #263238; stroke-width: 1.1; }
+      .augmentTag { fill: rgba(72,150,214,.22); stroke: #66b3ef; stroke-width: 1.2; }
+      .augmentTagText { font-size: 12px; fill: #d9f1ff; font-weight: 900; }
+      .recommendName { font-size: 14px; fill: #ffe2a3; font-weight: 900; }
+      .recommendNote { font-size: 12px; fill: #dce4e6; font-weight: 800; }
       .smallBold { font-size: 16px; fill: #f7e2a6; font-weight: 900; }
       .note { font-size: 15px; fill: #aeb8be; }
       .warn { font-size: 16px; fill: #ffca68; font-weight: 900; }
@@ -1065,17 +1363,17 @@ async function renderComp(comp, maps) {
     ${textLines(comp.headline, 1192, 64, 'headline', 18, 24, 2)}
     ${textLines(comp.subtitle, 1192, 104, 'headlineSub', 18, 18, 1)}
 
-    <rect x="40" y="142" width="316" height="570" rx="10" class="panel"/>
+    <rect x="40" y="142" width="316" height="${leftPanelHeight}" rx="10" class="panel"/>
     <text x="106" y="172" class="sectionTitle">核心羁绊</text>
     ${comp.traits.map((trait, i) => traitRow(assets, trait, 194 + i * 68)).join('\n')}
-    <text x="106" y="496" class="sectionTitle">适玩条件</text>
-    ${renderList(comp.conditions.slice(0, 4), 82, 528, 'conditionText', 18)}
+    <text x="106" y="${conditionTitleY}" class="sectionTitle">适玩条件</text>
+    ${renderList(comp.conditions.slice(0, 4), 82, conditionListY, 'conditionText', 18)}
 
-    <rect x="40" y="724" width="316" height="176" rx="10" class="riskPanel"/>
-    <text x="76" y="758" class="riskTitle">放弃条件 / 风险</text>
-    ${renderList(comp.risks.slice(0, 3), 82, 790, 'riskLine', 20, 38)}
+    <rect x="40" y="${riskY}" width="316" height="176" rx="10" class="riskPanel"/>
+    <text x="76" y="${riskY + 34}" class="riskTitle">放弃条件 / 风险</text>
+    ${renderList(comp.risks.slice(0, 3), 82, riskY + 66, 'riskLine', 20, 38)}
 
-    <rect x="382" y="142" width="812" height="718" rx="18" class="panel"/>
+    <rect x="382" y="142" width="812" height="900" rx="18" class="panel"/>
     <text x="650" y="176" class="sectionTitle">阵容组成</text>
     <text x="408" y="207" class="note">终盘结构可按装备和来牌替换高费；棋盘从上到下是前排到后排。</text>
     ${compRow}
@@ -1084,12 +1382,16 @@ async function renderComp(comp, maps) {
     ${boardSlots()}
     ${comp.board.map((champ) => champCard(assets, champ)).join('\n')}
     ${timeline(comp)}
+    ${augmentPanel(comp)}
+    ${emblemPanel(assets, comp)}
 
-    <rect x="1222" y="142" width="338" height="718" rx="18" class="panel"/>
+    <rect x="1222" y="142" width="338" height="900" rx="18" class="panel"/>
     <text x="1250" y="184" class="sectionTitle">核心装备</text>
     ${comp.builds.map((build, i) => itemPanel(assets, { x: 1240, y: 214 + i * 140, title: build.title, items: build.items })).join('\n')}
     ${starGodPanel(assets, comp)}
-    ${textLines(comp.pivot, 1250, 852, 'warn', 18, 20, 2)}
+    <rect x="1240" y="868" width="312" height="146" rx="16" class="recommendPanel"/>
+    <text x="1258" y="896" class="panelLabel">转线提醒</text>
+    ${textLines(comp.pivot, 1258, 930, 'warn', 19, 21, 3)}
   </g>
 </svg>`;
   const outPath = path.join(OUT_DIR, `${comp.id}-17.2-early.svg`);

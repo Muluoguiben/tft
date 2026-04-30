@@ -226,7 +226,7 @@ const rawComps = [
     avoid: "把它当默认慢 D 小法、4-2 搜不出 7 木灵框架、装备偏物理，或同行抢木灵。",
     gods: "韦鲁斯首选；凯尔补装备；亚索/艾克看格子和突变；索拉卡低血止损。",
     pivot: "小法不胡转木灵飞机；法装多可转重装妖姬；8 级质量差转机甲 Flex。",
-    image: "./assets/comps/full/woodland-veigar-17.1b.jpg",
+    image: "./assets/comps/full/woodland-veigar-17.2-early.jpg",
     doc: "./docs/comps/木灵小法师.md",
     hasFullDetail: true,
     status: "watch",
@@ -238,4 +238,154 @@ const rawComps = [
   },
 ];
 
-export const comps = rawComps.map((comp) => ({ ...defaultCompMeta, ...comp }));
+const compRecommendations = {
+  "nova-95": {
+    augments: [
+      { type: "经济", name: "储蓄账户 / Hedge Fund", note: "高血上 9 的核心" },
+      { type: "节奏", name: "Money Monsoon / Upward Mobility", note: "加速 8/9 节奏" },
+      { type: "战力", name: "Late Game Scaling / Just Hit", note: "后期补质量" },
+      { type: "装备", name: "Max Build / 通用装备类", note: "修正双 C 装备" },
+    ],
+    emblems: [
+      { trait: "drx", name: "新星特攻队纹章", note: "给塔姆/慎/五费，开 7 新星上限" },
+      { trait: "bastion", name: "堡垒卫士纹章", note: "给高费前排，补抗性和容错" },
+      { trait: "hptank", name: "斗士纹章", note: "给慎/五费前排，撑血量" },
+    ],
+  },
+  "mecha-asol": {
+    augments: [
+      { type: "条件", name: "Ahri’s Aura / Feeling Lucky", note: "经济好时冲 6 机甲" },
+      { type: "经济", name: "储蓄账户 / AFK", note: "快 8 后仍有钱搜" },
+      { type: "战力", name: "Climb The Ladder / Charge Transfer", note: "补中期强度" },
+      { type: "装备", name: "Gold Collector / 光明法装", note: "补龙王和机甲装" },
+    ],
+    emblems: [
+      { trait: "mecha", name: "霸天机甲纹章", note: "优先给龙王/烬，稳定开 6 机甲" },
+      { trait: "darkStar", name: "暗星纹章", note: "给龙王或副 C，补终盘伤害" },
+      { trait: "hptank", name: "斗士纹章", note: "给超级机甲/前排，提高锁血" },
+    ],
+  },
+  "leblanc-vanguard": {
+    augments: [
+      { type: "经济", name: "Money Monsoon / Hedge Fund", note: "保证 4-2 大搜质量" },
+      { type: "节奏", name: "Upward Mobility / Late Game Specialist", note: "稳血后上 9" },
+      { type: "装备", name: "Statikk Shiv / AP 装备类", note: "补魔抗削减和启动" },
+      { type: "战力", name: "Late Game Scaling / 战斗类", note: "弥补 T2 下限" },
+    ],
+    emblems: [
+      { trait: "shieldTank", name: "重装战士纹章", note: "给乐芙兰外单位，开 6 重装" },
+      { trait: "arbiter", name: "法官纹章", note: "给卡尔玛/努努，补法官收益" },
+      { trait: "summon", name: "牧羊人纹章", note: "给卡尔玛/娜美，补前四稳定性" },
+    ],
+  },
+  "stargazer-xayah": {
+    augments: [
+      { type: "条件", name: "Battle Bunny Crossbow / 物理神器", note: "霞上限条件" },
+      { type: "经济", name: "储蓄账户 / Feeling Lucky", note: "高血上 9 补烬" },
+      { type: "战力", name: "Speedy Double Kill / 物理战力", note: "提升收割能力" },
+      { type: "装备", name: "Backline Blueprint / 物理装备类", note: "保护后排输出" },
+    ],
+    emblems: [
+      { trait: "stargazer", name: "观星者纹章", note: "给烬/巴德，开 4/5 观星上限" },
+      { trait: "ranged", name: "狙神纹章", note: "给副 C，补后排伤害" },
+      { trait: "shieldTank", name: "重装战士纹章", note: "给慎/前排，保护霞启动" },
+    ],
+  },
+  "shepherd-viktor": {
+    augments: [
+      { type: "战力", name: "Arcane Viktor-y / 珠光类", note: "维克托直接吃收益" },
+      { type: "装备", name: "Pandora’s Items / AP 装备类", note: "修正法装和前排装" },
+      { type: "经济", name: "Epic Rolldown / Feeling Lucky", note: "4-2 搜核心二星" },
+      { type: "容错", name: "Healing Orbs / Partial Ascension", note: "前排不足时补续航" },
+    ],
+    emblems: [
+      { trait: "summon", name: "牧羊人纹章", note: "给维克托/娜美，冲 5/7 牧羊" },
+      { trait: "psyops", name: "灵能特工纹章", note: "给娜美/副 C，补技能爆发" },
+      { trait: "mana", name: "神谕纹章", note: "给功能牌，提升技能频率" },
+    ],
+  },
+  "space-riven": {
+    augments: [
+      { type: "必需", name: "太空律动转 / Voyager Emblem", note: "没转职不优先玩" },
+      { type: "战力", name: "Flickerblades / Radiant Guinsoo", note: "锐雯/易启动" },
+      { type: "经济", name: "Epic Rolldown / Feeling Lucky", note: "8 级找四费二星" },
+      { type: "防线", name: "Frontline Foundation / Hold the Line", note: "前排质量优先" },
+    ],
+    emblems: [
+      { trait: "space", name: "太空律动纹章", note: "优先给锐雯/易，是进阵条件" },
+      { trait: "melee", name: "狂战士纹章", note: "给副 C，提高近战爆发" },
+      { trait: "bastion", name: "堡垒卫士纹章", note: "给塔姆/高费前排，补坦度" },
+    ],
+  },
+  "woodling-corki": {
+    augments: [
+      { type: "条件", name: "Gold Collector / 光明物理装", note: "库奇上限来源" },
+      { type: "经济", name: "储蓄账户 / Money Hungry", note: "快 8 找库奇拉莫斯" },
+      { type: "装备", name: "Backline Blueprint / 装备类", note: "补库奇三件套" },
+      { type: "战力", name: "Frontline Foundation / 战斗类", note: "拉莫斯先站住" },
+    ],
+    emblems: [
+      { trait: "meeple", name: "木灵族纹章", note: "给非木灵高费，冲 7 木灵" },
+      { trait: "fateweaver", name: "织命者纹章", note: "给副 C，补暴击和输出" },
+      { trait: "bastion", name: "堡垒卫士纹章", note: "给高费前排，保护库奇" },
+    ],
+  },
+  "mecha-flex": {
+    augments: [
+      { type: "经济", name: "储蓄账户 / AFK", note: "给 8 级大搜预算" },
+      { type: "装备", name: "装备重随 / 光明装备类", note: "谁二星谁吃装" },
+      { type: "战力", name: "Charge Transfer / Climb The Ladder", note: "中期锁血" },
+      { type: "转线", name: "Trait Tree / Branching Out", note: "补机甲或暗星上限" },
+    ],
+    emblems: [
+      { trait: "mecha", name: "霸天机甲纹章", note: "能转 6 机甲就升为龙王线" },
+      { trait: "darkStar", name: "暗星纹章", note: "给龙王/卡尔玛，补后期伤害" },
+      { trait: "melee", name: "狂战士纹章", note: "给易/厄加特，补近战输出" },
+    ],
+  },
+  "sea-belveth": {
+    augments: [
+      { type: "条件", name: "Mittens / Missed Connections", note: "大卑胡牌才玩" },
+      { type: "装备", name: "Radiant Giant Slayer / Wit's End", note: "补大卑输出" },
+      { type: "战力", name: "Kayle’s Exaltation / Crown of Demacia", note: "即时战力优先" },
+      { type: "D牌", name: "On a Roll / Prismatic Ticket", note: "追核心质量" },
+    ],
+    emblems: [
+      { trait: "primordian", name: "海魔人纹章", note: "给阿卡丽/千珏，冲 5 海魔" },
+      { trait: "rogue", name: "游侠纹章", note: "给副 C，补收割和切入" },
+      { trait: "drx", name: "新星特攻队纹章", note: "给卑尔维斯/前排，补新星层级" },
+    ],
+  },
+  "anima-aurora": {
+    augments: [
+      { type: "条件", name: "Anima Commander / 经济收菜", note: "只在幻灵开局进" },
+      { type: "D牌", name: "Patience is a Virtue / Prismatic Ticket", note: "找阿萝拉和前排" },
+      { type: "装备", name: "AP 装备类 / 光明法装", note: "保证阿萝拉能收菜" },
+      { type: "容错", name: "Tiny Titans / 索拉卡类", note: "低血防第七第八" },
+    ],
+    emblems: [
+      { trait: "anima", name: "幻灵战队纹章", note: "给乐芙兰/俄洛伊，冲高幻灵" },
+      { trait: "shieldTank", name: "重装战士纹章", note: "给阿萝拉外单位，补前排" },
+      { trait: "arbiter", name: "法官纹章", note: "给阿萝拉/卡尔玛，补法系收益" },
+    ],
+  },
+  "woodland-veigar": {
+    augments: [
+      { type: "最强", name: "值得等待：小法/波比", note: "直接抬到高上限" },
+      { type: "D牌", name: "攀阶 / Prismatic Ticket", note: "帮助追小法三星" },
+      { type: "经济", name: "储蓄账户 / AFK / Money Hungry", note: "快 8 找 7 木灵" },
+      { type: "装备", name: "阿狸光环 / Gold Collector", note: "补小法和库奇装备" },
+    ],
+    emblems: [
+      { trait: "meeple", name: "木灵族纹章", note: "给卡尔玛/巴德，冲 7/9 木灵" },
+      { trait: "magician", name: "魔术师纹章", note: "给库奇/卡尔玛，补小法输出" },
+      { trait: "darkStar", name: "暗星纹章", note: "给小法/库奇，补后期伤害" },
+    ],
+  },
+};
+
+export const comps = rawComps.map((comp) => ({
+  ...defaultCompMeta,
+  ...comp,
+  ...(compRecommendations[comp.id] || {}),
+}));
